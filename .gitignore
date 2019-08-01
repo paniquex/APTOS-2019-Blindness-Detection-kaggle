@@ -2,3 +2,13 @@
 *.png
 
 *.pt
+
+\.idea/inspectionProfiles/
+
+*.iml
+
+*.xml
+
+__pycache__/
+
+input/pretrained-models/
