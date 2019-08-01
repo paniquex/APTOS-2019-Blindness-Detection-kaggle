@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-
+import torchvision.models as models # Pre-Trained models
 
 class ConvBlock(nn.Module):
     def __init__(self, in_channels, out_channels):
@@ -61,3 +61,26 @@ class SimpleModel(nn.Module):
         x, _ = torch.max(x, dim=2)
         x = self.fc(x)
         return x
+
+
+class MainModel:
+    def __init__(self, model_type, num_classes=1):
+        if model_type == 'Simple':
+            self.model = SimpleModel(num_classes)
+        elif model_type == 'Resnet':
+            self.model = models.resnet101(pretrained=False)
+            self.model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
+            # for param in model.parameters():
+            #     param.requires_grad = False
+            self.model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
+            self.model.fc = nn.Sequential(
+                nn.Linear(in_features=2048, out_features=1024, bias=True),
+                nn.Dropout(0.2),
+                nn.BatchNorm1d(1024),
+                nn.Linear(in_features=1024, out_features=512, bias=True),
+                nn.Dropout(0.1),
+                nn.BatchNorm1d(512),
+                #                     nn.MaxPool2d(2, 2),\n",
+                nn.Linear(in_features=512, out_features=1, bias=True)
+            )
+
