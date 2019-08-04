@@ -1,0 +1,53 @@
+----------------------------------------
+
+date: 2019.08.05 00:39:42
+data-type: 
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.0015
+    weight_decay: 0
+)
+early-stopping-patience: 8
+parameters-amount: 45126721
+n-epochs: 100
+batch-size: 32
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+Train loss on 25 batch: 2.551005
+Train loss on 50 batch: 1.244187
+Train loss on 75 batch: 0.815185
+best-train-loss: 1.536792
+best-valid-loss: 1.263900
+best-kappa: 0.1077
+: Epoch: 1 | Training Loss: 1.536792 | Val. Loss: 1.263900 | Val. Kappa Score: 0.1077 | Estimated time: 234.18
+Train loss on 25 batch: 0.781850
+Train loss on 50 batch: 0.824853
+Train loss on 75 batch: 1.012340
+best-train-loss: 0.873014
+best-valid-loss: 0.856788
+best-kappa: 0.2500
+: Epoch: 2 | Training Loss: 0.873014 | Val. Loss: 0.856788 | Val. Kappa Score: 0.2500 | Estimated time: 232.93
+Train loss on 25 batch: 0.954536
+Train loss on 50 batch: 0.822893
+Train loss on 75 batch: 0.765484
+: Epoch: 3 | Training Loss: 0.847638 | Val. Loss: 1.280690 | Val. Kappa Score: 0.2680 | Estimated time: 232.70
+Train loss on 25 batch: 0.898491
+Train loss on 50 batch: 0.799154
+Train loss on 75 batch: 0.774475
+best-train-loss: 0.824040
+best-valid-loss: 0.713410
+best-kappa: 0.3202
+: Epoch: 4 | Training Loss: 0.824040 | Val. Loss: 0.713410 | Val. Kappa Score: 0.3202 | Estimated time: 233.62
+Train loss on 25 batch: 0.680228
+Train loss on 50 batch: 0.793171
+Train loss on 75 batch: 0.828131
+: Epoch: 5 | Training Loss: 0.767177 | Val. Loss: 0.788603 | Val. Kappa Score: 0.2780 | Estimated time: 238.89
+Train loss on 25 batch: 0.753880
+Train loss on 50 batch: 0.775943
+Train loss on 75 batch: 0.697835
+: Epoch: 6 | Training Loss: 0.742553 | Val. Loss: 0.751580 | Val. Kappa Score: 0.2607 | Estimated time: 239.35

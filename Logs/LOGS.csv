@@ -1,2 +1,147 @@
-""
-0
+date,data-type,net-architecture,loss-func,optim,early-stopping-patience,parameters-amount,n-epochs,batch-size,best-train-loss,best-valid-loss,best-kappa,cfg
+2019.08.05 00:39:42,,"import torch
+import torch.nn as nn
+import torchvision.models as models # Pre-Trained models
+
+import timm     # Another Pre-trained models
+
+
+class ConvBlock(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        super().__init__()
+
+        self.conv1 = nn.Sequential(
+            nn.Conv2d(in_channels, out_channels, 3, 1, 1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+        )
+        self.conv2 = nn.Sequential(
+            nn.Conv2d(out_channels, out_channels, 3, 1, 1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+        )
+
+        self._init_weights()
+
+    def _init_weights(self):
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight)
+                if m.bias is not None:
+                    nn.init.zeros_(m.bias)
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1)
+                nn.init.zeros_(m.bias)
+
+    def forward(self, x):
+        out = self.conv1(x)
+        out = self.conv2(out)
+        return out
+
+
+class SimpleModel(nn.Module):
+    def __init__(self, num_classes):
+        super().__init__()
+
+        self.conv = nn.Sequential(
+            ConvBlock(in_channels=3, out_channels=64),
+            ConvBlock(in_channels=64, out_channels=128),
+            ConvBlock(in_channels=128, out_channels=256),
+            ConvBlock(in_channels=256, out_channels=512)
+        )
+
+        self.fc = nn.Sequential(
+            nn.Dropout(0.2),
+            nn.Linear(512, 128),
+            nn.PReLU(),
+            nn.BatchNorm1d(128),
+            nn.Dropout(0.1),
+            nn.Linear(128, num_classes),
+        )
+
+    def forward(self, x):
+        x = self.conv(x)
+        x = torch.mean(x, dim=3)
+        x, _ = torch.max(x, dim=2)
+        x = self.fc(x)
+        return x
+
+
+class MainModel:
+    def __init__(self, model_type, num_classes=1):
+        if model_type == 'Simple':
+            self.model = SimpleModel(num_classes)
+        elif model_type == 'ResNet':
+            self.model = models.resnet101(pretrained=False)
+            self.model.load_state_dict(torch.load(""./input/pretrained-models/resnet101-5d3b4d8f.pth""))
+            # for param in model.parameters():
+            #     param.requires_grad = False
+            self.model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
+            self.model.fc = nn.Sequential(
+                nn.Linear(in_features=2048, out_features=1024, bias=True),
+                nn.Dropout(0.2),
+                nn.BatchNorm1d(1024),
+                nn.Linear(in_features=1024, out_features=512, bias=True),
+                nn.Dropout(0.1),
+                nn.BatchNorm1d(512),
+                #                     nn.MaxPool2d(2, 2),\n"",
+                nn.Linear(in_features=512, out_features=1, bias=True)
+            )
+
+",MSELoss(),"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.0015
+    weight_decay: 0
+)",8.0,45126721.0,100.0,32.0,0.824040,0.713410,0.3202,"from model import MainModel
+from torch import optim
+import torch.nn as nn
+import os
+from logger import Logger
+from libs.earlystopping import EarlyStopping
+
+class Config:
+    def __init__(self):
+        ## INFO ABOUT EXPERIMENT
+        self.logsFileName = 'LOGS'
+        self.seed = 13
+        if os.path.exists('./Logs/' + self.logsFileName + '.csv'):
+            self.df_logger = Logger(self.logsFileName, 'df')
+            self.experiment_name = 'exp{}'.format(len(self.df_logger.logsFile)) + '_end_epoch'
+        else:
+            self.experiment_name = 'exp{}'.format(0) + '_end_epoch'
+
+
+
+        ## MODEL PARAMETERS
+        self.model_type = 'ResNet'
+
+        self.model = MainModel(model_type=self.model_type).model
+        self.pytorch_total_params = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
+
+        self.lr = 0.0015
+        self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr)
+        self.scheduler = None
+        self.criterion = nn.MSELoss()
+        self.model_param_list = [self.model, self.optimizer, self.scheduler]
+
+        ## EARLY STOPPING
+        self.early_stopping_patience = 8
+        self.early_stopping = EarlyStopping(self.early_stopping_patience)
+
+        ## TRAINING & VALIDATION SETUP
+        self.n_epochs = 100
+        self.batch_size = 32
+        self.valid_type = 'HoldOut' #CV
+        self.valid_size = 0.2
+        self.n_folds = 5 ## for CV!
+
+
+        ## TRANSFORMER AND DATASET
+        self.p_horizontalflip = 0.4
+
+        ## PRINT FREQUENCY
+        self.print_frequency = 25
+"
