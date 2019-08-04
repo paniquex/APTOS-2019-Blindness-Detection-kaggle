@@ -2,6 +2,9 @@ import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
 
+import timm     # Another Pre-trained models
+
+
 class ConvBlock(nn.Module):
     def __init__(self, in_channels, out_channels):
         super().__init__()
@@ -67,7 +70,7 @@ class MainModel:
     def __init__(self, model_type, num_classes=1):
         if model_type == 'Simple':
             self.model = SimpleModel(num_classes)
-        elif model_type == 'Resnet':
+        elif model_type == 'ResNet':
             self.model = models.resnet101(pretrained=False)
             self.model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
             # for param in model.parameters():

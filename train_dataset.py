@@ -2,11 +2,14 @@ from torch.utils.data.dataset import Dataset
 from torchvision.transforms import transforms
 import os
 import cv2
+from config import Config
+
+conf = Config()
 
 transforms = transforms.Compose([
     transforms.ToPILImage(),
     transforms.Resize((224, 224)),
-    transforms.RandomHorizontalFlip(p=0.4),
+    transforms.RandomHorizontalFlip(p=conf.p_horizontalflip),
     #transforms.ColorJitter(brightness=2, contrast=2),
     transforms.ToTensor(),
     transforms.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225))

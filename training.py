@@ -27,19 +27,40 @@ from datetime import datetime
 from tqdm import tqdm_notebook
 
 import os
+import random
 
 # User-defined modules
 from train_dataset import transforms, CreateDataset
 from model import MainModel
 from logger import Logger
+from config import Config
+
+# Open source libs
 
 
 def add_data_to_loggers(loggers_list, column_name, data):
     loggers_list[0].add_data(column_name, data)
     loggers_list[1].add_data(column_name, data)
 
+# FOR DETERMINISTIC RESLTS
+def seed_torch(seed=13):
+    random.seed(seed)
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed) # if you are using multi-GPU.
+    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.deterministic = True
+
 
 def main():
+    ## CONFIG!
+    cfg = Config()
+
+    ## REPRODUCIBILITY
+    seed_torch(cfg.seed)
+
     print(os.listdir("./input"))
     base_dir = "./input"
 
@@ -63,16 +84,10 @@ def main():
     train_path = "./input/train_images/"
     train_data = CreateDataset(df_data=train_csv, data_dir=train_path, transform=transforms)
 
-    # Set Batch Size
-    batch_size = 4
-
-    # Percentage of training set to use as validation
-    valid_size = 0.2
-
     # obtain training indices that will be used for validation
     num_train = len(train_data)
     indices = list(range(num_train))
-    split = int(np.floor(valid_size * num_train))
+    split = int(np.floor(cfg.valid_size * num_train))
     train_idx, valid_idx = indices[split:], indices[:split]
 
     # Create Samplers
@@ -80,11 +95,11 @@ def main():
     valid_sampler = SubsetRandomSampler(valid_idx)
 
     # prepare data loaders (combine dataset and sampler)
-    train_loader = DataLoader(train_data, batch_size=batch_size, sampler=train_sampler)
-    valid_loader = DataLoader(train_data, batch_size=batch_size, sampler=valid_sampler)
+    train_loader = DataLoader(train_data, batch_size=cfg.batch_size, sampler=train_sampler)
+    valid_loader = DataLoader(train_data, batch_size=cfg.batch_size, sampler=valid_sampler)
 
     # Model
-    model = MainModel('Resnet').model
+    model = cfg.model
 
     # check if CUDA is available
     train_on_gpu = torch.cuda.is_available()
@@ -96,31 +111,10 @@ def main():
         model.cuda()
 
     # Trainable Parameters
-    pytorch_total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    print("Number of trainable parameters: \n{}".format(pytorch_total_params))
+    print("Number of trainable parameters: \n{}".format(cfg.pytorch_total_params))
 
     #Training(Fine-Tuning) and Validation
-
-    # specify loss function (categorical cross-entropy loss)
-    criterion = nn.MSELoss()
-
-    # specify optimizer
-    optimizer = optim.Adam(model.parameters(), lr=0.0015)
-
-    #specify scheduler
-    scheduler = None
-
-    #specify early stopping
-    early_stopping = False
-    early_stopping_patience = 0
-
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
-    # number of epochs to train the model
-    N_EPOCHS = 35
-
-
-    valid_loss_min = np.Inf
 
     # keeping track of losses as it happen
     train_losses = []
@@ -132,24 +126,30 @@ def main():
 
     # Loggers
 
-    logger_df = Logger("LOGS.csv", mode = 'df')
-    logger_txt = Logger("LOGS.txt", mode = 'txt')
+    logger_df = Logger(logsFileName=cfg.logsFileName + '.csv', mode = 'df')
+    logger_txt = Logger(logsFileName=cfg.logsFileName + '.txt', mode = 'txt')
     loggers_list = [logger_df, logger_txt]
+
+    loggers_list[0].add_empty_row()
+    loggers_list[1].add_empty_row()
+
     add_data_to_loggers(loggers_list, 'date', datetime.strftime(datetime.now(), "%Y.%m.%d %H:%M:%S"))
     add_data_to_loggers(loggers_list, 'data-type', '')
-    add_data_to_loggers(loggers_list, 'net-architecture', "!!!Need to parse model file!!!")
-    add_data_to_loggers(loggers_list, 'loss-func', str(criterion))
-    add_data_to_loggers(loggers_list, 'optim', str(optimizer))
-    if scheduler is not None:
-        add_data_to_loggers(loggers_list, 'scheduler', str(scheduler))
-    if early_stopping:
-        add_data_to_loggers(loggers_list, 'early-stopping-patience', early_stopping_patience)
-    else:
-        add_data_to_loggers(loggers_list, 'early-stopping-patience', early_stopping)
+    loggers_list[0].add_data('net-architecture', open('model.py', 'r+').read())
+    add_data_to_loggers(loggers_list, 'loss-func', str(cfg.criterion))
+    add_data_to_loggers(loggers_list, 'optim', str(cfg.optimizer))
 
-    add_data_to_loggers(loggers_list, 'parameters-amount', pytorch_total_params)
-    add_data_to_loggers(loggers_list, 'n-epochs', N_EPOCHS)
-    add_data_to_loggers(loggers_list, 'batch-size', batch_size)
+    if cfg.scheduler is not None:
+        add_data_to_loggers(loggers_list, 'scheduler', str(cfg.scheduler))
+
+    if cfg.early_stopping is not None:
+        add_data_to_loggers(loggers_list, 'early-stopping-patience', cfg.early_stopping_patience)
+    else:
+        add_data_to_loggers(loggers_list, 'early-stopping-patience', cfg.early_stopping)
+
+    add_data_to_loggers(loggers_list, 'parameters-amount', cfg.pytorch_total_params)
+    add_data_to_loggers(loggers_list, 'n-epochs', cfg.n_epochs)
+    add_data_to_loggers(loggers_list, 'batch-size', cfg.batch_size)
 
     train_loss_best = np.inf
     valid_loss_best = np.inf
@@ -159,79 +159,104 @@ def main():
     add_data_to_loggers(loggers_list, 'best-valid-loss', valid_loss_best)
     add_data_to_loggers(loggers_list, 'best-kappa', kappa_best)
 
+    loggers_list[0].add_data('cfg', open('config.py', 'r+').read())
 
-    for epoch in range(1, N_EPOCHS + 1):
+
+
+    ## PRINT OUTPUT FREQUENCY
+    print_frequency = cfg.print_frequency
+    start_full_time = time.time()
+    for epoch in range(1, cfg.n_epochs + 1):
+        # For timing
+        loggers_list[1].open()
+        start_epoch_time = time.time()
 
         # keep track of training and validation loss
-        train_loss = 0.0
-        valid_loss = 0.0
+        train_loss_batch = []
+        train_loss_epoch = []
+        valid_loss_epoch = []
         ###################
-        # train the model #
+        # train the cfg.model #
         ###################
-        model.train()
+        cfg.model.train()
+        batch_n = 0
         for data, target in train_loader:
+            batch_n += 1
             # move tensors to GPU if CUDA is available
             if train_on_gpu:
                 data, target = data.cuda(), target.cpu().float()
             target = target.view(-1, 1)
             # clear the gradients of all optimized variables
-            optimizer.zero_grad()
+            cfg.optimizer.zero_grad()
             with torch.set_grad_enabled(True):
-                # forward pass: compute predicted outputs by passing inputs to the model
-                output = model(data).cpu()
+                # forward pass: compute predicted outputs by passing inputs to the cfg.model
+                output = cfg.model(data).cpu()
                 # calculate the batch loss
-                loss = criterion(output, target).cpu()
-                # backward pass: compute gradient of the loss with respect to model parameters
+                loss = cfg.criterion(output, target).cpu()
+                # backward pass: compute gradient of the loss with respect to cfg.model parameters
                 loss.backward()
                 # perform a single optimization step (parameter update)
-                optimizer.step()
+                cfg.optimizer.step()
                 data = data.cpu()
-            # Update Train loss and accuracies
-            train_loss += loss.item() * data.size(0)
+                train_loss_batch.append(loss.item())
+                if batch_n % print_frequency == (print_frequency-1):
+                    print('Train loss on {} batch: {:.6f}'.format(batch_n+1, np.mean(train_loss_batch)))
+                    loggers_list[1].add_data(None, 'Train loss on {} batch: {:.6f}'.format(batch_n+1, np.mean(train_loss_batch)))
+                    train_loss_epoch.append(np.mean(train_loss_batch))
+                    train_loss_batch = []
 
         ######################
-        # validate the model #
+        # validate the cfg.model #
         ######################
-        model.eval()
+        cfg.model.eval()
         for data, target in valid_loader:
             # move tensors to GPU if CUDA is available
             if train_on_gpu:
-                data, target = data.cuda(), target.cuda().float()
-            # forward pass: compute predicted outputs by passing inputs to the model
+                data, target = data.cuda(), target.cpu().float()
+            # forward pass: compute predicted outputs by passing inputs to the cfg.model
             target = target.view(-1, 1)
             with torch.set_grad_enabled(True):
-                output = model(data)
+                output = cfg.model(data).cpu()
                 # calculate the batch loss
-                loss = criterion(output, target)
+                loss = cfg.criterion(output, target)
             # update average validation loss
-            valid_loss += loss.item() * data.size(0)
+            valid_loss_epoch.append(loss.item())
             # output = output.cohen_kappa_score_kappa_score)
             y_actual = target.data.cpu().numpy()
             y_pred = output[:, -1].detach().cpu().numpy()
             val_kappa.append(cohen_kappa_score(y_actual, y_pred.round()))
 
             # calculate average losses
-        train_loss = train_loss / len(train_loader.sampler)
-        valid_loss = valid_loss / len(valid_loader.sampler)
+        train_loss_epoch = np.mean(train_loss_epoch)
+        valid_loss_epoch = np.mean(valid_loss_epoch)
         valid_kappa = np.mean(val_kappa)
         kappa_epoch.append(np.mean(val_kappa))
-        train_losses.append(train_loss)
-        valid_losses.append(valid_loss)
+        train_losses.append(train_loss_epoch)
+        valid_losses.append(valid_loss_epoch)
+
+        ## LOGGINS LOSSES
+        if valid_loss_best > valid_loss_epoch:
+            valid_loss_best  = valid_loss_epoch
+            train_loss_best = train_loss_epoch
+            kappa_best = valid_kappa
+            add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
+            add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
+            add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
 
         # print training/validation statistics
-        print('Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f}'.format(
-            epoch, train_loss, valid_loss, valid_kappa))
+        print('Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | Estimated time: {:.2f}'.format(
+            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, time.time() - start_epoch_time))
+        loggers_list[1].add_data('', 'Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | Estimated time: {:.2f}'.format(
+            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, time.time() - start_epoch_time))
 
         ##################
         # Early Stopping #
         ##################
-        if valid_loss <= valid_loss_min:
-            print('Validation loss decreased ({:.6f} --> {:.6f}).  Saving model ...'.format(
-                valid_loss_min,
-                valid_loss))
-            torch.save(model.state_dict(), 'best_model.pt')
-            valid_loss_min = valid_loss
+        cfg.early_stopping(valid_loss_epoch, model_params_list=cfg.model_param_list, experiment_name=cfg.experiment_name, epoch=epoch)
+        loggers_list[0].save()
+        loggers_list[1].save()
 
+    add_data_to_loggers(loggers_list, 'time_estimated', start_full_time - time.time())
 
 if __name__ == '__main__':
     main()
