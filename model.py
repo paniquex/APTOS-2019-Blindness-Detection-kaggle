@@ -65,25 +65,46 @@ class SimpleModel(nn.Module):
         x = self.fc(x)
         return x
 
+## --------------_##
+##  RESNEXT MODEL ##
+## -------------- ##
+from torchvision.models.resnet import ResNet, Bottleneck
+
+# def _resnext(path, block, layers, pretrained, progress, **kwargs):
+#     model = ResNet(block, layers, **kwargs)
+#     model.load_state_dict(torch.load(path))
+#     return model
+#
+# def resnext101_32x16d_wsl(path, progress=True, **kwargs):
+#     """Constructs a ResNeXt-101 32x8 model pre-trained on weakly-supervised data
+#     and finetuned on ImageNet from Figure 5 in
+#     `"Exploring the Limits of Weakly Supervised Pretraining" <https://arxiv.org/abs/1805.00932>`_
+#     Args:
+#         progress (bool): If True, displays a progress bar of the download to stderr.
+#     """
+#     kwargs['groups'] = 32
+#     kwargs['width_per_group'] = 16
+#     return _resnext(path, Bottleneck, [3, 4, 23, 3], True, progress, **kwargs)
+
 
 class MainModel:
     def __init__(self, model_type, num_classes=1):
         if model_type == 'Simple':
             self.model = SimpleModel(num_classes)
-        elif model_type == 'ResNet':
-            self.model = models.resnet101(pretrained=False)
-            self.model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
-            # for param in model.parameters():
-            #     param.requires_grad = False
-            self.model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
-            self.model.fc = nn.Sequential(
+        elif model_type == 'ResNet101':
+            model = models.resnet101(pretrained=False)
+            model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
+            for param in model.parameters():
+                param.requires_grad = False
+            model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
+            model.fc = nn.Sequential(
                 nn.Linear(in_features=2048, out_features=1024, bias=True),
-                nn.Dropout(0.2),
-                nn.BatchNorm1d(1024),
-                nn.Linear(in_features=1024, out_features=512, bias=True),
-                nn.Dropout(0.1),
-                nn.BatchNorm1d(512),
-                #                     nn.MaxPool2d(2, 2),\n",
-                nn.Linear(in_features=512, out_features=1, bias=True)
+                nn.Linear(in_features=1024, out_features=1, bias=True)
             )
+            self.model = model
+        elif model_type == 'ResNext101_32x16d':
+            self.model = torch.hub.load('facebookresearch/WSL-Images', 'resnext101_32x16d_wsl')
+
+    def get_model(self):
+        return self.model
 
