@@ -41,13 +41,13 @@ class EarlyStopping:
             print(f'Validation loss decreased ({self.val_loss_min:.6f} --> {val_loss:.6f}).  Saving model ...')
 
 
-            model_full_state = {'model': model_param_list[0].state_dict(),
-                                'optim': model_param_list[1].state_dict()}
+            model_full_state = {'model': model_param_list[0].state_dict()}
+                                #'optim': model_param_list[1].state_dict()}
 
-            if model_param_list[2] is not None:
-                model_full_state.update({'Scheduler' : model_param_list[2].state_dict()})
-            else:
-                model_full_state.update({'Scheduler': None})
+            # if model_param_list[2] is not None:
+            #     model_full_state.update({'Scheduler' : model_param_list[2].state_dict()})
+            # else:
+            #     model_full_state.update({'Scheduler': None})
 
             torch.save(model_full_state, experiment_name + str(epoch))
             self.val_loss_min = val_loss
