@@ -164,7 +164,7 @@ class LRFinder(object):
         # Forward pass
         self.optimizer.zero_grad()
         outputs = self.model(inputs)
-        loss = self.criterion(outputs, labels)
+        loss = self.criterion(outputs.float(), labels.float())
 
         # Backward pass
         loss.backward()
@@ -179,8 +179,8 @@ class LRFinder(object):
         with torch.no_grad():
             for inputs, labels in dataloader:
                 # Move data to the correct device
-                inputs = inputs.to(self.device)
-                labels = labels.to(self.device)
+                inputs = inputs.to(self.device).float()
+                labels = labels.to(self.device).float()
 
                 # Forward pass and loss computation
                 outputs = self.model(inputs)
