@@ -20,7 +20,7 @@ def seed_torch(seed=13):
 
 
 class Config:
-    def __init__(self, batch_size=32, lr=0.00015, p_horizontalflip=0.4):
+    def __init__(self, batch_size=32, lr=0.00015, p_horizontalflip=0.4, model_type='ResNet101'):
         ## INFO ABOUT EXPERIMENT
         self.logsFileName = 'LOGS'
         self.seed = 13
@@ -30,21 +30,18 @@ class Config:
         if os.path.exists('./Logs/' + self.logsFileName + '.csv'):
             self.df_logger = Logger(self.logsFileName + '.csv', 'df')
             self.experiment_name = 'exp{}'.format(len(self.df_logger.logsFile)) + '_end_epoch'
+            self.df_logger.save()
         else:
             self.experiment_name = 'exp{}'.format(0) + '_end_epoch'
-        self.data_type = 'new_comp_quadratic_kappa'
+        self.exper_type = 'new_comp_quadratic_kappa'
 
         self.img_size = 256
 
         ## MODEL PARAMETERS
         self.weights_dir = './Model_weights/'
-        self.model_type = 'ResNet101'
+        self.model_type = model_type
 
-        self.model = MainModel(model_type=self.model_type).get_model()
-        if self.model_type == 'ResNext101_32x16d':
-            for param in self.model.parameters():
-                param.requires_grad = False
-            self.model.fc = torch.nn.Linear(2048, 1)
+        self.model = MainModel(model_type=self.model_type).model
 
         self.pytorch_total_params = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
 
@@ -55,22 +52,23 @@ class Config:
         self.model_param_list = [self.model, self.optimizer, self.scheduler]
 
         ## EARLY STOPPING
-        self.early_stopping_patience = 8
+        self.early_stopping_patience = 5
         self.early_stopping = EarlyStopping(self.early_stopping_patience)
         self.early_stopping_loss = "pytorch" #kappa
 
         ## TRAINING & VALIDATION SETUP
         self.num_workers = 16
-        self.n_epochs = 50
+        self.n_epochs = 25
         self.batch_size = batch_size
         self.valid_type = 'HoldOut' #CV
-        self.valid_size = 0.2
+        self.valid_size = 0.3
         self.n_folds = 5 ## for CV!
 
 
 
         ## TRANSFORMER AND DATASET
         self.p_horizontalflip = p_horizontalflip
+        self.data_type = 'new_old_mixed'
 
         ## PRINT FREQUENCY
-        self.print_frequency = 25
+        self.print_frequency = 50
