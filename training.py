@@ -32,9 +32,9 @@ import os
 import random
 
 # User-defined modules
-from config import Config
 from train_dataset import transforms_train, transforms_valid, CreateDataset
-from model import MainModel
+from config import Config
+
 from logger import Logger
 
 # Open source libs
@@ -50,9 +50,9 @@ from config import seed_torch
 def __init_fn(worker_id):
     np.random.seed(13 + worker_id)
 
-def main(batch_size, lr, p_horizontalflip, info):
+def main(batch_size, lr, p_horizontalflip, model_type, info):
     ## CONFIG!
-    cfg = Config(batch_size=batch_size, lr=lr, p_horizontalflip=p_horizontalflip)
+    cfg = Config(batch_size=batch_size, lr=lr, p_horizontalflip=p_horizontalflip, model_type=model_type)
 
     ## REPRODUCIBILITY
     seed_torch(cfg.seed)
@@ -63,12 +63,16 @@ def main(batch_size, lr, p_horizontalflip, info):
 
     # Loading Data + EDA
 
-    train_csv = pd.read_csv('./input/train.csv')
+    train_new_csv = pd.read_csv('./input/train_new.csv')
+    train_old_csv = pd.read_csv('./input/train_old.csv')
+    train_csv = None
+    train_path = None
+    if cfg.data_type == 'new_old_mixed':
+        train_csv = pd.concat([train_new_csv, train_old_csv], axis=0)
+        train_path = './input/train_mixed_images/'
     test_csv = pd.read_csv('./input/test.csv')
     print('Train Size = {}'.format(len(train_csv)))
     print('Public Test Size = {}'.format(len(test_csv)))
-
-
 
     counts = train_csv['diagnosis'].value_counts()
     class_list = ['No DR', 'Mild', 'Moderate', 'Severe', 'Proliferate']
@@ -78,7 +82,6 @@ def main(batch_size, lr, p_horizontalflip, info):
 
     # Data Processing
 
-    train_path = "./input/train_images/"
 
     ## SHUFFLE DATA
     train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed)
@@ -179,6 +182,7 @@ def main(batch_size, lr, p_horizontalflip, info):
     start_full_time = time.time()
     for epoch in range(1, cfg.n_epochs + 1):
         # For timing
+        # loggers_list[0].open()
         loggers_list[1].open()
         start_epoch_time = time.time()
 
@@ -247,13 +251,22 @@ def main(batch_size, lr, p_horizontalflip, info):
         valid_losses.append(valid_loss_epoch)
 
         ## LOGGINS LOSSES
-        if valid_loss_best > valid_loss_epoch:
-            valid_loss_best  = valid_loss_epoch
-            train_loss_best = train_loss_epoch
-            kappa_best = valid_kappa
-            add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
-            add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
-            add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
+        if cfg.early_stopping_loss == 'pytorch':
+            if valid_loss_best > valid_loss_epoch:
+                valid_loss_best  = valid_loss_epoch
+                train_loss_best = train_loss_epoch
+                kappa_best = valid_kappa
+                add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
+                add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
+                add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
+        elif cfg.early_stopping_loss == 'kappa':
+            if kappa_best < valid_kappa:
+                valid_loss_best  = valid_loss_epoch
+                train_loss_best = train_loss_epoch
+                kappa_best = valid_kappa
+                add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
+                add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
+                add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
 
         # print training/validation statistics
         print('Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | Estimated time: {:.2f}'.format(
@@ -280,14 +293,19 @@ def main(batch_size, lr, p_horizontalflip, info):
 
     loggers_list[1].open()
     add_data_to_loggers(loggers_list, 'time_estimated', '{:.2f}'.format(time.time() - start_full_time))
+    loggers_list[0].save()
+    loggers_list[1].save()
+
 
 if __name__ == '__main__':
-    batch_size_list = [64]
-    lr_list = [0.00015]
+    batch_size_list = [16]
+    lr_list = [0.001]
     p_horizontalflip_list = [0.4]
+    model_type_list = ['efficientnet-b5']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:
-                info = "\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n".format(batch_size, lr, p_horizontalflip)
-                print(info)
-                main(batch_size, lr, p_horizontalflip, info)
+                for model_type in model_type_list:
+                    info = "\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n".format(batch_size, lr, p_horizontalflip, model_type)
+                    print(info)
+                    main(batch_size, lr, p_horizontalflip, model_type, info)
