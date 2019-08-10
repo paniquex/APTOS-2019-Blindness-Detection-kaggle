@@ -42,8 +42,8 @@ def expand_path(p, train_path):
     p = str(p)
     if isfile(train_path + p + ".png"):
         return train_path + (p + ".png")
-    # if isfile(train_2015 + p + '.png'):
-    #     return train_2015 + (p + ".png")
+    # if isfile(train_old_path + p + '.png'):
+    #     return train_old_path + (p + ".png")
     # if isfile(test + p + ".png"):
     #     return test + (p + ".png")
     return p
