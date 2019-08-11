@@ -164,8 +164,6 @@ class MainModel:
             model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b5-586e6cc6.pth'))
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
-                nn.Dropout(0.4),
-                nn.BatchNorm1d(in_features),
                 nn.Linear(in_features=in_features, out_features=1, bias=True),
             )
             model.cuda()
