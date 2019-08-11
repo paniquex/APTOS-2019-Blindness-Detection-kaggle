@@ -70,6 +70,12 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     if cfg.data_type == 'new_old_mixed':
         train_csv = pd.concat([train_new_csv, train_old_csv], axis=0)
         train_path = './input/train_mixed_images/'
+    elif cfg.data_type == 'new':
+        train_csv = train_new_csv
+        train_path = './input/train_new_images/'
+    elif cfg.data_type == 'old':
+        train_csv = train_old_csv
+        train_path = './input/train_old_images/'
     test_csv = pd.read_csv('./input/test.csv')
     print('Train Size = {}'.format(len(train_csv)))
     print('Public Test Size = {}'.format(len(test_csv)))
@@ -250,6 +256,10 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
         train_losses.append(train_loss_epoch)
         valid_losses.append(valid_loss_epoch)
 
+        ## SCHEDULER STEP
+        if cfg.scheduler is not None:
+            cfg.scheduler.step()
+
         ## LOGGINS LOSSES
         if cfg.early_stopping_loss == 'pytorch':
             if valid_loss_best > valid_loss_epoch:
@@ -278,10 +288,10 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
         # Early Stopping #
         ##################
         if cfg.early_stopping_loss == 'pytorch':
-            cfg.early_stopping(valid_loss_epoch, model_params_list=cfg.model_param_list, experiment_name=cfg.weights_dir + cfg.experiment_name + '.pt', epoch=epoch)
+            cfg.early_stopping(valid_loss_epoch, model_params_list=cfg.model_param_list, experiment_name=cfg.weights_dir + cfg.experiment_name, epoch=epoch)
         elif cfg.early_stopping_loss == 'kappa':
             cfg.early_stopping(1 - valid_kappa, model_params_list=cfg.model_param_list,
-                               experiment_name=cfg.experiment_name, epoch=epoch)
+                               experiment_name=cfg.weights_dir + cfg.experiment_name, epoch=epoch)
         if cfg.early_stopping.early_stop:
             add_data_to_loggers(loggers_list, 'time_estimated', '{:.2f}'.format(time.time() - start_full_time))
             add_data_to_loggers(loggers_list, 'n-epochs', epoch)
@@ -299,7 +309,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
 if __name__ == '__main__':
     batch_size_list = [16]
-    lr_list = [0.001]
+    lr_list = [0.003]
     p_horizontalflip_list = [0.4]
     model_type_list = ['efficientnet-b5']
     for batch_size in batch_size_list:
