@@ -40,6 +40,10 @@ from logger import Logger
 # Open source libs
 
 
+## GLOBAL CONSTANTS:
+
+
+
 def add_data_to_loggers(loggers_list, column_name, data):
     loggers_list[0].add_data(column_name, data)
     loggers_list[1].add_data(column_name, data)
@@ -76,6 +80,9 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     elif cfg.data_type == 'old':
         train_csv = train_old_csv
         train_path = './input/train_old_images/'
+    elif cfg.data_type == 'new_old_mixed_ben_preprocessing':
+        train_csv = pd.concat([train_new_csv, train_old_csv], axis=0)
+        train_path = './input/train_mixed_BEN_preprocessing/'
     test_csv = pd.read_csv('./input/test.csv')
     print('Train Size = {}'.format(len(train_csv)))
     print('Public Test Size = {}'.format(len(test_csv)))
@@ -251,14 +258,14 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
             # calculate average losses
         train_loss_epoch = np.mean(train_loss_epoch)
         valid_loss_epoch = np.mean(valid_loss_epoch)
-        valid_kappa = np.mean(val_kappa)
+        valid_kappa = np.nanmean(val_kappa)
         kappa_epoch.append(valid_kappa)
         train_losses.append(train_loss_epoch)
         valid_losses.append(valid_loss_epoch)
 
         ## SCHEDULER STEP
         if cfg.scheduler is not None:
-            cfg.scheduler.step()
+            cfg.scheduler.step(valid_loss_epoch)
 
         ## LOGGINS LOSSES
         if cfg.early_stopping_loss == 'pytorch':
@@ -279,10 +286,10 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
                 add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
 
         # print training/validation statistics
-        print('Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | Estimated time: {:.2f}'.format(
-            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, time.time() - start_epoch_time))
-        loggers_list[1].add_data('', 'Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | Estimated time: {:.2f}'.format(
-            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, time.time() - start_epoch_time))
+        print('Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | LR: {:.6f} | Estimated time: {:.2f}'.format(
+            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, cfg.optimizer.param_groups[0]['lr'], time.time() - start_epoch_time))
+        loggers_list[1].add_data('', 'Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | LR: {:.6f} | Estimated time: {:.2f}'.format(
+            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, cfg.optimizer.param_groups[0]['lr'], time.time() - start_epoch_time))
 
         ##################
         # Early Stopping #
@@ -309,7 +316,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
 if __name__ == '__main__':
     batch_size_list = [16]
-    lr_list = [0.003]
+    lr_list = [0.0003]
     p_horizontalflip_list = [0.4]
     model_type_list = ['efficientnet-b5']
     for batch_size in batch_size_list:

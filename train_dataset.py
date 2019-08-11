@@ -66,10 +66,10 @@ class CreateDataset(Dataset):
         p = self.df.id_code.values[idx]
         p_path = expand_path(p, self.train_path)
         image = cv2.imread(p_path)
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-        image = crop_image_from_gray(image)
-        image = cv2.resize(image, (cfg.img_size, cfg.img_size))
-        image = cv2.addWeighted(image, 4, cv2.GaussianBlur(image, (0, 0), 30), -4, 128)
+        # image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        # image = crop_image_from_gray(image)
+        # image = cv2.resize(image, (cfg.img_size, cfg.img_size))
+        # image = cv2.addWeighted(image, 4, cv2.GaussianBlur(image, (0, 0), 30), -4, 128)
         image = transforms.ToPILImage()(image)
 
         if self.transform:
