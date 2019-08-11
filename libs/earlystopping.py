@@ -49,5 +49,5 @@ class EarlyStopping:
             # else:
             #     model_full_state.update({'Scheduler': None})
 
-            torch.save(model_full_state, experiment_name + str(epoch))
+            torch.save(model_full_state, experiment_name + str(epoch) + '.pth')
             self.val_loss_min = val_loss

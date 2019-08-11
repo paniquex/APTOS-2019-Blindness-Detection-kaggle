@@ -15496,3 +15496,497 @@ Train loss on 750 batch: 0.636514
 Train loss on 800 batch: 0.703939
 Train loss on 850 batch: 0.662788
 Train loss on 900 batch: 0.616672
+----------------------------------------
+
+Experiment N: 48: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.006, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.10 21:12:27
+data-type: new_old_mixed
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.006
+    lr: 0.006
+    weight_decay: 0
+)
+scheduler: <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7efb95f979e8>
+early-stopping-patience: 5
+parameters-amount: 28342833
+n-epochs: 25
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 1.527347
+Train loss on 100 batch: 1.262985
+Train loss on 150 batch: 1.052425
+Train loss on 200 batch: 1.197711
+Train loss on 250 batch: 1.107384
+Train loss on 300 batch: 1.089655
+Train loss on 350 batch: 1.129813
+Train loss on 400 batch: 1.153687
+Train loss on 450 batch: 1.123394
+Train loss on 500 batch: 1.045880
+Train loss on 550 batch: 1.093411
+Train loss on 600 batch: 1.087997
+Train loss on 650 batch: 0.952567
+Train loss on 700 batch: 1.075323
+Train loss on 750 batch: 1.081295
+Train loss on 800 batch: 1.127764
+Train loss on 850 batch: 0.943640
+Train loss on 900 batch: 1.081801
+Train loss on 950 batch: 1.004322
+Train loss on 1000 batch: 0.897877
+Train loss on 1050 batch: 1.099762
+Train loss on 1100 batch: 0.959830
+Train loss on 1150 batch: 1.002231
+Train loss on 1200 batch: 1.071024
+Train loss on 1250 batch: 0.994002
+Train loss on 1300 batch: 1.174390
+Train loss on 1350 batch: 1.062614
+Train loss on 1400 batch: 1.121080
+Train loss on 1450 batch: 1.205530
+Train loss on 1500 batch: 1.066048
+Train loss on 1550 batch: 1.021687
+Train loss on 1600 batch: 0.977474
+Train loss on 1650 batch: 0.961469
+best-train-loss: 1.079804
+best-valid-loss: 1.176087
+best-kappa: nan
+: Epoch: 1 | Training Loss: 1.079804 | Val. Loss: 1.176087 | Val. Kappa Score: nan | Estimated time: 1412.91
+Train loss on 50 batch: 1.140050
+Train loss on 100 batch: 0.974815
+Train loss on 150 batch: 0.977704
+Train loss on 200 batch: 1.059097
+Train loss on 250 batch: 1.059239
+Train loss on 300 batch: 0.850027
+Train loss on 350 batch: 0.944337
+Train loss on 400 batch: 0.885395
+Train loss on 450 batch: 0.913879
+Train loss on 500 batch: 0.862314
+Train loss on 550 batch: 0.802539
+Train loss on 600 batch: 0.947170
+Train loss on 650 batch: 0.865813
+Train loss on 700 batch: 0.964153
+Train loss on 750 batch: 0.887214
+Train loss on 800 batch: 0.889089
+Train loss on 850 batch: 0.873924
+Train loss on 900 batch: 0.898723
+Train loss on 950 batch: 1.018255
+Train loss on 1000 batch: 0.883147
+Train loss on 1050 batch: 0.812358
+Train loss on 1100 batch: 0.729207
+Train loss on 1150 batch: 0.841446
+Train loss on 1200 batch: 0.794788
+Train loss on 1250 batch: 0.839433
+Train loss on 1300 batch: 0.896092
+Train loss on 1350 batch: 0.772666
+Train loss on 1400 batch: 0.829154
+Train loss on 1450 batch: 0.807416
+Train loss on 1500 batch: 0.821024
+Train loss on 1550 batch: 0.917433
+Train loss on 1600 batch: 0.821705
+Train loss on 1650 batch: 0.824872
+best-train-loss: 0.890118
+best-valid-loss: 1.036369
+best-kappa: nan
+: Epoch: 2 | Training Loss: 0.890118 | Val. Loss: 1.036369 | Val. Kappa Score: nan | Estimated time: 1415.49
+Train loss on 50 batch: 0.863499
+Train loss on 100 batch: 0.783998
+Train loss on 150 batch: 0.786483
+Train loss on 200 batch: 0.762852
+Train loss on 250 batch: 0.678464
+Train loss on 300 batch: 0.816881
+Train loss on 350 batch: 0.697249
+Train loss on 400 batch: 0.746367
+Train loss on 450 batch: 0.729189
+Train loss on 500 batch: 0.729456
+Train loss on 550 batch: 0.764178
+Train loss on 600 batch: 0.784708
+Train loss on 650 batch: 0.634035
+Train loss on 700 batch: 0.708112
+Train loss on 750 batch: 0.821588
+Train loss on 800 batch: 0.799521
+Train loss on 850 batch: 0.739935
+Train loss on 900 batch: 0.756729
+Train loss on 950 batch: 0.775374
+Train loss on 1000 batch: 0.774956
+Train loss on 1050 batch: 0.816842
+Train loss on 1100 batch: 0.732354
+Train loss on 1150 batch: 0.643509
+Train loss on 1200 batch: 0.725348
+Train loss on 1250 batch: 0.724051
+Train loss on 1300 batch: 0.824798
+Train loss on 1350 batch: 0.777636
+Train loss on 1400 batch: 0.771320
+Train loss on 1450 batch: 0.693915
+Train loss on 1500 batch: 0.726910
+Train loss on 1550 batch: 0.724820
+Train loss on 1600 batch: 0.626244
+Train loss on 1650 batch: 0.679128
+best-train-loss: 0.745114
+best-valid-loss: 0.720569
+best-kappa: nan
+: Epoch: 3 | Training Loss: 0.745114 | Val. Loss: 0.720569 | Val. Kappa Score: nan | Estimated time: 1414.27
+Train loss on 50 batch: 0.682185
+Train loss on 100 batch: 0.667463
+Train loss on 150 batch: 0.639829
+Train loss on 200 batch: 0.623949
+Train loss on 250 batch: 0.608131
+Train loss on 300 batch: 0.696359
+Train loss on 350 batch: 0.634240
+Train loss on 400 batch: 0.659781
+Train loss on 450 batch: 0.657614
+Train loss on 500 batch: 0.667227
+Train loss on 550 batch: 0.631433
+Train loss on 600 batch: 0.672290
+Train loss on 650 batch: 0.650414
+Train loss on 700 batch: 0.637787
+Train loss on 750 batch: 0.674969
+Train loss on 800 batch: 0.636549
+Train loss on 850 batch: 0.651286
+Train loss on 900 batch: 0.594663
+Train loss on 950 batch: 0.697948
+Train loss on 1000 batch: 0.649113
+Train loss on 1050 batch: 0.618750
+Train loss on 1100 batch: 0.657656
+Train loss on 1150 batch: 0.666953
+Train loss on 1200 batch: 0.592825
+Train loss on 1250 batch: 0.671735
+Train loss on 1300 batch: 0.604227
+Train loss on 1350 batch: 0.634843
+Train loss on 1400 batch: 0.579376
+Train loss on 1450 batch: 0.599084
+Train loss on 1500 batch: 0.699152
+Train loss on 1550 batch: 0.576854
+Train loss on 1600 batch: 0.571781
+Train loss on 1650 batch: 0.655927
+best-train-loss: 0.642468
+best-valid-loss: 0.673667
+best-kappa: nan
+: Epoch: 4 | Training Loss: 0.642468 | Val. Loss: 0.673667 | Val. Kappa Score: nan | Estimated time: 1432.69
+Train loss on 50 batch: 0.576350
+Train loss on 100 batch: 0.581053
+Train loss on 150 batch: 0.526916
+Train loss on 200 batch: 0.602382
+Train loss on 250 batch: 0.510379
+Train loss on 300 batch: 0.576725
+Train loss on 350 batch: 0.534835
+Train loss on 400 batch: 0.545653
+Train loss on 450 batch: 0.589097
+Train loss on 500 batch: 0.565419
+Train loss on 550 batch: 0.550543
+Train loss on 600 batch: 0.504648
+Train loss on 650 batch: 0.546860
+Train loss on 700 batch: 0.547606
+Train loss on 750 batch: 0.514977
+Train loss on 800 batch: 0.503944
+Train loss on 850 batch: 0.626957
+Train loss on 900 batch: 0.549464
+Train loss on 950 batch: 0.599565
+Train loss on 1000 batch: 0.655384
+Train loss on 1050 batch: 0.613052
+Train loss on 1100 batch: 0.611683
+Train loss on 1150 batch: 0.490810
+Train loss on 1200 batch: 0.616985
+Train loss on 1250 batch: 0.601687
+Train loss on 1300 batch: 0.597691
+Train loss on 1350 batch: 0.457026
+Train loss on 1400 batch: 0.616506
+Train loss on 1450 batch: 0.544772
+Train loss on 1500 batch: 0.563843
+Train loss on 1550 batch: 0.585555
+Train loss on 1600 batch: 0.625594
+Train loss on 1650 batch: 0.557917
+best-train-loss: 0.566693
+best-valid-loss: 0.585826
+best-kappa: nan
+: Epoch: 5 | Training Loss: 0.566693 | Val. Loss: 0.585826 | Val. Kappa Score: nan | Estimated time: 1428.21
+Train loss on 50 batch: 0.586378
+Train loss on 100 batch: 0.500569
+Train loss on 150 batch: 0.619217
+Train loss on 200 batch: 0.530107
+Train loss on 250 batch: 0.451003
+Train loss on 300 batch: 0.504714
+Train loss on 350 batch: 0.562005
+Train loss on 400 batch: 0.500231
+Train loss on 450 batch: 0.657487
+Train loss on 500 batch: 0.582484
+Train loss on 550 batch: 0.588868
+Train loss on 600 batch: 0.515863
+Train loss on 650 batch: 0.518005
+Train loss on 700 batch: 0.551638
+Train loss on 750 batch: 0.530579
+Train loss on 800 batch: 0.551560
+Train loss on 850 batch: 0.603451
+Train loss on 900 batch: 0.530245
+Train loss on 950 batch: 0.544802
+Train loss on 1000 batch: 0.447867
+Train loss on 1050 batch: 0.537464
+Train loss on 1100 batch: 0.623146
+Train loss on 1150 batch: 0.543914
+Train loss on 1200 batch: 0.565561
+Train loss on 1250 batch: 0.588810
+Train loss on 1300 batch: 0.586129
+Train loss on 1350 batch: 0.490019
+Train loss on 1400 batch: 0.567353
+Train loss on 1450 batch: 0.588648
+Train loss on 1500 batch: 0.578638
+Train loss on 1550 batch: 0.540945
+Train loss on 1600 batch: 0.590299
+Train loss on 1650 batch: 0.500672
+best-train-loss: 0.553108
+best-valid-loss: 0.566219
+best-kappa: nan
+: Epoch: 6 | Training Loss: 0.553108 | Val. Loss: 0.566219 | Val. Kappa Score: nan | Estimated time: 1413.93
+Train loss on 50 batch: 0.576992
+Train loss on 100 batch: 0.573947
+Train loss on 150 batch: 0.549199
+Train loss on 200 batch: 0.537607
+Train loss on 250 batch: 0.523911
+Train loss on 300 batch: 0.601433
+Train loss on 350 batch: 0.524685
+Train loss on 400 batch: 0.579680
+Train loss on 450 batch: 0.515235
+Train loss on 500 batch: 0.543994
+Train loss on 550 batch: 0.548642
+Train loss on 600 batch: 0.607448
+Train loss on 650 batch: 0.633841
+Train loss on 700 batch: 0.539915
+Train loss on 750 batch: 0.480195
+Train loss on 800 batch: 0.495232
+Train loss on 850 batch: 0.499434
+Train loss on 900 batch: 0.552683
+Train loss on 950 batch: 0.517189
+Train loss on 1000 batch: 0.455201
+Train loss on 1050 batch: 0.531234
+Train loss on 1100 batch: 0.596766
+Train loss on 1150 batch: 0.597433
+Train loss on 1200 batch: 0.529817
+Train loss on 1250 batch: 0.544783
+Train loss on 1300 batch: 0.587619
+Train loss on 1350 batch: 0.525665
+Train loss on 1400 batch: 0.640842
+Train loss on 1450 batch: 0.534478
+Train loss on 1500 batch: 0.526672
+Train loss on 1550 batch: 0.431790
+Train loss on 1600 batch: 0.495956
+Train loss on 1650 batch: 0.586165
+best-train-loss: 0.543704
+best-valid-loss: 0.519596
+best-kappa: nan
+: Epoch: 7 | Training Loss: 0.543704 | Val. Loss: 0.519596 | Val. Kappa Score: nan | Estimated time: 1413.96
+Train loss on 50 batch: 0.546127
+Train loss on 100 batch: 0.547901
+Train loss on 150 batch: 0.643195
+Train loss on 200 batch: 0.526221
+Train loss on 250 batch: 0.633107
+Train loss on 300 batch: 0.592310
+Train loss on 350 batch: 0.554527
+Train loss on 400 batch: 0.617260
+Train loss on 450 batch: 0.544591
+Train loss on 500 batch: 0.526131
+Train loss on 550 batch: 0.517335
+Train loss on 600 batch: 0.538065
+Train loss on 650 batch: 0.576349
+Train loss on 700 batch: 0.603181
+Train loss on 750 batch: 0.553208
+Train loss on 800 batch: 0.686998
+Train loss on 850 batch: 0.556761
+Train loss on 900 batch: 0.593557
+Train loss on 950 batch: 0.621581
+Train loss on 1000 batch: 0.540291
+Train loss on 1050 batch: 0.562051
+Train loss on 1100 batch: 0.569810
+Train loss on 1150 batch: 0.630807
+Train loss on 1200 batch: 0.571555
+Train loss on 1250 batch: 0.580067
+Train loss on 1300 batch: 0.599428
+Train loss on 1350 batch: 0.571256
+Train loss on 1400 batch: 0.571926
+Train loss on 1450 batch: 0.540951
+Train loss on 1500 batch: 0.589004
+Train loss on 1550 batch: 0.589199
+Train loss on 1600 batch: 0.550373
+Train loss on 1650 batch: 0.518464
+: Epoch: 8 | Training Loss: 0.573436 | Val. Loss: 0.569325 | Val. Kappa Score: nan | Estimated time: 1415.78
+Train loss on 50 batch: 0.554842
+Train loss on 100 batch: 0.584439
+Train loss on 150 batch: 0.666881
+Train loss on 200 batch: 0.609342
+Train loss on 250 batch: 0.700100
+Train loss on 300 batch: 0.635542
+Train loss on 350 batch: 0.562149
+Train loss on 400 batch: 0.637138
+Train loss on 450 batch: 0.547360
+Train loss on 500 batch: 0.616079
+Train loss on 550 batch: 0.641873
+Train loss on 600 batch: 0.640665
+Train loss on 650 batch: 0.583383
+Train loss on 700 batch: 0.699214
+Train loss on 750 batch: 0.636399
+Train loss on 800 batch: 0.695053
+Train loss on 850 batch: 0.596743
+Train loss on 900 batch: 0.514810
+Train loss on 950 batch: 0.512887
+Train loss on 1000 batch: 0.570961
+Train loss on 1050 batch: 0.613696
+Train loss on 1100 batch: 0.657857
+Train loss on 1150 batch: 0.541847
+Train loss on 1200 batch: 0.634990
+Train loss on 1250 batch: 0.577900
+Train loss on 1300 batch: 0.613003
+Train loss on 1350 batch: 0.512684
+Train loss on 1400 batch: 0.557994
+Train loss on 1450 batch: 0.544266
+Train loss on 1500 batch: 0.698123
+Train loss on 1550 batch: 0.574618
+Train loss on 1600 batch: 0.648328
+Train loss on 1650 batch: 0.610804
+: Epoch: 9 | Training Loss: 0.605200 | Val. Loss: 0.605527 | Val. Kappa Score: nan | Estimated time: 1420.14
+Train loss on 50 batch: 0.602326
+Train loss on 100 batch: 0.701482
+Train loss on 150 batch: 0.657644
+Train loss on 200 batch: 0.638819
+Train loss on 250 batch: 0.604292
+Train loss on 300 batch: 0.615575
+Train loss on 350 batch: 0.625452
+Train loss on 400 batch: 0.636007
+Train loss on 450 batch: 0.623634
+Train loss on 500 batch: 0.624364
+Train loss on 550 batch: 0.692312
+Train loss on 600 batch: 0.690055
+Train loss on 650 batch: 0.657778
+Train loss on 700 batch: 0.677183
+Train loss on 750 batch: 0.571910
+Train loss on 800 batch: 0.703331
+Train loss on 850 batch: 0.541748
+Train loss on 900 batch: 0.583132
+Train loss on 950 batch: 0.727820
+Train loss on 1000 batch: 0.604169
+Train loss on 1050 batch: 0.588630
+Train loss on 1100 batch: 0.620561
+Train loss on 1150 batch: 0.710128
+Train loss on 1200 batch: 0.614690
+Train loss on 1250 batch: 0.560125
+Train loss on 1300 batch: 0.589805
+Train loss on 1350 batch: 0.611500
+Train loss on 1400 batch: 0.719012
+Train loss on 1450 batch: 0.613568
+Train loss on 1500 batch: 0.592202
+Train loss on 1550 batch: 0.589106
+Train loss on 1600 batch: 0.608385
+Train loss on 1650 batch: 0.556325
+: Epoch: 10 | Training Loss: 0.627644 | Val. Loss: 0.599103 | Val. Kappa Score: nan | Estimated time: 1420.05
+Train loss on 50 batch: 0.551830
+Train loss on 100 batch: 0.655103
+Train loss on 150 batch: 0.623082
+Train loss on 200 batch: 0.615882
+Train loss on 250 batch: 0.607659
+Train loss on 300 batch: 0.530095
+Train loss on 350 batch: 0.574410
+Train loss on 400 batch: 0.579063
+Train loss on 450 batch: 0.588437
+Train loss on 500 batch: 0.547907
+Train loss on 550 batch: 0.679265
+Train loss on 600 batch: 0.650217
+Train loss on 650 batch: 0.597640
+Train loss on 700 batch: 0.740401
+Train loss on 750 batch: 0.721595
+Train loss on 800 batch: 0.637574
+Train loss on 850 batch: 0.639366
+Train loss on 900 batch: 0.632376
+Train loss on 950 batch: 0.637846
+Train loss on 1000 batch: 0.703985
+Train loss on 1050 batch: 0.618377
+Train loss on 1100 batch: 0.627830
+Train loss on 1150 batch: 0.555211
+Train loss on 1200 batch: 0.550972
+Train loss on 1250 batch: 0.533434
+Train loss on 1300 batch: 0.597407
+Train loss on 1350 batch: 0.577053
+Train loss on 1400 batch: 0.578026
+Train loss on 1450 batch: 0.619000
+Train loss on 1500 batch: 0.663928
+Train loss on 1550 batch: 0.655026
+Train loss on 1600 batch: 0.642196
+Train loss on 1650 batch: 0.563196
+: Epoch: 11 | Training Loss: 0.612250 | Val. Loss: 0.635679 | Val. Kappa Score: nan | Estimated time: 1421.85
+Train loss on 50 batch: 0.507224
+Train loss on 100 batch: 0.565200
+Train loss on 150 batch: 0.564120
+Train loss on 200 batch: 0.590304
+Train loss on 250 batch: 0.706880
+Train loss on 300 batch: 0.654918
+Train loss on 350 batch: 0.565524
+Train loss on 400 batch: 0.575819
+Train loss on 450 batch: 0.539355
+Train loss on 500 batch: 0.573603
+Train loss on 550 batch: 0.567183
+Train loss on 600 batch: 0.531006
+Train loss on 650 batch: 0.555360
+Train loss on 700 batch: 0.612366
+Train loss on 750 batch: 0.617263
+Train loss on 800 batch: 0.610281
+Train loss on 850 batch: 0.567386
+Train loss on 900 batch: 0.508961
+Train loss on 950 batch: 0.641928
+Train loss on 1000 batch: 0.600329
+Train loss on 1050 batch: 0.625103
+Train loss on 1100 batch: 0.541433
+Train loss on 1150 batch: 0.597373
+Train loss on 1200 batch: 0.570429
+Train loss on 1250 batch: 0.659952
+Train loss on 1300 batch: 0.614223
+Train loss on 1350 batch: 0.591175
+Train loss on 1400 batch: 0.646518
+Train loss on 1450 batch: 0.585316
+Train loss on 1500 batch: 0.686431
+Train loss on 1550 batch: 0.597360
+Train loss on 1600 batch: 0.591502
+Train loss on 1650 batch: 0.567257
+: Epoch: 12 | Training Loss: 0.593395 | Val. Loss: 0.609084 | Val. Kappa Score: nan | Estimated time: 1414.87
+time_estimated: 17024.89
+n-epochs: 12
+time_estimated: 17024.91
+----------------------------------------
+
+Experiment N: 49: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.006, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.11 01:57:36
+data-type: new_old_mixed
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.006
+    lr: 0.006
+    weight_decay: 0
+)
+scheduler: <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7efb95f92c88>
+early-stopping-patience: 5
+parameters-amount: 28342833
+n-epochs: 25
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan

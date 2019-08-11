@@ -39,6 +39,7 @@ class Config:
 
         ## MODEL PARAMETERS
         self.weights_dir = './Model_weights/'
+        self.weights_dir_finetuning = './Model_weights_finetuning/'
         self.model_type = model_type
 
         self.model = MainModel(model_type=self.model_type).model
@@ -47,18 +48,18 @@ class Config:
 
         self.lr = lr
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr)
-        self.scheduler = None
+        self.scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(self.optimizer, 3)
         self.criterion = nn.MSELoss()
         self.model_param_list = [self.model, self.optimizer, self.scheduler]
 
         ## EARLY STOPPING
-        self.early_stopping_patience = 5
+        self.early_stopping_patience = 10
         self.early_stopping = EarlyStopping(self.early_stopping_patience)
         self.early_stopping_loss = "pytorch" #kappa
 
         ## TRAINING & VALIDATION SETUP
         self.num_workers = 16
-        self.n_epochs = 25
+        self.n_epochs = 45
         self.batch_size = batch_size
         self.valid_type = 'HoldOut' #CV
         self.valid_size = 0.3

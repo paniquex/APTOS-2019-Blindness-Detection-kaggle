@@ -1,4 +1,4 @@
-date,data-type,net-architecture,loss-func,optim,early-stopping-patience,parameters-amount,n-epochs,batch-size,best-train-loss,best-valid-loss,best-kappa,cfg,time_estimated,lb-kappa-score,dataset,trainloop,time-estimated
+date,data-type,net-architecture,loss-func,optim,early-stopping-patience,parameters-amount,n-epochs,batch-size,best-train-loss,best-valid-loss,best-kappa,cfg,time_estimated,lb-kappa-score,dataset,trainloop,time-estimated,scheduler
 2019.08.05 23:20:37,,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -142,7 +142,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",327.82,,,,
+",327.82,,,,,
 2019.08.05 23:29:59,,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -286,7 +286,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",,,,,
+",,,,,,
 2019.08.05 23:43:43,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -430,7 +430,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",690.71,,,,
+",690.71,,,,,
 2019.08.05 23:55:42,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -574,7 +574,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",717.39,,,,
+",717.39,,,,,
 2019.08.06 08:11:27,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -736,7 +736,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",5222.55,,,,
+",5222.55,,,,,
 2019.08.06 09:38:31,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -898,7 +898,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",2654.21,,,,
+",2654.21,,,,,
 2019.08.06 10:22:46,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -1060,7 +1060,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1850.02,,,,
+",1850.02,,,,,
 2019.08.06 10:53:37,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -1222,7 +1222,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",3120.4,,,,
+",3120.4,,,,,
 2019.08.06 11:45:38,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -1384,7 +1384,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1351.18,,,,
+",1351.18,,,,,
 2019.08.06 12:08:10,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -1546,7 +1546,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1212.47,,,,
+",1212.47,,,,,
 2019.08.06 12:28:23,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -1708,7 +1708,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1226.16,,,,
+",1226.16,,,,,
 2019.08.06 12:48:50,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -1870,7 +1870,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1294.01,,,,
+",1294.01,,,,,
 2019.08.06 17:06:42,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -2032,7 +2032,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",662.72,,,,
+",662.72,,,,,
 2019.08.06 17:17:45,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -2194,7 +2194,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",2089.43,,,,
+",2089.43,,,,,
 2019.08.06 17:52:35,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -2356,7 +2356,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",2023.55,,,,
+",2023.55,,,,,
 2019.08.06 18:26:20,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -2518,7 +2518,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1793.97,,,,
+",1793.97,,,,,
 2019.08.06 18:56:14,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -2680,7 +2680,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",2032.91,,,,
+",2032.91,,,,,
 2019.08.06 19:30:08,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -2842,7 +2842,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",2028.09,,,,
+",2028.09,,,,,
 2019.08.06 20:03:57,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -3004,7 +3004,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",766.31,,,,
+",766.31,,,,,
 2019.08.06 21:08:37,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -3166,7 +3166,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1318.98,,,,
+",1318.98,,,,,
 2019.08.06 21:30:37,new_comp,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -3328,7 +3328,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1320.6,,,,
+",1320.6,,,,,
 2019.08.06 22:00:46,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -3490,7 +3490,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1318.7,,,,
+",1318.7,,,,,
 2019.08.06 22:28:37,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -3653,7 +3653,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",,,,,
+",,,,,,
 2019.08.06 22:35:19,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -3845,7 +3845,7 @@ class Config:
 
         ## PRINT FREQUENCY
         self.print_frequency = 25
-",1802.03,,,,
+",1802.03,,,,,
 2019.08.06 23:37:58,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -4373,7 +4373,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.06 23:52:23,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -4901,7 +4901,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 01:40:35,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -5475,7 +5475,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 02:19:27,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -6049,7 +6049,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 02:23:27,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -6623,7 +6623,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 08:44:40,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -7198,7 +7198,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 08:49:26,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -7773,7 +7773,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 09:02:11,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -8349,7 +8349,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 15:19:31,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -8925,7 +8925,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 16:36:39,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -9501,7 +9501,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.07 19:09:56,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -10077,7 +10077,7 @@ if __name__ == '__main__':
                 info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}\n\n\n"".format(batch_size, lr, p_horizontalflip)
                 print(info)
                 main(batch_size, lr, p_horizontalflip, info)
-",
+",,
 2019.08.08 01:02:16,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -10722,7 +10722,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
 2019.08.08 02:15:52,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -11367,7 +11367,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
 2019.08.08 03:16:52,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -12012,7 +12012,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
 2019.08.08 08:03:14,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -12657,7 +12657,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
 2019.08.08 14:12:38,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -13302,7 +13302,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
 2019.08.08 15:10:05,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -13947,7 +13947,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
 2019.08.08 19:23:20,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -14592,7 +14592,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
 2019.08.08 19:30:39,new_comp_quadratic_kappa,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -15237,8 +15237,8 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
-2019.08.09 00:29:38,new_old_mixed,efficientnet-b5 with one FC,,"Adam, lr = 0.001",5.0,28342833.0,9.0,16.0,0.419599,0.423766,,,,,,,19910.0
+",,
+2019.08.09 00:29:38,new_old_mixed,efficientnet-b5 with one FC,,"Adam, lr = 0.001",5.0,28342833.0,9.0,16.0,0.419599,0.423766,,,,,,,19910.0,
 2019.08.09 17:40:21,new_old_mixed,efficientnet-b5 with one FC,MSELoss(),"Adam, lr = 0.001",5.0,30442033.0,25.0,16.0,0.43094399999999994,0.42818900000000004,,"from model import MainModel
 from torch import optim
 import torch.nn as nn
@@ -15710,7 +15710,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",35557.0
+",35557.0,
 2019.08.10 04:36:38,new_old_mixed,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -16364,7 +16364,7 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
 2019.08.10 12:28:42,new_old_mixed,"import torch
 import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
@@ -17018,4 +17018,661 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",,
+2019.08.10 21:12:27,new_old_mixed,"import torch
+import torch.nn as nn
+import torchvision.models as models # Pre-Trained models
+from input.EfficientNet_PyTorch.efficientnet_pytorch import EfficientNet
+import timm     # Another Pre-trained models
+
+
+class ConvBlock(nn.Module):
+    def __init__(self, in_channels, out_channels):
+        super().__init__()
+
+        self.conv1 = nn.Sequential(
+            nn.Conv2d(in_channels, out_channels, 3, 1, 1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+        )
+        self.conv2 = nn.Sequential(
+            nn.Conv2d(out_channels, out_channels, 3, 1, 1),
+            nn.BatchNorm2d(out_channels),
+            nn.ReLU(),
+        )
+
+        self._init_weights()
+
+    def _init_weights(self):
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                nn.init.kaiming_normal_(m.weight)
+                if m.bias is not None:
+                    nn.init.zeros_(m.bias)
+            elif isinstance(m, nn.BatchNorm2d):
+                nn.init.constant_(m.weight, 1)
+                nn.init.zeros_(m.bias)
+
+    def forward(self, x):
+        out = self.conv1(x)
+        out = self.conv2(out)
+        return out
+
+
+class SimpleModel(nn.Module):
+    def __init__(self, num_classes):
+        super().__init__()
+
+        self.conv = nn.Sequential(
+            ConvBlock(in_channels=3, out_channels=64),
+            ConvBlock(in_channels=64, out_channels=128),
+            ConvBlock(in_channels=128, out_channels=256),
+            ConvBlock(in_channels=256, out_channels=512)
+        )
+
+        self.fc = nn.Sequential(
+            nn.Dropout(0.2),
+            nn.Linear(512, 128),
+            nn.PReLU(),
+            nn.BatchNorm1d(128),
+            nn.Dropout(0.1),
+            nn.Linear(128, num_classes),
+        )
+
+    def forward(self, x):
+        x = self.conv(x)
+        x = torch.mean(x, dim=3)
+        x, _ = torch.max(x, dim=2)
+        x = self.fc(x)
+        return x
+
+## --------------_##
+##  RESNEXT MODEL ##
+## -------------- ##
+from torchvision.models.resnet import ResNet, Bottleneck
+
+# def _resnext(path, block, layers, pretrained, progress, **kwargs):
+#     model = ResNet(block, layers, **kwargs)
+#     model.load_state_dict(torch.load(path))
+#     return model
+#
+# def resnext101_32x16d_wsl(path, progress=True, **kwargs):
+#     """"""Constructs a ResNeXt-101 32x8 model pre-trained on weakly-supervised data
+#     and finetuned on ImageNet from Figure 5 in
+#     `""Exploring the Limits of Weakly Supervised Pretraining"" <https://arxiv.org/abs/1805.00932>`_
+#     Args:
+#         progress (bool): If True, displays a progress bar of the download to stderr.
+#     """"""
+#     kwargs['groups'] = 32
+#     kwargs['width_per_group'] = 16
+#     return _resnext(path, Bottleneck, [3, 4, 23, 3], True, progress, **kwargs)
+
+
+class MainModel:
+    def __init__(self, model_type, num_classes=1):
+        if model_type == 'Simple':
+            self.model = SimpleModel(num_classes)
+        elif model_type == 'ResNet101':
+            model = models.resnet101(pretrained=False)
+            model.load_state_dict(torch.load(""./input/pretrained-models/resnet101-5d3b4d8f.pth""))
+            # for param in model.parameters():
+            #     param.requires_grad = False
+            model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
+            model.fc = nn.Sequential(
+                nn.Linear(in_features=2048, out_features=1024, bias=True),
+                nn.Dropout(0.4),
+                nn.Linear(in_features=1024, out_features=1, bias=True)
+            )
+            self.model = model
+
+        elif model_type == 'efficientnet-b0':
+            model = EfficientNet.from_name(model_type)
+            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b0-08094119.pth'))
+            in_features = model._fc.in_features
+            model._fc = nn.Sequential(
+                nn.Linear(in_features=in_features, out_features=1024, bias=True),
+                nn.Dropout(0.4),
+                nn.Linear(in_features=1024, out_features=1, bias=True)
+            )
+            model.cuda()
+            self.model = model
+        elif model_type == 'efficientnet-b1':
+            model = EfficientNet.from_name(model_type)
+            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b1-dbc7070a.pth'))
+            in_features = model._fc.in_features
+            model._fc = nn.Sequential(
+                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                # nn.Dropout(0.4),
+                # nn.Linear(in_features=1024, out_features=1, bias=True)
+            )
+            model.cuda()
+            self.model = model
+        elif model_type == 'efficientnet-b2':
+            model = EfficientNet.from_name(model_type)
+            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b2-27687264.pth'))
+            in_features = model._fc.in_features
+            model._fc = nn.Sequential(
+                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                # nn.Dropout(0.4),
+                # nn.Linear(in_features=1024, out_features=1, bias=True)
+            )
+            model.cuda()
+            self.model = model
+        elif model_type == 'efficientnet-b3':
+            model = EfficientNet.from_name(model_type)
+            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b3-c8376fa2.pth'))
+            in_features = model._fc.in_features
+            model._fc = nn.Sequential(
+                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                # nn.Dropout(0.4),
+                # nn.Linear(in_features=1024, out_features=1, bias=True)
+            )
+            model.cuda()
+            self.model = model
+        elif model_type == 'efficientnet-b4':
+            model = EfficientNet.from_name(model_type)
+            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b4-e116e8b3.pth'))
+            in_features = model._fc.in_features
+            model._fc = nn.Sequential(
+                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                # nn.Dropout(0.4),
+                # nn.Linear(in_features=1024, out_features=1, bias=True)
+            )
+            model.cuda()
+            self.model = model
+        elif model_type == 'efficientnet-b5':
+            model = EfficientNet.from_name(model_type)
+            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b5-586e6cc6.pth'))
+            in_features = model._fc.in_features
+            model._fc = nn.Sequential(
+                nn.Linear(in_features=in_features, out_features=1, bias=True),
+            )
+            model.cuda()
+            self.model = model
+
+
+
+",MSELoss(),"Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.006
+    lr: 0.006
+    weight_decay: 0
+)",5.0,28342833.0,12.0,16.0,0.543704,0.5195960000000001,,"from model import MainModel
+from torch import optim
+import torch.nn as nn
+import os
+from logger import Logger
+from libs.earlystopping import EarlyStopping
+
+import torch, random
+import numpy as np
+
+def seed_torch(seed=13):
+    random.seed(seed)
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed) # if you are using multi-GPU.
+    torch.backends.cudnn.benchmark = False
+    torch.backends.cudnn.deterministic = True
+
+
+class Config:
+    def __init__(self, batch_size=32, lr=0.00015, p_horizontalflip=0.4, model_type='ResNet101'):
+        ## INFO ABOUT EXPERIMENT
+        self.logsFileName = 'LOGS'
+        self.seed = 13
+
+        seed_torch(self.seed)
+
+        if os.path.exists('./Logs/' + self.logsFileName + '.csv'):
+            self.df_logger = Logger(self.logsFileName + '.csv', 'df')
+            self.experiment_name = 'exp{}'.format(len(self.df_logger.logsFile)) + '_end_epoch'
+            self.df_logger.save()
+        else:
+            self.experiment_name = 'exp{}'.format(0) + '_end_epoch'
+        self.exper_type = 'new_comp_quadratic_kappa'
+
+        self.img_size = 256
+
+        ## MODEL PARAMETERS
+        self.weights_dir = './Model_weights/'
+        self.model_type = model_type
+
+        self.model = MainModel(model_type=self.model_type).model
+
+        self.pytorch_total_params = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
+
+        self.lr = lr
+        self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr)
+        self.scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(self.optimizer, 5)
+        self.criterion = nn.MSELoss()
+        self.model_param_list = [self.model, self.optimizer, self.scheduler]
+
+        ## EARLY STOPPING
+        self.early_stopping_patience = 5
+        self.early_stopping = EarlyStopping(self.early_stopping_patience)
+        self.early_stopping_loss = ""pytorch"" #kappa
+
+        ## TRAINING & VALIDATION SETUP
+        self.num_workers = 16
+        self.n_epochs = 25
+        self.batch_size = batch_size
+        self.valid_type = 'HoldOut' #CV
+        self.valid_size = 0.3
+        self.n_folds = 5 ## for CV!
+
+
+
+        ## TRANSFORMER AND DATASET
+        self.p_horizontalflip = p_horizontalflip
+        self.data_type = 'new_old_mixed'
+
+        ## PRINT FREQUENCY
+        self.print_frequency = 50",17024.91,,"from torch.utils.data.dataset import Dataset
+from torchvision.transforms import transforms
+import os
+import cv2
+from os.path import isfile
+import numpy as np
+from config import Config
+
+
+# The Code from: https://www.kaggle.com/ratthachat/aptos-updated-albumentation-meets-grad-cam
+cfg = Config()
+
+def crop_image1(img, tol=7):
+    # img is image data
+    # tol  is tolerance
+
+    mask = img > tol
+    return img[np.ix_(mask.any(1), mask.any(0))]
+
+
+def crop_image_from_gray(img, tol=7):
+    if img.ndim == 2:
+        mask = img > tol
+        return img[np.ix_(mask.any(1), mask.any(0))]
+    elif img.ndim == 3:
+        gray_img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+        mask = gray_img > tol
+
+        check_shape = img[:, :, 0][np.ix_(mask.any(1), mask.any(0))].shape[0]
+        if (check_shape == 0):  # image is too dark so that we crop out everything,
+            return img  # return original image
+        else:
+            img1 = img[:, :, 0][np.ix_(mask.any(1), mask.any(0))]
+            img2 = img[:, :, 1][np.ix_(mask.any(1), mask.any(0))]
+            img3 = img[:, :, 2][np.ix_(mask.any(1), mask.any(0))]
+            #         print(img1.shape,img2.shape,img3.shape)
+            img = np.stack([img1, img2, img3], axis=-1)
+        #         print(img.shape)
+        return img
+
+def expand_path(p, train_path):
+    p = str(p)
+    if isfile(train_path + p + "".png""):
+        return train_path + (p + "".png"")
+    # if isfile(train_old_path + p + '.png'):
+    #     return train_old_path + (p + "".png"")
+    # if isfile(test + p + "".png""):
+    #     return test + (p + "".png"")
+    return p
+
+
+class CreateDataset(Dataset):
+
+    def __init__(self, df_data, data_dir, transform=None):
+        self.df = df_data
+        self.transform = transform
+        self.train_path = data_dir
+
+    def __len__(self):
+        return len(self.df)
+
+    def __getitem__(self, idx):
+        label = self.df.diagnosis.values[idx]
+        label = np.expand_dims(label, -1)
+
+        p = self.df.id_code.values[idx]
+        p_path = expand_path(p, self.train_path)
+        image = cv2.imread(p_path)
+        image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        image = crop_image_from_gray(image)
+        image = cv2.resize(image, (cfg.img_size, cfg.img_size))
+        image = cv2.addWeighted(image, 4, cv2.GaussianBlur(image, (0, 0), 30), -4, 128)
+        image = transforms.ToPILImage()(image)
+
+        if self.transform:
+            image = self.transform(image)
+
+        return image, label
+
+transforms_train = transforms.Compose([
+        transforms.RandomHorizontalFlip(),
+        transforms.RandomRotation((-120, 120)),
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
+
+transforms_valid = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])","import numpy as np # linear algebra
+import pandas as pd # data processing
+import matplotlib.pyplot as plt # Plotting
+import seaborn as sns # Plotting
+
+# Import Image Libraries - Pillow and OpenCV
+from PIL import Image
+import cv2
+
+# Import PyTorch and useful fuctions
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import TensorDataset, DataLoader, Dataset
+import torchvision.transforms as transforms
+from torch.utils.data.sampler import SubsetRandomSampler
+import torchvision
+import torch.optim as optim
+import torchvision.models as models # Pre-Trained models
+
+
+# Import useful sklearn functions
+import sklearn
+from sklearn.metrics import cohen_kappa_score, accuracy_score
+from sklearn.model_selection import train_test_split
+
+import time
+from datetime import datetime
+from tqdm import tqdm_notebook
+
+import os
+import random
+
+# User-defined modules
+from train_dataset import transforms_train, transforms_valid, CreateDataset
+from config import Config
+
+from logger import Logger
+
+# Open source libs
+
+
+def add_data_to_loggers(loggers_list, column_name, data):
+    loggers_list[0].add_data(column_name, data)
+    loggers_list[1].add_data(column_name, data)
+
+# FOR DETERMINISTIC RESLTS
+from config import seed_torch
+
+def __init_fn(worker_id):
+    np.random.seed(13 + worker_id)
+
+def main(batch_size, lr, p_horizontalflip, model_type, info):
+    ## CONFIG!
+    cfg = Config(batch_size=batch_size, lr=lr, p_horizontalflip=p_horizontalflip, model_type=model_type)
+
+    ## REPRODUCIBILITY
+    seed_torch(cfg.seed)
+
+
+    print(os.listdir(""./input""))
+    base_dir = ""./input""
+
+    # Loading Data + EDA
+
+    train_new_csv = pd.read_csv('./input/train_new.csv')
+    train_old_csv = pd.read_csv('./input/train_old.csv')
+    train_csv = None
+    train_path = None
+    if cfg.data_type == 'new_old_mixed':
+        train_csv = pd.concat([train_new_csv, train_old_csv], axis=0)
+        train_path = './input/train_mixed_images/'
+    test_csv = pd.read_csv('./input/test.csv')
+    print('Train Size = {}'.format(len(train_csv)))
+    print('Public Test Size = {}'.format(len(test_csv)))
+
+    counts = train_csv['diagnosis'].value_counts()
+    class_list = ['No DR', 'Mild', 'Moderate', 'Severe', 'Proliferate']
+    for i, x in enumerate(class_list):
+        counts[x] = counts.pop(i)
+        print(""{:^12} - class examples: {:^6}"".format(x, counts[x]))
+
+    # Data Processing
+
+
+    ## SHUFFLE DATA
+    train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed)
+    train_data = CreateDataset(df_data=train_csv, data_dir=train_path, transform=transforms_train)
+    valid_data = CreateDataset(df_data=valid_csv, data_dir=train_path, transform=transforms_valid)
+
+    # obtain training indices that will be used for validation
+
+
+    # Create Samplers
+
+
+    # prepare data loaders (combine dataset and sampler)
+    train_loader = DataLoader(train_data, batch_size=cfg.batch_size,
+                              pin_memory=True,
+                              num_workers=cfg.num_workers,
+                              shuffle=True,
+                              worker_init_fn=__init_fn)
+
+    valid_loader = DataLoader(valid_data, batch_size=cfg.batch_size,
+                              pin_memory=True,
+                              num_workers=cfg.num_workers,
+                              shuffle=True,
+                              worker_init_fn=__init_fn)
+
+    # Model
+
+    # check if CUDA is available
+    train_on_gpu = torch.cuda.is_available()
+
+    if not train_on_gpu:
+        print('CUDA is not available.  Training on CPU ...')
+    else:
+        print('CUDA is available!  Training on GPU ...')
+        cfg.model = cfg.model.cuda()
+
+    # Trainable Parameters
+    print(""Number of trainable parameters: \n{}"".format(cfg.pytorch_total_params))
+
+    #Training(Fine-Tuning) and Validation
+    device = torch.device(""cuda"" if torch.cuda.is_available() else ""cpu"")
+
+    # keeping track of losses as it happen
+    train_losses = []
+    valid_losses = []
+    val_kappa = []
+    test_accuracies = []
+    valid_accuracies = []
+    kappa_epoch = []
+
+    # Loggers
+
+    logger_df = Logger(logsFileName=cfg.logsFileName + '.csv', mode = 'df')
+    logger_txt = Logger(logsFileName=cfg.logsFileName + '.txt', mode = 'txt')
+    loggers_list = [logger_df, logger_txt]
+
+    loggers_list[0].add_empty_row()
+    loggers_list[1].add_empty_row()
+
+    loggers_list[1].add_data('Experiment N: {}'.format(len(loggers_list[0].logsFile)), '')
+    loggers_list[1].add_data(info, '')
+    add_data_to_loggers(loggers_list, 'date', datetime.strftime(datetime.now(), ""%Y.%m.%d %H:%M:%S""))
+
+    add_data_to_loggers(loggers_list, 'data-type', cfg.data_type)
+    loggers_list[0].add_data('net-architecture', open('model.py', 'r+').read())
+    add_data_to_loggers(loggers_list, 'loss-func', str(cfg.criterion))
+    add_data_to_loggers(loggers_list, 'optim', str(cfg.optimizer))
+
+    if cfg.scheduler is not None:
+        add_data_to_loggers(loggers_list, 'scheduler', str(cfg.scheduler))
+
+    if cfg.early_stopping is not None:
+        add_data_to_loggers(loggers_list, 'early-stopping-patience', cfg.early_stopping_patience)
+    else:
+        add_data_to_loggers(loggers_list, 'early-stopping-patience', cfg.early_stopping)
+
+    add_data_to_loggers(loggers_list, 'parameters-amount', cfg.pytorch_total_params)
+    add_data_to_loggers(loggers_list, 'n-epochs', cfg.n_epochs)
+    add_data_to_loggers(loggers_list, 'batch-size', cfg.batch_size)
+
+    train_loss_best = np.inf
+    valid_loss_best = np.inf
+    kappa_best = 0
+
+    add_data_to_loggers(loggers_list, 'best-train-loss', train_loss_best)
+    add_data_to_loggers(loggers_list, 'best-valid-loss', valid_loss_best)
+    add_data_to_loggers(loggers_list, 'best-kappa', kappa_best)
+    add_data_to_loggers(loggers_list, 'lb-kappa-score', np.nan)
+
+    loggers_list[0].add_data('cfg', open('config.py', 'r+').read())
+    loggers_list[0].add_data('dataset', open('train_dataset.py', 'r+').read())
+    loggers_list[0].add_data('trainloop', open('training.py', 'r+').read())
+
+
+
+    ## PRINT OUTPUT FREQUENCY
+    print_frequency = cfg.print_frequency
+    start_full_time = time.time()
+    for epoch in range(1, cfg.n_epochs + 1):
+        # For timing
+        # loggers_list[0].open()
+        loggers_list[1].open()
+        start_epoch_time = time.time()
+
+        # keep track of training and validation loss
+        train_loss_batch = []
+        train_loss_epoch = []
+        valid_loss_epoch = []
+        ###################
+        # train the cfg.model #
+        ###################
+        cfg.model.train()
+        batch_n = 0
+        for data, target in train_loader:
+            batch_n += 1
+            # move tensors to GPU if CUDA is available
+            if train_on_gpu:
+                data, target = data.cuda(), target.cuda().float()
+            target = target.view(-1, 1)
+            # clear the gradients of all optimized variables
+            cfg.optimizer.zero_grad()
+            with torch.set_grad_enabled(True):
+                # forward pass: compute predicted outputs by passing inputs to the cfg.model
+                output = cfg.model(data)
+                # calculate the batch loss
+                loss = cfg.criterion(output, target)
+                # backward pass: compute gradient of the loss with respect to cfg.model parameters
+                loss.backward()
+                # perform a single optimization step (parameter update)
+                cfg.optimizer.step()
+                # data = data.cpu()
+                train_loss_batch.append(loss.item())
+                if batch_n % print_frequency == (print_frequency-1):
+                    print('Train loss on {} batch: {:.6f}'.format(batch_n+1, np.mean(train_loss_batch)))
+                    loggers_list[1].add_data(None, 'Train loss on {} batch: {:.6f}'.format(batch_n+1, np.mean(train_loss_batch)))
+                    train_loss_epoch.append(np.mean(train_loss_batch))
+                    train_loss_batch = []
+        train_loss_epoch.append(np.mean(train_loss_batch))
+        torch.cuda.empty_cache()
+        ######################
+        # validate the cfg.model #
+        ######################
+        cfg.model.eval()
+        for data, target in valid_loader:
+            # move tensors to GPU if CUDA is available
+            if train_on_gpu:
+                data, target = data.cuda(), target.cuda().float()
+            # forward pass: compute predicted outputs by passing inputs to the cfg.model
+            target = target.view(-1, 1)
+            with torch.no_grad():
+                output = cfg.model(data)
+                # calculate the batch loss
+                loss = cfg.criterion(output, target)
+            # loss = loss.cpu()
+            # update average validation loss
+            valid_loss_epoch.append(loss.item())
+            y_actual = target.data.cpu().numpy()
+            y_pred = output[:, -1].detach().cpu().numpy()
+            val_kappa.append(cohen_kappa_score(y_actual, y_pred.round(), weights='quadratic'))
+
+            # calculate average losses
+        train_loss_epoch = np.mean(train_loss_epoch)
+        valid_loss_epoch = np.mean(valid_loss_epoch)
+        valid_kappa = np.mean(val_kappa)
+        kappa_epoch.append(valid_kappa)
+        train_losses.append(train_loss_epoch)
+        valid_losses.append(valid_loss_epoch)
+
+        ## SCHEDULER STEP
+        if cfg.scheduler is not None:
+            cfg.scheduler.step()
+
+        ## LOGGINS LOSSES
+        if cfg.early_stopping_loss == 'pytorch':
+            if valid_loss_best > valid_loss_epoch:
+                valid_loss_best  = valid_loss_epoch
+                train_loss_best = train_loss_epoch
+                kappa_best = valid_kappa
+                add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
+                add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
+                add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
+        elif cfg.early_stopping_loss == 'kappa':
+            if kappa_best < valid_kappa:
+                valid_loss_best  = valid_loss_epoch
+                train_loss_best = train_loss_epoch
+                kappa_best = valid_kappa
+                add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
+                add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
+                add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
+
+        # print training/validation statistics
+        print('Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | Estimated time: {:.2f}'.format(
+            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, time.time() - start_epoch_time))
+        loggers_list[1].add_data('', 'Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | Estimated time: {:.2f}'.format(
+            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, time.time() - start_epoch_time))
+
+        ##################
+        # Early Stopping #
+        ##################
+        if cfg.early_stopping_loss == 'pytorch':
+            cfg.early_stopping(valid_loss_epoch, model_params_list=cfg.model_param_list, experiment_name=cfg.weights_dir + cfg.experiment_name + '.pt', epoch=epoch)
+        elif cfg.early_stopping_loss == 'kappa':
+            cfg.early_stopping(1 - valid_kappa, model_params_list=cfg.model_param_list,
+                               experiment_name=cfg.experiment_name, epoch=epoch)
+        if cfg.early_stopping.early_stop:
+            add_data_to_loggers(loggers_list, 'time_estimated', '{:.2f}'.format(time.time() - start_full_time))
+            add_data_to_loggers(loggers_list, 'n-epochs', epoch)
+            loggers_list[0].save()
+            loggers_list[1].save()
+            break
+        loggers_list[0].save()
+        loggers_list[1].save()
+
+    loggers_list[1].open()
+    add_data_to_loggers(loggers_list, 'time_estimated', '{:.2f}'.format(time.time() - start_full_time))
+    loggers_list[0].save()
+    loggers_list[1].save()
+
+
+if __name__ == '__main__':
+    batch_size_list = [16]
+    lr_list = [0.006]
+    p_horizontalflip_list = [0.4]
+    model_type_list = ['efficientnet-b5']
+    for batch_size in batch_size_list:
+        for lr in lr_list:
+            for p_horizontalflip in p_horizontalflip_list:
+                for model_type in model_type_list:
+                    info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
+                    print(info)
+                    main(batch_size, lr, p_horizontalflip, model_type, info)
+",,<torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7efb95f979e8>
