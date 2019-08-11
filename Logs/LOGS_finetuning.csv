@@ -2172,7 +2172,7 @@ Parameter Group 0
     initial_lr: 0.006
     lr: 0.006
     weight_decay: 0
-)",<torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7efb95f97a20>,10.0,28342833.0,45.0,16.0,0.319932,0.313264,0.8444,,"from model import MainModel
+)",<torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7efb95f97a20>,10.0,28342833.0,26.0,16.0,0.291845,0.305394,0.8427,,"from model import MainModel
 from torch import optim
 import torch.nn as nn
 import os
@@ -2654,4 +2654,4 @@ if __name__ == '__main__':
                     info = ""\n\n\nEXPERIMENT WITH BATCH_SIZE: {}, LR: {}, p_horizontalflip: {}, model_type: {}\n\n\n"".format(batch_size, lr, p_horizontalflip, model_type)
                     print(info)
                     main(batch_size, lr, p_horizontalflip, model_type, info)
-",
+",4296.42
