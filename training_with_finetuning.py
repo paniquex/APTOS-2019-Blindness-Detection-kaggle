@@ -9,14 +9,8 @@ import cv2
 
 # Import PyTorch and useful fuctions
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
 from torch.utils.data import TensorDataset, DataLoader, Dataset
-import torchvision.transforms as transforms
-from torch.utils.data.sampler import SubsetRandomSampler
-import torchvision
-import torch.optim as optim
-import torchvision.models as models # Pre-Trained models
+
 
 
 # Import useful sklearn functions
