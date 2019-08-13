@@ -98,9 +98,9 @@ class MainModel:
             #     param.requires_grad = False
             model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
             model.fc = nn.Sequential(
-                nn.Linear(in_features=2048, out_features=1024, bias=True),
+                nn.Linear(in_features=2048, out_features=1024),
                 nn.Dropout(0.4),
-                nn.Linear(in_features=1024, out_features=1, bias=True)
+                nn.Linear(in_features=1024, out_features=1)
             )
             self.model = model
 
@@ -109,10 +109,12 @@ class MainModel:
             model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b0-08094119.pth'))
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
-                nn.Linear(in_features=in_features, out_features=1024, bias=True),
-                nn.Dropout(0.4),
-                nn.Linear(in_features=1024, out_features=1, bias=True)
+                nn.Linear(in_features=in_features, out_features=1)
+                # nn.Dropout(0.4),
+                # nn.Linear(in_features=1024, out_features=1)
             )
+            ###################### DELETE!!!!!!!!!!!!!!!!!!!!!!!!
+            # model.load_state_dict(torch.load('./Model_weights/exp51_end_epoch30.pth')['model'])
             model.cuda()
             self.model = model
         elif model_type == 'efficientnet-b1':
@@ -131,7 +133,7 @@ class MainModel:
             model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b2-27687264.pth'))
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
-                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                nn.Linear(in_features=in_features, out_features=1),
                 # nn.Dropout(0.4),
                 # nn.Linear(in_features=1024, out_features=1, bias=True)
             )
@@ -142,7 +144,7 @@ class MainModel:
             model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b3-c8376fa2.pth'))
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
-                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                nn.Linear(in_features=in_features, out_features=1),
                 # nn.Dropout(0.4),
                 # nn.Linear(in_features=1024, out_features=1, bias=True)
             )
@@ -153,7 +155,7 @@ class MainModel:
             model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b4-e116e8b3.pth'))
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
-                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                nn.Linear(in_features=in_features, out_features=1),
                 # nn.Dropout(0.4),
                 # nn.Linear(in_features=1024, out_features=1, bias=True)
             )
@@ -162,10 +164,15 @@ class MainModel:
         elif model_type == 'efficientnet-b5':
             model = EfficientNet.from_name(model_type)
             model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b5-586e6cc6.pth'))
+
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
-                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                nn.Dropout(0.4),
+                nn.Linear(in_features=in_features, out_features=1),
             )
+            ###################### DELETE!!!!!!!!!!!!!!!!!!!!!!!!
+            # model.load_state_dict(torch.load('./Model_weights/exp43_end_epoch.pt9')['model'])
+            #########################!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             model.cuda()
             self.model = model
 
