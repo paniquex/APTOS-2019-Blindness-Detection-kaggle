@@ -97,7 +97,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
 
     ## SHUFFLE DATA
-    train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed)
+    train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed, stratify=train_csv['diagnosis'])
     train_data = CreateDataset(df_data=train_csv, data_dir=train_path, transform=transforms_train)
     valid_data = CreateDataset(df_data=valid_csv, data_dir=train_path, transform=transforms_valid)
 
@@ -154,7 +154,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     loggers_list[0].add_empty_row()
     loggers_list[1].add_empty_row()
 
-    loggers_list[1].add_data('Experiment N: {}'.format(len(loggers_list[0].logsFile)), '')
+    loggers_list[1].add_data('Experiment N: {}'.format(len(loggers_list[0].logsFile)-1), '')
     loggers_list[1].add_data(info, '')
     add_data_to_loggers(loggers_list, 'date', datetime.strftime(datetime.now(), "%Y.%m.%d %H:%M:%S"))
 
@@ -265,7 +265,10 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
         ## SCHEDULER STEP
         if cfg.scheduler is not None:
-            cfg.scheduler.step(valid_loss_epoch)
+            if cfg.early_stopping_loss == 'pytorch':
+                cfg.scheduler.step(valid_loss_epoch)
+            elif cfg.early_stopping_loss == 'kappa':
+                cfg.scheduler.step(1-valid_kappa)
 
         ## LOGGINS LOSSES
         if cfg.early_stopping_loss == 'pytorch':
@@ -316,7 +319,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
 if __name__ == '__main__':
     batch_size_list = [16]
-    lr_list = [0.0003]
+    lr_list = [1e-3]
     p_horizontalflip_list = [0.4]
     model_type_list = ['efficientnet-b5']
     for batch_size in batch_size_list:
