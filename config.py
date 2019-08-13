@@ -39,9 +39,9 @@ class Config:
                 self.df_logger.save()
         else:
             self.experiment_name = 'exp{}'.format(0) + '_end_epoch'
-        self.exper_type = 'mixed_data_finetuning_51th_model_img_size_180'
+        self.exper_type = 'mixed_data_imgsize_256'
 
-        self.img_size = 180
+        self.img_size = 256
 
         ## MODEL PARAMETERS
         self.weights_dir = './Model_weights/'
@@ -53,7 +53,7 @@ class Config:
         self.pytorch_total_params = sum(p.numel() for p in self.model.parameters() if p.requires_grad)
 
         self.lr = lr
-        self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr)
+        self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr, weight_decay=1e-5)
         self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer, factor=0.5, patience=2, verbose=True)
         self.criterion = nn.MSELoss()
         self.model_param_list = [self.model, self.optimizer, self.scheduler]
@@ -61,14 +61,14 @@ class Config:
         ## EARLY STOPPING
         self.early_stopping_patience = 8
         self.early_stopping = EarlyStopping(self.early_stopping_patience)
-        self.early_stopping_loss = "pytorch" #kappa
+        self.early_stopping_loss = 'pytorch' #kappa
 
         ## TRAINING & VALIDATION SETUP
         self.num_workers = 16
-        self.n_epochs = 30
+        self.n_epochs = 100
         self.batch_size = batch_size
         self.valid_type = 'HoldOut' #CV
-        self.valid_size = 0.3
+        self.valid_size = 0.2
         self.n_folds = 5 ## for CV!
 
 
