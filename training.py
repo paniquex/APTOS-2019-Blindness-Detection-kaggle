@@ -83,6 +83,9 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     elif cfg.data_type == 'new_old_mixed_ben_preprocessing':
         train_csv = pd.concat([train_new_csv, train_old_csv], axis=0)
         train_path = './input/train_mixed_BEN_preprocessing/'
+    elif cfg.data_type == 'new_old_balanced':
+        train_csv = pd.read_csv('./input/train_balanced.csv')
+        train_path = './input/train_mixed_BEN_preprocessing/'
     test_csv = pd.read_csv('./input/test.csv')
     print('Train Size = {}'.format(len(train_csv)))
     print('Public Test Size = {}'.format(len(test_csv)))
