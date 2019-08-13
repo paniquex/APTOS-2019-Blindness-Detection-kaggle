@@ -346,3 +346,5 @@ Model_weights/exp52_end_epoch4\.pth
 Model_weights/exp52_end_epoch5\.pth
 
 Model_weights/exp52_end_epoch7\.pth
+
+*.pth
