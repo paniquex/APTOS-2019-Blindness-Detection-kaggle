@@ -102,12 +102,14 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
     ## SHUFFLE DATA
     skf = None
-    if cfg.valid_type == 'holdout':
-        train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed, stratify=train_csv['diagnosis'])
-        train_data = CreateDataset(df_data=train_csv, data_dir=train_path, transform=transforms_train)
-        valid_data = CreateDataset(df_data=valid_csv, data_dir=train_path, transform=transforms_train) # need to change It!!!!!
-    elif cfg.valid_type == 'cv':
-        skf = StratifiedKFold(n_splits=cfg.n_folds, shuffle=True, random_state=cfg.seed)
+    # if cfg.valid_type == 'holdout':
+    train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True,
+                                                                   random_state=cfg.seed, stratify=train_csv['diagnosis'])
+    train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed, stratify=train_csv['diagnosis'])
+    train_data = CreateDataset(df_data=train_csv, data_dir=train_path, transform=transforms_train)
+    valid_data = CreateDataset(df_data=valid_csv, data_dir=train_path, transform=transforms_valid) # need to change It!!!!!
+    # elif cfg.valid_type == 'cv':
+    #     skf = StratifiedKFold(n_splits=cfg.n_folds, shuffle=True, random_state=cfg.seed)
 
 
 
@@ -131,6 +133,8 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
                               worker_init_fn=__init_fn)
 
     # Model
+    # cfg.model.load_state_dict(
+    #     torch.load('./Model_weights_finetuning/finetune3_pretrained_on_old_img480_with_cropto240_b1.pth')['model'])
 
     # check if CUDA is available
     train_on_gpu = torch.cuda.is_available()
@@ -204,128 +208,106 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     print_frequency = cfg.print_frequency
     start_full_time = time.time()
 
-
     for epoch in range(1, cfg.n_epochs + 1):
+        # For timing
+        # loggers_list[0].open()
+        loggers_list[1].open()
+        start_epoch_time = time.time()
+
+        # keep track of training and validation loss
+        train_loss_batch = []
         train_loss_epoch = []
         valid_loss_epoch = []
-        for fold_num, train_idx, valid_idx in enumerate(skf.split(train_csv)):
-            print('Traning fold N {}'.format(fold_num))
-            logger_txt.add_data('Training fold N ', fold_numb)
-            train_data = CreateDataset(df_data=train_csv.loc[train_idx], data_dir=train_path,
-                                       transform=transforms_train)
-            valid_data = CreateDataset(df_data=train_csv.loc[valid_idx], data_dir=train_path,
-                                       transform=transforms_train)  # need to change It!!!!!
-
-            train_loader = DataLoader(train_data, batch_size=cfg.batch_size,
-                                      pin_memory=True,
-                                      num_workers=cfg.num_workers,
-                                      shuffle=True,
-                                      worker_init_fn=__init_fn)
-
-            valid_loader = DataLoader(valid_data, batch_size=cfg.batch_size,
-                                      pin_memory=True,
-                                      num_workers=cfg.num_workers,
-                                      shuffle=True,
-                                      worker_init_fn=__init_fn)
-            # For timing
-            # loggers_list[0].open()
-            loggers_list[1].open()
-            start_epoch_time = time.time()
-
-            # keep track of training and validation loss
-            train_loss_batch = []
-            train_loss_fold = []
-            valid_loss_fold = []
-            ###################
-            # train the cfg.model #
-            ###################
-            cfg.model.train()
-            batch_n = 0
-            for data, target in train_loader:
-                batch_n += 1
-                # move tensors to GPU if CUDA is available
-                if train_on_gpu:
-                    data, target = data.cuda(), target.cuda().float()
-                target = target.view(-1, 1)
-                # clear the gradients of all optimized variables
-                cfg.optimizer.zero_grad()
-                with torch.set_grad_enabled(True):
-                    # forward pass: compute predicted outputs by passing inputs to the cfg.model
-                    output = cfg.model(data)
-                    # calculate the batch loss
-                    loss = cfg.criterion(output, target)
-                    # backward pass: compute gradient of the loss with respect to cfg.model parameters
-                    loss.backward()
-                    # perform a single optimization step (parameter update)
-                    cfg.optimizer.step()
-                    # data = data.cpu()
-                    train_loss_batch.append(loss.item())
-                    if batch_n % print_frequency == (print_frequency-1):
-                        print('Train loss on {} batch: {:.6f}'.format(batch_n+1, np.mean(train_loss_batch)))
-                        loggers_list[1].add_data(None, 'Train loss on {} batch: {:.6f}'.format(batch_n+1, np.mean(train_loss_batch)))
-                        train_loss_fold.append(np.mean(train_loss_batch))
-                        train_loss_batch = []
-            train_loss_fold.append(np.mean(train_loss_batch))
-            torch.cuda.empty_cache()
-            ######################
-            # validate the cfg.model #
-            ######################
-            cfg.model.eval()
-            for data, target in valid_loader:
-                # move tensors to GPU if CUDA is available
-                if train_on_gpu:
-                    data, target = data.cuda(), target.cuda().float()
+        ###################
+        # train the cfg.model #
+        ###################
+        cfg.model.train()
+        batch_n = 0
+        for data, target in train_loader:
+            batch_n += 1
+            # move tensors to GPU if CUDA is available
+            if train_on_gpu:
+                data, target = data.cuda(), target.cuda().float()
+            target = target.view(-1, 1)
+            # clear the gradients of all optimized variables
+            cfg.optimizer.zero_grad()
+            with torch.set_grad_enabled(True):
                 # forward pass: compute predicted outputs by passing inputs to the cfg.model
-                target = target.view(-1, 1)
-                with torch.no_grad():
-                    output = cfg.model(data)
-                    # calculate the batch loss
-                    loss = cfg.criterion(output, target)
-                # loss = loss.cpu()
-                # update average validation loss
-                valid_loss_epoch.append(loss.item())
-                y_actual = target.data.cpu().numpy()
-                y_pred = output[:, -1].detach().cpu().numpy()
-                val_kappa.append(cohen_kappa_score(y_actual, y_pred.round(), weights='quadratic'))
+                output = cfg.model(data)
+                # calculate the batch loss
+                loss = cfg.criterion(output, target)
+                # backward pass: compute gradient of the loss with respect to cfg.model parameters
+                loss.backward()
+                # perform a single optimization step (parameter update)
+                cfg.optimizer.step()
+                # data = data.cpu()
+                train_loss_batch.append(loss.item())
+                if batch_n % print_frequency == (print_frequency-1):
+                    print('Train loss on {} batch: {:.6f}'.format(batch_n+1, np.mean(train_loss_batch)))
+                    loggers_list[1].add_data(None, 'Train loss on {} batch: {:.6f}'.format(batch_n+1, np.mean(train_loss_batch)))
+                    train_loss_epoch.append(np.mean(train_loss_batch))
+                    train_loss_batch = []
+        train_loss_epoch.append(np.mean(train_loss_batch))
+        torch.cuda.empty_cache()
+        ######################
+        # validate the cfg.model #
+        ######################
+        cfg.model.eval()
+        for data, target in valid_loader:
+            # move tensors to GPU if CUDA is available
+            if train_on_gpu:
+                data, target = data.cuda(), target.cuda().float()
+            # forward pass: compute predicted outputs by passing inputs to the cfg.model
+            target = target.view(-1, 1)
+            with torch.no_grad():
+                output = cfg.model(data)
+                # calculate the batch loss
+                loss = cfg.criterion(output, target)
+            # loss = loss.cpu()
+            # update average validation loss
+            valid_loss_epoch.append(loss.item())
+            y_actual = target.data.cpu().numpy()
+            y_pred = output[:, -1].detach().cpu().numpy()
+            val_kappa.append(cohen_kappa_score(y_actual, y_pred.round(), weights='quadratic'))
 
-                # calculate average losses
-            train_loss_fold = np.mean(train_loss_fold)
-            valid_loss_epoch = np.mean(valid_loss_epoch)
-            valid_kappa = np.nanmean(val_kappa)
-            kappa_epoch.append(valid_kappa)
-            train_losses.append(train_loss_fold)
-            valid_losses.append(valid_loss_epoch)
+            # calculate average losses
+        train_loss_epoch = np.mean(train_loss_epoch)
+        valid_loss_epoch = np.mean(valid_loss_epoch)
+        valid_kappa = np.nanmean(val_kappa)
+        kappa_epoch.append(valid_kappa)
+        train_losses.append(train_loss_epoch)
+        valid_losses.append(valid_loss_epoch)
 
-            ## SCHEDULER STEP
-            if cfg.scheduler is not None:
-                if cfg.early_stopping_loss == 'pytorch':
-                    cfg.scheduler.step(valid_loss_epoch)
-                elif cfg.early_stopping_loss == 'kappa':
-                    cfg.scheduler.step(1-valid_kappa)
-
-            ## LOGGINS LOSSES
+        ## SCHEDULER STEP
+        if cfg.scheduler is not None:
             if cfg.early_stopping_loss == 'pytorch':
-                if valid_loss_best > valid_loss_epoch:
-                    valid_loss_best  = valid_loss_epoch
-                    train_loss_best = train_loss_epoch
-                    kappa_best = valid_kappa
-                    add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
-                    add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
-                    add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
+                cfg.scheduler.step(valid_loss_epoch)
             elif cfg.early_stopping_loss == 'kappa':
-                if kappa_best < valid_kappa:
-                    valid_loss_best  = valid_loss_epoch
-                    train_loss_best = train_loss_epoch
-                    kappa_best = valid_kappa
-                    add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
-                    add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
-                    add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
+                cfg.scheduler.step(1-valid_kappa)
 
-            # print training/validation statistics
-            print('Fold: {}/{} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | LR: {:.6f} | Estimated time: {:.2f}'.format(
-                fold_num, train_loss_epoch, valid_loss_epoch, valid_kappa, cfg.optimizer.param_groups[0]['lr'], time.time() - start_epoch_time))
-            loggers_list[1].add_data('', 'Epoch: {}/{} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | LR: {:.6f} | Estimated time: {:.2f}'.format(
-                fold_num, train_loss_epoch, valid_loss_epoch, valid_kappa, cfg.optimizer.param_groups[0]['lr'], time.time() - start_epoch_time))
+        ## LOGGINS LOSSES
+        if cfg.early_stopping_loss == 'pytorch':
+            if valid_loss_best > valid_loss_epoch:
+                valid_loss_best  = valid_loss_epoch
+                train_loss_best = train_loss_epoch
+                kappa_best = valid_kappa
+                add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
+                add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
+                add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
+        elif cfg.early_stopping_loss == 'kappa':
+            if kappa_best < valid_kappa:
+                valid_loss_best  = valid_loss_epoch
+                train_loss_best = train_loss_epoch
+                kappa_best = valid_kappa
+                add_data_to_loggers(loggers_list, 'best-train-loss', '{:.6f}'.format(train_loss_best))
+                add_data_to_loggers(loggers_list, 'best-valid-loss', '{:.6f}'.format(valid_loss_best))
+                add_data_to_loggers(loggers_list, 'best-kappa', '{:.4f}'.format(kappa_best))
+
+        # print training/validation statistics
+        print('Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | LR: {:.6f} | Estimated time: {:.2f}'.format(
+            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, cfg.optimizer.param_groups[0]['lr'], time.time() - start_epoch_time))
+        loggers_list[1].add_data('', 'Epoch: {} | Training Loss: {:.6f} | Val. Loss: {:.6f} | Val. Kappa Score: {:.4f} | LR: {:.6f} | Estimated time: {:.2f}'.format(
+            epoch, train_loss_epoch, valid_loss_epoch, valid_kappa, cfg.optimizer.param_groups[0]['lr'], time.time() - start_epoch_time))
 
         ##################
         # Early Stopping #
@@ -352,10 +334,10 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     torch.cuda.empty_cache()
 
 if __name__ == '__main__':
-    batch_size_list = [16]
+    batch_size_list = [12]
     lr_list = [1e-3]
     p_horizontalflip_list = [0.4]
-    model_type_list = ['efficientnet-b2']
+    model_type_list = ['efficientnet-b1']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:
