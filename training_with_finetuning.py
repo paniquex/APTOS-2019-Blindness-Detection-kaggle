@@ -46,8 +46,9 @@ def __init_fn(worker_id):
     np.random.seed(13 + worker_id)
 
 
-def training_loop(mode, train_csv_path, train_images_path, n_epochs, cfg):
+def training_loop(mode, train_csv_path, train_images_path, valid_csv_path, valid_images_path, n_epochs, cfg):
     train_csv = pd.read_csv(train_csv_path)
+    valid_csv = pd.read_csv(valid_csv_path)
     test_csv = pd.read_csv('./input/test.csv')
     print('Train Size = {}'.format(len(train_csv)))
     print('Public Test Size = {}'.format(len(test_csv)))
@@ -61,9 +62,9 @@ def training_loop(mode, train_csv_path, train_images_path, n_epochs, cfg):
     # Data Processing
 
     ## SHUFFLE DATA
-    train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size, shuffle=True, random_state=cfg.seed)
+    valid_csv = valid_csv#train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed, stratify=train_csv['diagnosis'])
     train_data = CreateDataset(df_data=train_csv, data_dir=train_images_path, transform=transforms_train)
-    valid_data = CreateDataset(df_data=valid_csv, data_dir=train_images_path, transform=transforms_valid)
+    valid_data = CreateDataset(df_data=valid_csv, data_dir=valid_images_path, transform=transforms_valid)
 
     # obtain training indices that will be used for validation
 
@@ -220,14 +221,14 @@ def training_loop(mode, train_csv_path, train_images_path, n_epochs, cfg):
             # calculate average losses
         train_loss_epoch = np.mean(train_loss_epoch)
         valid_loss_epoch = np.mean(valid_loss_epoch)
-        valid_kappa = np.mean(val_kappa)
+        valid_kappa = np.nanmean(val_kappa)
         kappa_epoch.append(valid_kappa)
         train_losses.append(train_loss_epoch)
         valid_losses.append(valid_loss_epoch)
 
         ## SCHEDULER STEP
         if cfg.scheduler is not None:
-            cfg.scheduler.step()
+            cfg.scheduler.step(valid_loss_epoch)
 
         ## LOGGINS LOSSES
         if cfg.early_stopping_loss == 'pytorch':
@@ -294,16 +295,16 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
     # Loading Data + EDA
     modes = ['old', 'new']
-    # training_loop(modes[0], './input/train_old.csv', './input/train_old_images/', 10, cfg)
+    training_loop(modes[0], './input/train_old.csv', './input/train_old_images/', './input/train_new.csv', './input/train_new_images/', 100, cfg)
     cfg.model.load_state_dict(torch.load(model_path)['model'])
-    training_loop(modes[1], './input/train_new.csv', './input/train_new_images/', cfg.n_epochs, cfg)
+    #training_loop(modes[1], './input/train_new.csv', './input/train_new_images/', cfg.n_epochs, cfg)
 
 
 if __name__ == '__main__':
-    batch_size_list = [16]
-    lr_list = [0.006]
+    batch_size_list = [12]
+    lr_list = [2e-3]
     p_horizontalflip_list = [0.4]
-    model_type_list = ['efficientnet-b5']
+    model_type_list = ['efficientnet-b1']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:
