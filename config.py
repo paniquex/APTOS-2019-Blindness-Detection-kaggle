@@ -39,9 +39,9 @@ class Config:
                 self.df_logger.save()
         else:
             self.experiment_name = 'exp{}'.format(0) + '_end_epoch'
-        self.exper_type = 'mixed_data_imgsize_256'
-
-        self.img_size = 256
+        self.exper_type = 'mixed_data_imgsize_300'
+        self.img_size = 480
+        # self.img_size_crop = 300
 
         ## MODEL PARAMETERS
         self.weights_dir = './Model_weights/'
@@ -56,18 +56,20 @@ class Config:
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr, weight_decay=1e-5)
         self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer, factor=0.5, patience=2, verbose=True)
         self.criterion = nn.MSELoss()
+        # self.num_classes = 5
         self.model_param_list = [self.model, self.optimizer, self.scheduler]
 
         ## EARLY STOPPING
-        self.early_stopping_patience = 8
+        self.early_stopping_patience = 10
         self.early_stopping = EarlyStopping(self.early_stopping_patience)
         self.early_stopping_loss = 'pytorch' #kappa
 
         ## TRAINING & VALIDATION SETUP
+
         self.num_workers = 16
-        self.n_epochs = 100
+        self.n_epochs = 150
         self.batch_size = batch_size
-        self.valid_type = 'HoldOut' #CV
+        self.valid_type = 'holdout' #CV
         self.valid_size = 0.2
         self.n_folds = 5 ## for CV!
 
@@ -75,7 +77,7 @@ class Config:
 
         ## TRANSFORMER AND DATASET
         self.p_horizontalflip = p_horizontalflip
-        self.data_type = 'new_old_mixed_ben_preprocessing'
+        self.data_type = 'new'
 
         ## PRINT FREQUENCY
         self.print_frequency = 50
