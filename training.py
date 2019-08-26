@@ -86,7 +86,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
         train_path = './input/train_mixed_BEN_preprocessing/'
     elif cfg.data_type == 'new_old_balanced':
         train_csv = pd.read_csv('./input/train_balanced.csv')
-        train_path = './input/train_mixed_BEN_preprocessing/'
+        train_path = './input/train_mixed_images/'
     test_csv = pd.read_csv('./input/test.csv')
     print('Train Size = {}'.format(len(train_csv)))
     print('Public Test Size = {}'.format(len(test_csv)))
@@ -133,8 +133,8 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
                               worker_init_fn=__init_fn)
 
     # Model
-    # cfg.model.load_state_dict(
-    #     torch.load('./Model_weights_finetuning/finetune3_pretrained_on_old_img480_with_cropto240_b1.pth')['model'])
+    cfg.model.load_state_dict(
+        torch.load('./Model_weights_finetuning/finetune5_with_cropto260_b2_clahe.pth')['model'])
 
     # check if CUDA is available
     train_on_gpu = torch.cuda.is_available()
@@ -334,10 +334,10 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     torch.cuda.empty_cache()
 
 if __name__ == '__main__':
-    batch_size_list = [12]
+    batch_size_list = [16]
     lr_list = [1e-3]
     p_horizontalflip_list = [0.4]
-    model_type_list = ['efficientnet-b1']
+    model_type_list = ['efficientnet-b2']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:
