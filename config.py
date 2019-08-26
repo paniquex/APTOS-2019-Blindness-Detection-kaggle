@@ -39,8 +39,8 @@ class Config:
                 self.df_logger.save()
         else:
             self.experiment_name = 'exp{}'.format(0) + '_end_epoch'
-        self.exper_type = 'mixed_data_imgsize_300'
-        self.img_size = 480
+        self.exper_type = 'data_imgsize_260'
+        self.img_size = 260
         # self.img_size_crop = 300
 
         ## MODEL PARAMETERS
