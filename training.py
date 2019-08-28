@@ -105,7 +105,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     # if cfg.valid_type == 'holdout':
     train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True,
                                                                    random_state=cfg.seed, stratify=train_csv['diagnosis'])
-    train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed, stratify=train_csv['diagnosis'])
+    # train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed, stratify=train_csv['diagnosis'])
     train_data = CreateDataset(df_data=train_csv, data_dir=train_path, transform=transforms_train)
     valid_data = CreateDataset(df_data=valid_csv, data_dir=train_path, transform=transforms_valid) # need to change It!!!!!
     # elif cfg.valid_type == 'cv':
@@ -134,7 +134,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
     # Model
     cfg.model.load_state_dict(
-        torch.load('./Model_weights_finetuning/finetune5_with_cropto260_b2_clahe.pth')['model'])
+        torch.load('./Model_weights_finetuning/finetune11_like_10_imgsize256.pth')['model'])
 
     # check if CUDA is available
     train_on_gpu = torch.cuda.is_available()
@@ -337,7 +337,7 @@ if __name__ == '__main__':
     batch_size_list = [16]
     lr_list = [1e-3]
     p_horizontalflip_list = [0.4]
-    model_type_list = ['efficientnet-b2']
+    model_type_list = ['efficientnet-b5']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:

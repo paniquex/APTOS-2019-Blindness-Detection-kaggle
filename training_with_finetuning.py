@@ -295,16 +295,16 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
     # Loading Data + EDA
     modes = ['old', 'new']
-    training_loop(modes[0], './input/train_old.csv', './input/train_old_images/', './input/train_new.csv', './input/train_new_images/', 100, cfg)
+    training_loop(modes[0], './input/train_old.csv', './input/train_mixed_BEN_preprocessing/', './input/train_new.csv', './input/train_mixed_BEN_preprocessing/', 100, cfg)
     cfg.model.load_state_dict(torch.load(model_path)['model'])
     #training_loop(modes[1], './input/train_new.csv', './input/train_new_images/', cfg.n_epochs, cfg)
 
 
 if __name__ == '__main__':
-    batch_size_list = [12]
-    lr_list = [2e-3]
+    batch_size_list = [16]
+    lr_list = [5e-3]
     p_horizontalflip_list = [0.4]
-    model_type_list = ['efficientnet-b1']
+    model_type_list = ['efficientnet-b5']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:
