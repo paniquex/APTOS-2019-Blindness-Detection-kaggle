@@ -39,8 +39,8 @@ class Config:
                 self.df_logger.save()
         else:
             self.experiment_name = 'exp{}'.format(0) + '_end_epoch'
-        self.exper_type = 'data_imgsize_260'
-        self.img_size = 260
+        self.exper_type = 'data_imgsize_240'
+        self.img_size = 256
         # self.img_size_crop = 300
 
         ## MODEL PARAMETERS
@@ -60,14 +60,14 @@ class Config:
         self.model_param_list = [self.model, self.optimizer, self.scheduler]
 
         ## EARLY STOPPING
-        self.early_stopping_patience = 10
+        self.early_stopping_patience = 20
         self.early_stopping = EarlyStopping(self.early_stopping_patience)
         self.early_stopping_loss = 'pytorch' #kappa
 
         ## TRAINING & VALIDATION SETUP
 
         self.num_workers = 16
-        self.n_epochs = 150
+        self.n_epochs = 200
         self.batch_size = batch_size
         self.valid_type = 'holdout' #CV
         self.valid_size = 0.2
