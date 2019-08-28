@@ -97,7 +97,7 @@ class MainModel:
             model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
             # for param in model.parameters():
             #     param.requires_grad = False
-            # model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
+            model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
             model.fc = nn.Sequential(
                 nn.Dropout(0.4),
                 nn.Linear(in_features=2048, out_features=1),
@@ -177,7 +177,7 @@ class MainModel:
             self.model = model
         elif model_type == 'efficientnet-b5':
             model = EfficientNet.from_name(model_type)
-            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b5-586e6cc6.pth'))
+            # model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b5-586e6cc6.pth'))
 
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
