@@ -94,12 +94,12 @@ class MainModel:
             self.model = SimpleModel(num_classes)
         elif model_type == 'ResNet101':
             model = models.resnet101(pretrained=False)
-            model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
+            # model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
             # for param in model.parameters():
             #     param.requires_grad = False
-            model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
+            # model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
             model.fc = nn.Sequential(
-                nn.Dropout(0.4),
+                # nn.Dropout(0.4),
                 nn.Linear(in_features=2048, out_features=1),
             )
             self.model = model
@@ -125,19 +125,19 @@ class MainModel:
             )
             ###################### DELETE!!!!!!!!!!!!!!!!!!!!!!!!
             # model.load_state_dict(torch.load('./Model_weights/exp51_end_epoch30.pth')['model'])
-            model.cuda()
+            #model.cuda()
             self.model = model
         elif model_type == 'efficientnet-b1':
             model = EfficientNet.from_name(model_type)
-            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b1-dbc7070a.pth'))
+            # model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b1-dbc7070a.pth'))
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
                 nn.Dropout(0.4),
-                nn.Linear(in_features=in_features, out_features=1, bias=True),
+                nn.Linear(in_features=in_features, out_features=1),
                 # nn.Dropout(0.4),
                 # nn.Linear(in_features=1024, out_features=1, bias=True)
             )
-            model.cuda()
+            #model.cuda()
             self.model = model
         elif model_type == 'efficientnet-b2':
             model = EfficientNet.from_name(model_type)
@@ -161,7 +161,7 @@ class MainModel:
                 # nn.Dropout(0.4),
                 # nn.Linear(in_features=1024, out_features=1, bias=True)
             )
-            model.cuda()
+            #model.cuda()
             self.model = model
         elif model_type == 'efficientnet-b4':
             model = EfficientNet.from_name(model_type)
@@ -173,12 +173,12 @@ class MainModel:
                 # nn.Dropout(0.4),
                 # nn.Linear(in_features=1024, out_features=1, bias=True)
             )
-            model.cuda()
+            #model.cuda()
             self.model = model
         elif model_type == 'efficientnet-b5':
             model = EfficientNet.from_name(model_type)
-            # model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b5-586e6cc6.pth'))
-
+            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b5-586e6cc6.pth'))
+            # model._conv_stem = nn.Conv2d(4, 48, kernel_size=3, stride=2, bias=False)
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
                 nn.Dropout(0.4),
@@ -187,7 +187,7 @@ class MainModel:
             ###################### DELETE!!!!!!!!!!!!!!!!!!!!!!!!
             # model.load_state_dict(torch.load('./Model_weights/exp43_end_epoch.pt9')['model'])
             #########################!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            model.cuda()
+            # #model.cuda()
             self.model = model
         elif model_type == 'efficientnet-b6':
             model = EfficientNet.from_name(model_type)
@@ -201,7 +201,7 @@ class MainModel:
             ###################### DELETE!!!!!!!!!!!!!!!!!!!!!!!!
             # model.load_state_dict(torch.load('./Model_weights/exp43_end_epoch.pt9')['model'])
             #########################!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            model.cuda()
+            #model.cuda()
             self.model = model
         elif model_type == 'efficientnet-b7':
             model = EfficientNet.from_name(model_type)
@@ -215,7 +215,7 @@ class MainModel:
             ###################### DELETE!!!!!!!!!!!!!!!!!!!!!!!!
             # model.load_state_dict(torch.load('./Model_weights/exp43_end_epoch.pt9')['model'])
             #########################!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-            model.cuda()
+            #model.cuda()
             self.model = model
 
 
