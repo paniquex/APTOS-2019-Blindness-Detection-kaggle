@@ -70550,3 +70550,4059 @@ Train loss on 150 batch: 0.289171
 time_estimated: 3319.18
 n-epochs: 48
 time_estimated: 3319.23
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:39:01
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f41518>
+early-stopping-patience: 20
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:39:20
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f414e0>
+early-stopping-patience: 20
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:43:02
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5ce528d0>
+early-stopping-patience: 20
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:46:39
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5ce56748>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:47:28
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5ce56710>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:48:32
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5ce56780>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:49:19
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5cdd87b8>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:50:57
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5cdd9710>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 00:59:46
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a324940>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:09:23
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb3af96ef0>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:10:37
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb3af97eb8>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:11:17
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb3af95f28>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 1, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:12:44
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb9d0faa58>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 1
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:13:55
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e1a90>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:16:50
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e1b00>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:17:07
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e0b38>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:17:51
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5dcc0dd8>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:32:20
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e2a90>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 1, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:32:57
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e0b00>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 1
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:36:06
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e2ac8>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:38:52
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e3ac8>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:42:18
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e0b00>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:43:41
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e5908>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:44:40
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2e5908>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:47:27
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2eb908>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:48:41
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5a2ea908>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 01:57:22
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5508e9b0>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:00:45
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5508e860>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:01:17
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702f28>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:03:24
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5508e860>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:45:28
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702f98>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:46:33
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb55090860>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:51:25
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702fd0>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:51:56
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5508b7f0>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:52:12
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5511b198>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:52:43
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb99c1eef0>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:54:22
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb4d06d978>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 02:56:22
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51703f98>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:07:24
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb5508c9e8>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:08:41
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702f98>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:11:06
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb54fa9d30>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:11:40
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb550907b8>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:13:33
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702f28>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:14:10
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702f98>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:17:04
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702f28>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:17:50
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702f28>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 03:21:10
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51702f28>
+early-stopping-patience: 20
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 156: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b2
+
+
+: 
+date: 2019.08.29 20:31:10
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb96026358>
+early-stopping-patience: 10
+parameters-amount: 7702403
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 0.852529
+Train loss on 100 batch: 0.671577
+Train loss on 150 batch: 0.594211
+best-train-loss: 0.668964
+best-valid-loss: 0.569616
+best-kappa: 0.8028
+: Epoch: 1 | Training Loss: 0.668964 | Val. Loss: 0.569616 | Val. Kappa Score: 0.8028 | LR: 0.001000 | Estimated time: 57.19
+Train loss on 50 batch: 0.548843
+Train loss on 100 batch: 0.545988
+Train loss on 150 batch: 0.482897
+best-train-loss: 0.560832
+best-valid-loss: 0.488546
+best-kappa: 0.8052
+: Epoch: 2 | Training Loss: 0.560832 | Val. Loss: 0.488546 | Val. Kappa Score: 0.8052 | LR: 0.001000 | Estimated time: 57.47
+Train loss on 50 batch: 0.543222
+Train loss on 100 batch: 0.533688
+Train loss on 150 batch: 0.524614
+: Epoch: 3 | Training Loss: 0.523369 | Val. Loss: 0.618991 | Val. Kappa Score: 0.7893 | LR: 0.001000 | Estimated time: 57.17
+Train loss on 50 batch: 0.525282
+Train loss on 100 batch: 0.551392
+Train loss on 150 batch: 0.507067
+: Epoch: 4 | Training Loss: 0.593244 | Val. Loss: 0.480832 | Val. Kappa Score: 0.7944 | LR: 0.001000 | Estimated time: 58.24
+Train loss on 50 batch: 0.477882
+Train loss on 100 batch: 0.566641
+Train loss on 150 batch: 0.449735
+: Epoch: 5 | Training Loss: 0.488726 | Val. Loss: 0.552569 | Val. Kappa Score: 0.7953 | LR: 0.000500 | Estimated time: 59.34
+Train loss on 50 batch: 0.435271
+Train loss on 100 batch: 0.445087
+Train loss on 150 batch: 0.408756
+: Epoch: 6 | Training Loss: 0.431984 | Val. Loss: 0.505246 | Val. Kappa Score: 0.7979 | LR: 0.000500 | Estimated time: 58.22
+Train loss on 50 batch: 0.455540
+Train loss on 100 batch: 0.412392
+Train loss on 150 batch: 0.411669
+: Epoch: 7 | Training Loss: 0.435685 | Val. Loss: 0.411739 | Val. Kappa Score: 0.8051 | LR: 0.000500 | Estimated time: 58.22
+Train loss on 50 batch: 0.352313
+Train loss on 100 batch: 0.453716
+Train loss on 150 batch: 0.412687
+best-train-loss: 0.415350
+best-valid-loss: 0.376326
+best-kappa: 0.8111
+: Epoch: 8 | Training Loss: 0.415350 | Val. Loss: 0.376326 | Val. Kappa Score: 0.8111 | LR: 0.000500 | Estimated time: 58.34
+Train loss on 50 batch: 0.451858
+Train loss on 100 batch: 0.443138
+Train loss on 150 batch: 0.418256
+best-train-loss: 0.424922
+best-valid-loss: 0.404846
+best-kappa: 0.8156
+: Epoch: 9 | Training Loss: 0.424922 | Val. Loss: 0.404846 | Val. Kappa Score: 0.8156 | LR: 0.000500 | Estimated time: 57.34
+Train loss on 50 batch: 0.355507
+Train loss on 100 batch: 0.423092
+Train loss on 150 batch: 0.385509
+best-train-loss: 0.470089
+best-valid-loss: 0.396548
+best-kappa: 0.8180
+: Epoch: 10 | Training Loss: 0.470089 | Val. Loss: 0.396548 | Val. Kappa Score: 0.8180 | LR: 0.000500 | Estimated time: 58.36
+Train loss on 50 batch: 0.437266
+Train loss on 100 batch: 0.400691
+Train loss on 150 batch: 0.388363
+best-train-loss: 0.402759
+best-valid-loss: 0.388917
+best-kappa: 0.8202
+: Epoch: 11 | Training Loss: 0.402759 | Val. Loss: 0.388917 | Val. Kappa Score: 0.8202 | LR: 0.000500 | Estimated time: 59.23
+Train loss on 50 batch: 0.383292
+Train loss on 100 batch: 0.374839
+Train loss on 150 batch: 0.423338
+best-train-loss: 0.393012
+best-valid-loss: 0.344575
+best-kappa: 0.8242
+: Epoch: 12 | Training Loss: 0.393012 | Val. Loss: 0.344575 | Val. Kappa Score: 0.8242 | LR: 0.000500 | Estimated time: 57.60
+Train loss on 50 batch: 0.332122
+Train loss on 100 batch: 0.385220
+Train loss on 150 batch: 0.422238
+best-train-loss: 0.382451
+best-valid-loss: 0.388670
+best-kappa: 0.8272
+: Epoch: 13 | Training Loss: 0.382451 | Val. Loss: 0.388670 | Val. Kappa Score: 0.8272 | LR: 0.000500 | Estimated time: 59.02
+Train loss on 50 batch: 0.352434
+Train loss on 100 batch: 0.327047
+Train loss on 150 batch: 0.424340
+best-train-loss: 0.378267
+best-valid-loss: 0.371851
+best-kappa: 0.8291
+: Epoch: 14 | Training Loss: 0.378267 | Val. Loss: 0.371851 | Val. Kappa Score: 0.8291 | LR: 0.000500 | Estimated time: 57.33
+Train loss on 50 batch: 0.416324
+Train loss on 100 batch: 0.336526
+Train loss on 150 batch: 0.334876
+best-train-loss: 0.376187
+best-valid-loss: 0.384017
+best-kappa: 0.8305
+: Epoch: 15 | Training Loss: 0.376187 | Val. Loss: 0.384017 | Val. Kappa Score: 0.8305 | LR: 0.000500 | Estimated time: 57.58
+Train loss on 50 batch: 0.379477
+Train loss on 100 batch: 0.302928
+Train loss on 150 batch: 0.339412
+best-train-loss: 0.348310
+best-valid-loss: 0.380819
+best-kappa: 0.8321
+: Epoch: 16 | Training Loss: 0.348310 | Val. Loss: 0.380819 | Val. Kappa Score: 0.8321 | LR: 0.000500 | Estimated time: 58.26
+Train loss on 50 batch: 0.402344
+Train loss on 100 batch: 0.374893
+Train loss on 150 batch: 0.267022
+: Epoch: 17 | Training Loss: 0.358709 | Val. Loss: 0.526271 | Val. Kappa Score: 0.8310 | LR: 0.000500 | Estimated time: 57.44
+Train loss on 50 batch: 0.375802
+Train loss on 100 batch: 0.308860
+Train loss on 150 batch: 0.364262
+: Epoch: 18 | Training Loss: 0.349900 | Val. Loss: 0.421116 | Val. Kappa Score: 0.8317 | LR: 0.000500 | Estimated time: 58.27
+Train loss on 50 batch: 0.315297
+Train loss on 100 batch: 0.382581
+Train loss on 150 batch: 0.401154
+best-train-loss: 0.365525
+best-valid-loss: 0.424626
+best-kappa: 0.8327
+: Epoch: 19 | Training Loss: 0.365525 | Val. Loss: 0.424626 | Val. Kappa Score: 0.8327 | LR: 0.000500 | Estimated time: 57.71
+Train loss on 50 batch: 0.371410
+Train loss on 100 batch: 0.362209
+Train loss on 150 batch: 0.285736
+best-train-loss: 0.327749
+best-valid-loss: 0.388354
+best-kappa: 0.8338
+: Epoch: 20 | Training Loss: 0.327749 | Val. Loss: 0.388354 | Val. Kappa Score: 0.8338 | LR: 0.000500 | Estimated time: 57.49
+Train loss on 50 batch: 0.346940
+Train loss on 100 batch: 0.332987
+Train loss on 150 batch: 0.347297
+best-train-loss: 0.374227
+best-valid-loss: 0.400844
+best-kappa: 0.8347
+: Epoch: 21 | Training Loss: 0.374227 | Val. Loss: 0.400844 | Val. Kappa Score: 0.8347 | LR: 0.000500 | Estimated time: 57.05
+Train loss on 50 batch: 0.339336
+Train loss on 100 batch: 0.343094
+Train loss on 150 batch: 0.383840
+best-train-loss: 0.348798
+best-valid-loss: 0.399247
+best-kappa: 0.8358
+: Epoch: 22 | Training Loss: 0.348798 | Val. Loss: 0.399247 | Val. Kappa Score: 0.8358 | LR: 0.000500 | Estimated time: 57.22
+Train loss on 50 batch: 0.348043
+Train loss on 100 batch: 0.333066
+Train loss on 150 batch: 0.355140
+: Epoch: 23 | Training Loss: 0.354470 | Val. Loss: 0.551814 | Val. Kappa Score: 0.8341 | LR: 0.000500 | Estimated time: 57.83
+Train loss on 50 batch: 0.339265
+Train loss on 100 batch: 0.348629
+Train loss on 150 batch: 0.345274
+: Epoch: 24 | Training Loss: 0.421248 | Val. Loss: 0.375618 | Val. Kappa Score: 0.8348 | LR: 0.000500 | Estimated time: 57.22
+Train loss on 50 batch: 0.341104
+Train loss on 100 batch: 0.317982
+Train loss on 150 batch: 0.396281
+best-train-loss: 0.339104
+best-valid-loss: 0.369476
+best-kappa: 0.8361
+: Epoch: 25 | Training Loss: 0.339104 | Val. Loss: 0.369476 | Val. Kappa Score: 0.8361 | LR: 0.000500 | Estimated time: 57.59
+Train loss on 50 batch: 0.333501
+Train loss on 100 batch: 0.308511
+Train loss on 150 batch: 0.386397
+best-train-loss: 0.383346
+best-valid-loss: 0.398779
+best-kappa: 0.8365
+: Epoch: 26 | Training Loss: 0.383346 | Val. Loss: 0.398779 | Val. Kappa Score: 0.8365 | LR: 0.000500 | Estimated time: 57.90
+Train loss on 50 batch: 0.359998
+Train loss on 100 batch: 0.385450
+Train loss on 150 batch: 0.321230
+best-train-loss: 0.359850
+best-valid-loss: 0.374950
+best-kappa: 0.8376
+: Epoch: 27 | Training Loss: 0.359850 | Val. Loss: 0.374950 | Val. Kappa Score: 0.8376 | LR: 0.000500 | Estimated time: 58.19
+Train loss on 50 batch: 0.357786
+Train loss on 100 batch: 0.354804
+Train loss on 150 batch: 0.326302
+best-train-loss: 0.354712
+best-valid-loss: 0.379925
+best-kappa: 0.8381
+: Epoch: 28 | Training Loss: 0.354712 | Val. Loss: 0.379925 | Val. Kappa Score: 0.8381 | LR: 0.000500 | Estimated time: 58.02
+Train loss on 50 batch: 0.301873
+Train loss on 100 batch: 0.369845
+Train loss on 150 batch: 0.354784
+best-train-loss: 0.347000
+best-valid-loss: 0.361621
+best-kappa: 0.8390
+: Epoch: 29 | Training Loss: 0.347000 | Val. Loss: 0.361621 | Val. Kappa Score: 0.8390 | LR: 0.000500 | Estimated time: 57.81
+Train loss on 50 batch: 0.354274
+Train loss on 100 batch: 0.347260
+Train loss on 150 batch: 0.343110
+best-train-loss: 0.351199
+best-valid-loss: 0.361523
+best-kappa: 0.8397
+: Epoch: 30 | Training Loss: 0.351199 | Val. Loss: 0.361523 | Val. Kappa Score: 0.8397 | LR: 0.000500 | Estimated time: 57.70
+Train loss on 50 batch: 0.289971
+Train loss on 100 batch: 0.335614
+Train loss on 150 batch: 0.317784
+best-train-loss: 0.327803
+best-valid-loss: 0.388533
+best-kappa: 0.8407
+: Epoch: 31 | Training Loss: 0.327803 | Val. Loss: 0.388533 | Val. Kappa Score: 0.8407 | LR: 0.000500 | Estimated time: 58.23
+Train loss on 50 batch: 0.314905
+Train loss on 100 batch: 0.373613
+Train loss on 150 batch: 0.292707
+: Epoch: 32 | Training Loss: 0.315239 | Val. Loss: 0.419748 | Val. Kappa Score: 0.8407 | LR: 0.000500 | Estimated time: 57.48
+Train loss on 50 batch: 0.327167
+Train loss on 100 batch: 0.338107
+Train loss on 150 batch: 0.299907
+best-train-loss: 0.327559
+best-valid-loss: 0.421291
+best-kappa: 0.8409
+: Epoch: 33 | Training Loss: 0.327559 | Val. Loss: 0.421291 | Val. Kappa Score: 0.8409 | LR: 0.000500 | Estimated time: 57.83
+Train loss on 50 batch: 0.300016
+Train loss on 100 batch: 0.334185
+Train loss on 150 batch: 0.347201
+best-train-loss: 0.323265
+best-valid-loss: 0.404342
+best-kappa: 0.8412
+: Epoch: 34 | Training Loss: 0.323265 | Val. Loss: 0.404342 | Val. Kappa Score: 0.8412 | LR: 0.000500 | Estimated time: 57.34
+Train loss on 50 batch: 0.318989
+Train loss on 100 batch: 0.317266
+Train loss on 150 batch: 0.312300
+: Epoch: 35 | Training Loss: 0.332441 | Val. Loss: 0.391586 | Val. Kappa Score: 0.8411 | LR: 0.000500 | Estimated time: 56.55
+Train loss on 50 batch: 0.304921
+Train loss on 100 batch: 0.370279
+Train loss on 150 batch: 0.328028
+: Epoch: 36 | Training Loss: 0.353106 | Val. Loss: 0.418541 | Val. Kappa Score: 0.8409 | LR: 0.000500 | Estimated time: 57.45
+Train loss on 50 batch: 0.367004
+Train loss on 100 batch: 0.298917
+Train loss on 150 batch: 0.323537
+: Epoch: 37 | Training Loss: 0.330750 | Val. Loss: 0.520878 | Val. Kappa Score: 0.8398 | LR: 0.000250 | Estimated time: 57.24
+Train loss on 50 batch: 0.292264
+Train loss on 100 batch: 0.285736
+Train loss on 150 batch: 0.277197
+: Epoch: 38 | Training Loss: 0.382848 | Val. Loss: 0.344284 | Val. Kappa Score: 0.8405 | LR: 0.000250 | Estimated time: 57.25
+Train loss on 50 batch: 0.324773
+Train loss on 100 batch: 0.293767
+Train loss on 150 batch: 0.296487
+: Epoch: 39 | Training Loss: 0.315915 | Val. Loss: 0.329684 | Val. Kappa Score: 0.8410 | LR: 0.000250 | Estimated time: 58.43
+Train loss on 50 batch: 0.307062
+Train loss on 100 batch: 0.280863
+Train loss on 150 batch: 0.315407
+best-train-loss: 0.318840
+best-valid-loss: 0.353928
+best-kappa: 0.8416
+: Epoch: 40 | Training Loss: 0.318840 | Val. Loss: 0.353928 | Val. Kappa Score: 0.8416 | LR: 0.000250 | Estimated time: 58.64
+Train loss on 50 batch: 0.262644
+Train loss on 100 batch: 0.307278
+Train loss on 150 batch: 0.305512
+best-train-loss: 0.295357
+best-valid-loss: 0.348185
+best-kappa: 0.8421
+: Epoch: 41 | Training Loss: 0.295357 | Val. Loss: 0.348185 | Val. Kappa Score: 0.8421 | LR: 0.000250 | Estimated time: 57.37
+Train loss on 50 batch: 0.307468
+Train loss on 100 batch: 0.261604
+Train loss on 150 batch: 0.315740
+best-train-loss: 0.292131
+best-valid-loss: 0.349977
+best-kappa: 0.8428
+: Epoch: 42 | Training Loss: 0.292131 | Val. Loss: 0.349977 | Val. Kappa Score: 0.8428 | LR: 0.000250 | Estimated time: 57.81
+Train loss on 50 batch: 0.305828
+Train loss on 100 batch: 0.314456
+Train loss on 150 batch: 0.297131
+best-train-loss: 0.310031
+best-valid-loss: 0.334606
+best-kappa: 0.8434
+: Epoch: 43 | Training Loss: 0.310031 | Val. Loss: 0.334606 | Val. Kappa Score: 0.8434 | LR: 0.000250 | Estimated time: 57.39
+Train loss on 50 batch: 0.275599
+Train loss on 100 batch: 0.316131
+Train loss on 150 batch: 0.339269
+best-train-loss: 0.291516
+best-valid-loss: 0.349853
+best-kappa: 0.8441
+: Epoch: 44 | Training Loss: 0.291516 | Val. Loss: 0.349853 | Val. Kappa Score: 0.8441 | LR: 0.000250 | Estimated time: 59.07
+Train loss on 50 batch: 0.293291
+Train loss on 100 batch: 0.259290
+Train loss on 150 batch: 0.320848
+best-train-loss: 0.293788
+best-valid-loss: 0.352238
+best-kappa: 0.8448
+: Epoch: 45 | Training Loss: 0.293788 | Val. Loss: 0.352238 | Val. Kappa Score: 0.8448 | LR: 0.000250 | Estimated time: 57.19
+Train loss on 50 batch: 0.290563
+Train loss on 100 batch: 0.307956
+Train loss on 150 batch: 0.288115
+best-train-loss: 0.303862
+best-valid-loss: 0.336660
+best-kappa: 0.8454
+: Epoch: 46 | Training Loss: 0.303862 | Val. Loss: 0.336660 | Val. Kappa Score: 0.8454 | LR: 0.000250 | Estimated time: 58.02
+Train loss on 50 batch: 0.328364
+Train loss on 100 batch: 0.285342
+Train loss on 150 batch: 0.254241
+best-train-loss: 0.301788
+best-valid-loss: 0.352319
+best-kappa: 0.8458
+: Epoch: 47 | Training Loss: 0.301788 | Val. Loss: 0.352319 | Val. Kappa Score: 0.8458 | LR: 0.000250 | Estimated time: 57.56
+Train loss on 50 batch: 0.263908
+Train loss on 100 batch: 0.344965
+Train loss on 150 batch: 0.281161
+best-train-loss: 0.293352
+best-valid-loss: 0.365630
+best-kappa: 0.8461
+: Epoch: 48 | Training Loss: 0.293352 | Val. Loss: 0.365630 | Val. Kappa Score: 0.8461 | LR: 0.000250 | Estimated time: 58.66
+Train loss on 50 batch: 0.267095
+Train loss on 100 batch: 0.296414
+Train loss on 150 batch: 0.275452
+best-train-loss: 0.298562
+best-valid-loss: 0.377470
+best-kappa: 0.8466
+: Epoch: 49 | Training Loss: 0.298562 | Val. Loss: 0.377470 | Val. Kappa Score: 0.8466 | LR: 0.000250 | Estimated time: 57.57
+Train loss on 50 batch: 0.276653
+Train loss on 100 batch: 0.293741
+Train loss on 150 batch: 0.311374
+best-train-loss: 0.292096
+best-valid-loss: 0.383758
+best-kappa: 0.8470
+: Epoch: 50 | Training Loss: 0.292096 | Val. Loss: 0.383758 | Val. Kappa Score: 0.8470 | LR: 0.000250 | Estimated time: 57.94
+Train loss on 50 batch: 0.270995
+Train loss on 100 batch: 0.342989
+Train loss on 150 batch: 0.268504
+best-train-loss: 0.295598
+best-valid-loss: 0.337774
+best-kappa: 0.8475
+: Epoch: 51 | Training Loss: 0.295598 | Val. Loss: 0.337774 | Val. Kappa Score: 0.8475 | LR: 0.000250 | Estimated time: 58.39
+Train loss on 50 batch: 0.298050
+Train loss on 100 batch: 0.285130
+Train loss on 150 batch: 0.296377
+best-train-loss: 0.293623
+best-valid-loss: 0.342695
+best-kappa: 0.8479
+: Epoch: 52 | Training Loss: 0.293623 | Val. Loss: 0.342695 | Val. Kappa Score: 0.8479 | LR: 0.000250 | Estimated time: 57.07
+Train loss on 50 batch: 0.342204
+Train loss on 100 batch: 0.255702
+Train loss on 150 batch: 0.264690
+best-train-loss: 0.300591
+best-valid-loss: 0.331690
+best-kappa: 0.8486
+: Epoch: 53 | Training Loss: 0.300591 | Val. Loss: 0.331690 | Val. Kappa Score: 0.8486 | LR: 0.000250 | Estimated time: 58.75
+Train loss on 50 batch: 0.297823
+Train loss on 100 batch: 0.266576
+Train loss on 150 batch: 0.282225
+best-train-loss: 0.329921
+best-valid-loss: 0.351143
+best-kappa: 0.8489
+: Epoch: 54 | Training Loss: 0.329921 | Val. Loss: 0.351143 | Val. Kappa Score: 0.8489 | LR: 0.000250 | Estimated time: 58.32
+Train loss on 50 batch: 0.320268
+Train loss on 100 batch: 0.289899
+Train loss on 150 batch: 0.327413
+best-train-loss: 0.300325
+best-valid-loss: 0.351709
+best-kappa: 0.8493
+: Epoch: 55 | Training Loss: 0.300325 | Val. Loss: 0.351709 | Val. Kappa Score: 0.8493 | LR: 0.000250 | Estimated time: 58.17
+Train loss on 50 batch: 0.257229
+Train loss on 100 batch: 0.255065
+Train loss on 150 batch: 0.306418
+best-train-loss: 0.312080
+best-valid-loss: 0.356892
+best-kappa: 0.8495
+: Epoch: 56 | Training Loss: 0.312080 | Val. Loss: 0.356892 | Val. Kappa Score: 0.8495 | LR: 0.000250 | Estimated time: 58.38
+Train loss on 50 batch: 0.258044
+Train loss on 100 batch: 0.310586
+Train loss on 150 batch: 0.283627
+best-train-loss: 0.282574
+best-valid-loss: 0.344577
+best-kappa: 0.8499
+: Epoch: 57 | Training Loss: 0.282574 | Val. Loss: 0.344577 | Val. Kappa Score: 0.8499 | LR: 0.000250 | Estimated time: 57.83
+Train loss on 50 batch: 0.326497
+Train loss on 100 batch: 0.272082
+Train loss on 150 batch: 0.272874
+best-train-loss: 0.299821
+best-valid-loss: 0.352182
+best-kappa: 0.8499
+: Epoch: 58 | Training Loss: 0.299821 | Val. Loss: 0.352182 | Val. Kappa Score: 0.8499 | LR: 0.000250 | Estimated time: 58.00
+Train loss on 50 batch: 0.316903
+Train loss on 100 batch: 0.273814
+Train loss on 150 batch: 0.258501
+best-train-loss: 0.291557
+best-valid-loss: 0.358907
+best-kappa: 0.8500
+: Epoch: 59 | Training Loss: 0.291557 | Val. Loss: 0.358907 | Val. Kappa Score: 0.8500 | LR: 0.000250 | Estimated time: 57.89
+Train loss on 50 batch: 0.282591
+Train loss on 100 batch: 0.298469
+Train loss on 150 batch: 0.296211
+best-train-loss: 0.384730
+best-valid-loss: 0.335068
+best-kappa: 0.8503
+: Epoch: 60 | Training Loss: 0.384730 | Val. Loss: 0.335068 | Val. Kappa Score: 0.8503 | LR: 0.000250 | Estimated time: 58.05
+Train loss on 50 batch: 0.294715
+Train loss on 100 batch: 0.265917
+Train loss on 150 batch: 0.281713
+best-train-loss: 0.279841
+best-valid-loss: 0.348996
+best-kappa: 0.8507
+: Epoch: 61 | Training Loss: 0.279841 | Val. Loss: 0.348996 | Val. Kappa Score: 0.8507 | LR: 0.000250 | Estimated time: 57.35
+Train loss on 50 batch: 0.265237
+Train loss on 100 batch: 0.252783
+Train loss on 150 batch: 0.348440
+best-train-loss: 0.365014
+best-valid-loss: 0.340905
+best-kappa: 0.8510
+: Epoch: 62 | Training Loss: 0.365014 | Val. Loss: 0.340905 | Val. Kappa Score: 0.8510 | LR: 0.000250 | Estimated time: 57.48
+Train loss on 50 batch: 0.266860
+Train loss on 100 batch: 0.276985
+Train loss on 150 batch: 0.284230
+best-train-loss: 0.302441
+best-valid-loss: 0.330570
+best-kappa: 0.8512
+: Epoch: 63 | Training Loss: 0.302441 | Val. Loss: 0.330570 | Val. Kappa Score: 0.8512 | LR: 0.000250 | Estimated time: 58.54
+Train loss on 50 batch: 0.312499
+Train loss on 100 batch: 0.302554
+Train loss on 150 batch: 0.241911
+best-train-loss: 0.285488
+best-valid-loss: 0.345426
+best-kappa: 0.8515
+: Epoch: 64 | Training Loss: 0.285488 | Val. Loss: 0.345426 | Val. Kappa Score: 0.8515 | LR: 0.000250 | Estimated time: 58.01
+Train loss on 50 batch: 0.282358
+Train loss on 100 batch: 0.288987
+Train loss on 150 batch: 0.313640
+best-train-loss: 0.298472
+best-valid-loss: 0.332232
+best-kappa: 0.8518
+: Epoch: 65 | Training Loss: 0.298472 | Val. Loss: 0.332232 | Val. Kappa Score: 0.8518 | LR: 0.000250 | Estimated time: 58.24
+Train loss on 50 batch: 0.267610
+Train loss on 100 batch: 0.277538
+Train loss on 150 batch: 0.324775
+best-train-loss: 0.370475
+best-valid-loss: 0.330106
+best-kappa: 0.8520
+: Epoch: 66 | Training Loss: 0.370475 | Val. Loss: 0.330106 | Val. Kappa Score: 0.8520 | LR: 0.000250 | Estimated time: 58.26
+Train loss on 50 batch: 0.264569
+Train loss on 100 batch: 0.278197
+Train loss on 150 batch: 0.293605
+best-train-loss: 0.294391
+best-valid-loss: 0.333294
+best-kappa: 0.8523
+: Epoch: 67 | Training Loss: 0.294391 | Val. Loss: 0.333294 | Val. Kappa Score: 0.8523 | LR: 0.000250 | Estimated time: 57.61
+Train loss on 50 batch: 0.281595
+Train loss on 100 batch: 0.258201
+Train loss on 150 batch: 0.282311
+: Epoch: 68 | Training Loss: 0.281506 | Val. Loss: 0.374173 | Val. Kappa Score: 0.8523 | LR: 0.000250 | Estimated time: 57.64
+Train loss on 50 batch: 0.266673
+Train loss on 100 batch: 0.297627
+Train loss on 150 batch: 0.263555
+best-train-loss: 0.291494
+best-valid-loss: 0.326240
+best-kappa: 0.8527
+: Epoch: 69 | Training Loss: 0.291494 | Val. Loss: 0.326240 | Val. Kappa Score: 0.8527 | LR: 0.000250 | Estimated time: 57.44
+Train loss on 50 batch: 0.273147
+Train loss on 100 batch: 0.284859
+Train loss on 150 batch: 0.281691
+best-train-loss: 0.272323
+best-valid-loss: 0.377660
+best-kappa: 0.8528
+: Epoch: 70 | Training Loss: 0.272323 | Val. Loss: 0.377660 | Val. Kappa Score: 0.8528 | LR: 0.000250 | Estimated time: 58.07
+Train loss on 50 batch: 0.278933
+Train loss on 100 batch: 0.245722
+Train loss on 150 batch: 0.319403
+best-train-loss: 0.270666
+best-valid-loss: 0.347986
+best-kappa: 0.8530
+: Epoch: 71 | Training Loss: 0.270666 | Val. Loss: 0.347986 | Val. Kappa Score: 0.8530 | LR: 0.000250 | Estimated time: 57.73
+Train loss on 50 batch: 0.239094
+Train loss on 100 batch: 0.292168
+Train loss on 150 batch: 0.269752
+best-train-loss: 0.288186
+best-valid-loss: 0.334632
+best-kappa: 0.8533
+: Epoch: 72 | Training Loss: 0.288186 | Val. Loss: 0.334632 | Val. Kappa Score: 0.8533 | LR: 0.000250 | Estimated time: 58.06
+Train loss on 50 batch: 0.263267
+Train loss on 100 batch: 0.283518
+Train loss on 150 batch: 0.282585
+best-train-loss: 0.361129
+best-valid-loss: 0.325455
+best-kappa: 0.8535
+: Epoch: 73 | Training Loss: 0.361129 | Val. Loss: 0.325455 | Val. Kappa Score: 0.8535 | LR: 0.000250 | Estimated time: 57.98
+Train loss on 50 batch: 0.275845
+Train loss on 100 batch: 0.283617
+Train loss on 150 batch: 0.265933
+best-train-loss: 0.281777
+best-valid-loss: 0.351130
+best-kappa: 0.8537
+: Epoch: 74 | Training Loss: 0.281777 | Val. Loss: 0.351130 | Val. Kappa Score: 0.8537 | LR: 0.000250 | Estimated time: 58.38
+Train loss on 50 batch: 0.251625
+Train loss on 100 batch: 0.265780
+Train loss on 150 batch: 0.279470
+best-train-loss: 0.277202
+best-valid-loss: 0.350094
+best-kappa: 0.8539
+: Epoch: 75 | Training Loss: 0.277202 | Val. Loss: 0.350094 | Val. Kappa Score: 0.8539 | LR: 0.000250 | Estimated time: 58.30
+Train loss on 50 batch: 0.237877
+Train loss on 100 batch: 0.282283
+Train loss on 150 batch: 0.290762
+best-train-loss: 0.275818
+best-valid-loss: 0.332415
+best-kappa: 0.8542
+: Epoch: 76 | Training Loss: 0.275818 | Val. Loss: 0.332415 | Val. Kappa Score: 0.8542 | LR: 0.000250 | Estimated time: 57.54
+Train loss on 50 batch: 0.286365
+Train loss on 100 batch: 0.276824
+Train loss on 150 batch: 0.309048
+best-train-loss: 0.285967
+best-valid-loss: 0.321629
+best-kappa: 0.8544
+: Epoch: 77 | Training Loss: 0.285967 | Val. Loss: 0.321629 | Val. Kappa Score: 0.8544 | LR: 0.000250 | Estimated time: 57.34
+Train loss on 50 batch: 0.300999
+Train loss on 100 batch: 0.247470
+Train loss on 150 batch: 0.283945
+best-train-loss: 0.273812
+best-valid-loss: 0.324973
+best-kappa: 0.8547
+: Epoch: 78 | Training Loss: 0.273812 | Val. Loss: 0.324973 | Val. Kappa Score: 0.8547 | LR: 0.000250 | Estimated time: 57.43
+Train loss on 50 batch: 0.273598
+Train loss on 100 batch: 0.251105
+Train loss on 150 batch: 0.271366
+best-train-loss: 0.273966
+best-valid-loss: 0.333196
+best-kappa: 0.8549
+: Epoch: 79 | Training Loss: 0.273966 | Val. Loss: 0.333196 | Val. Kappa Score: 0.8549 | LR: 0.000250 | Estimated time: 57.60
+Train loss on 50 batch: 0.291663
+Train loss on 100 batch: 0.245190
+Train loss on 150 batch: 0.279173
+best-train-loss: 0.297880
+best-valid-loss: 0.344385
+best-kappa: 0.8551
+: Epoch: 80 | Training Loss: 0.297880 | Val. Loss: 0.344385 | Val. Kappa Score: 0.8551 | LR: 0.000250 | Estimated time: 57.13
+Train loss on 50 batch: 0.259816
+Train loss on 100 batch: 0.289632
+Train loss on 150 batch: 0.282666
+best-train-loss: 0.271632
+best-valid-loss: 0.339816
+best-kappa: 0.8554
+: Epoch: 81 | Training Loss: 0.271632 | Val. Loss: 0.339816 | Val. Kappa Score: 0.8554 | LR: 0.000250 | Estimated time: 58.09
+Train loss on 50 batch: 0.275554
+Train loss on 100 batch: 0.283965
+Train loss on 150 batch: 0.212585
+best-train-loss: 0.267975
+best-valid-loss: 0.345405
+best-kappa: 0.8556
+: Epoch: 82 | Training Loss: 0.267975 | Val. Loss: 0.345405 | Val. Kappa Score: 0.8556 | LR: 0.000250 | Estimated time: 58.64
+Train loss on 50 batch: 0.245732
+Train loss on 100 batch: 0.290860
+Train loss on 150 batch: 0.267067
+best-train-loss: 0.275238
+best-valid-loss: 0.356547
+best-kappa: 0.8557
+: Epoch: 83 | Training Loss: 0.275238 | Val. Loss: 0.356547 | Val. Kappa Score: 0.8557 | LR: 0.000250 | Estimated time: 57.95
+Train loss on 50 batch: 0.258525
+Train loss on 100 batch: 0.271142
+Train loss on 150 batch: 0.287772
+best-train-loss: 0.270643
+best-valid-loss: 0.329924
+best-kappa: 0.8559
+: Epoch: 84 | Training Loss: 0.270643 | Val. Loss: 0.329924 | Val. Kappa Score: 0.8559 | LR: 0.000250 | Estimated time: 56.82
+Train loss on 50 batch: 0.299689
+Train loss on 100 batch: 0.289220
+Train loss on 150 batch: 0.261099
+best-train-loss: 0.286565
+best-valid-loss: 0.332034
+best-kappa: 0.8561
+: Epoch: 85 | Training Loss: 0.286565 | Val. Loss: 0.332034 | Val. Kappa Score: 0.8561 | LR: 0.000250 | Estimated time: 58.23
+Train loss on 50 batch: 0.282403
+Train loss on 100 batch: 0.263168
+Train loss on 150 batch: 0.288834
+best-train-loss: 0.364214
+best-valid-loss: 0.347510
+best-kappa: 0.8564
+: Epoch: 86 | Training Loss: 0.364214 | Val. Loss: 0.347510 | Val. Kappa Score: 0.8564 | LR: 0.000250 | Estimated time: 58.13
+Train loss on 50 batch: 0.277308
+Train loss on 100 batch: 0.268441
+Train loss on 150 batch: 0.220775
+best-train-loss: 0.278264
+best-valid-loss: 0.333881
+best-kappa: 0.8566
+: Epoch: 87 | Training Loss: 0.278264 | Val. Loss: 0.333881 | Val. Kappa Score: 0.8566 | LR: 0.000250 | Estimated time: 58.48
+Train loss on 50 batch: 0.270256
+Train loss on 100 batch: 0.269377
+Train loss on 150 batch: 0.280318
+best-train-loss: 0.299448
+best-valid-loss: 0.329871
+best-kappa: 0.8567
+: Epoch: 88 | Training Loss: 0.299448 | Val. Loss: 0.329871 | Val. Kappa Score: 0.8567 | LR: 0.000250 | Estimated time: 57.73
+Train loss on 50 batch: 0.265914
+Train loss on 100 batch: 0.284015
+Train loss on 150 batch: 0.313230
+: Epoch: 89 | Training Loss: 0.276390 | Val. Loss: 0.397639 | Val. Kappa Score: 0.8566 | LR: 0.000250 | Estimated time: 58.16
+Train loss on 50 batch: 0.352828
+Train loss on 100 batch: 0.248365
+Train loss on 150 batch: 0.282318
+best-train-loss: 0.285037
+best-valid-loss: 0.344026
+best-kappa: 0.8568
+: Epoch: 90 | Training Loss: 0.285037 | Val. Loss: 0.344026 | Val. Kappa Score: 0.8568 | LR: 0.000250 | Estimated time: 57.80
+Train loss on 50 batch: 0.285748
+Train loss on 100 batch: 0.279094
+Train loss on 150 batch: 0.256642
+best-train-loss: 0.273119
+best-valid-loss: 0.363329
+best-kappa: 0.8569
+: Epoch: 91 | Training Loss: 0.273119 | Val. Loss: 0.363329 | Val. Kappa Score: 0.8569 | LR: 0.000250 | Estimated time: 57.90
+Train loss on 50 batch: 0.263113
+Train loss on 100 batch: 0.244915
+Train loss on 150 batch: 0.305347
+best-train-loss: 0.278686
+best-valid-loss: 0.348230
+best-kappa: 0.8571
+: Epoch: 92 | Training Loss: 0.278686 | Val. Loss: 0.348230 | Val. Kappa Score: 0.8571 | LR: 0.000250 | Estimated time: 57.85
+Train loss on 50 batch: 0.255056
+Train loss on 100 batch: 0.243502
+Train loss on 150 batch: 0.262613
+best-train-loss: 0.271017
+best-valid-loss: 0.355720
+best-kappa: 0.8572
+: Epoch: 93 | Training Loss: 0.271017 | Val. Loss: 0.355720 | Val. Kappa Score: 0.8572 | LR: 0.000250 | Estimated time: 59.26
+Train loss on 50 batch: 0.336049
+Train loss on 100 batch: 0.238697
+Train loss on 150 batch: 0.257450
+best-train-loss: 0.335400
+best-valid-loss: 0.369297
+best-kappa: 0.8574
+: Epoch: 94 | Training Loss: 0.335400 | Val. Loss: 0.369297 | Val. Kappa Score: 0.8574 | LR: 0.000250 | Estimated time: 57.29
+Train loss on 50 batch: 0.264579
+Train loss on 100 batch: 0.260008
+Train loss on 150 batch: 0.282743
+: Epoch: 95 | Training Loss: 0.273703 | Val. Loss: 0.365784 | Val. Kappa Score: 0.8573 | LR: 0.000250 | Estimated time: 58.09
+Train loss on 50 batch: 0.267077
+Train loss on 100 batch: 0.262583
+Train loss on 150 batch: 0.273545
+best-train-loss: 0.266397
+best-valid-loss: 0.324785
+best-kappa: 0.8575
+: Epoch: 96 | Training Loss: 0.266397 | Val. Loss: 0.324785 | Val. Kappa Score: 0.8575 | LR: 0.000250 | Estimated time: 57.98
+Train loss on 50 batch: 0.228767
+Train loss on 100 batch: 0.254581
+Train loss on 150 batch: 0.272964
+best-train-loss: 0.260919
+best-valid-loss: 0.336624
+best-kappa: 0.8576
+: Epoch: 97 | Training Loss: 0.260919 | Val. Loss: 0.336624 | Val. Kappa Score: 0.8576 | LR: 0.000250 | Estimated time: 58.12
+Train loss on 50 batch: 0.256759
+Train loss on 100 batch: 0.259323
+Train loss on 150 batch: 0.286910
+best-train-loss: 0.273744
+best-valid-loss: 0.337351
+best-kappa: 0.8578
+: Epoch: 98 | Training Loss: 0.273744 | Val. Loss: 0.337351 | Val. Kappa Score: 0.8578 | LR: 0.000250 | Estimated time: 57.75
+Train loss on 50 batch: 0.261674
+Train loss on 100 batch: 0.254642
+Train loss on 150 batch: 0.250451
+best-train-loss: 0.282576
+best-valid-loss: 0.341373
+best-kappa: 0.8579
+: Epoch: 99 | Training Loss: 0.282576 | Val. Loss: 0.341373 | Val. Kappa Score: 0.8579 | LR: 0.000250 | Estimated time: 57.59
+Train loss on 50 batch: 0.221247
+Train loss on 100 batch: 0.291741
+Train loss on 150 batch: 0.259217
+best-train-loss: 0.349961
+best-valid-loss: 0.347859
+best-kappa: 0.8580
+: Epoch: 100 | Training Loss: 0.349961 | Val. Loss: 0.347859 | Val. Kappa Score: 0.8580 | LR: 0.000250 | Estimated time: 58.46
+Train loss on 50 batch: 0.283399
+Train loss on 100 batch: 0.227692
+Train loss on 150 batch: 0.256135
+best-train-loss: 0.274152
+best-valid-loss: 0.333538
+best-kappa: 0.8581
+: Epoch: 101 | Training Loss: 0.274152 | Val. Loss: 0.333538 | Val. Kappa Score: 0.8581 | LR: 0.000250 | Estimated time: 57.23
+Train loss on 50 batch: 0.258120
+Train loss on 100 batch: 0.226784
+Train loss on 150 batch: 0.281072
+best-train-loss: 0.277415
+best-valid-loss: 0.332567
+best-kappa: 0.8582
+: Epoch: 102 | Training Loss: 0.277415 | Val. Loss: 0.332567 | Val. Kappa Score: 0.8582 | LR: 0.000250 | Estimated time: 58.26
+Train loss on 50 batch: 0.314180
+Train loss on 100 batch: 0.260643
+Train loss on 150 batch: 0.280203
+: Epoch: 103 | Training Loss: 0.279682 | Val. Loss: 0.347326 | Val. Kappa Score: 0.8582 | LR: 0.000250 | Estimated time: 57.83
+Train loss on 50 batch: 0.267360
+Train loss on 100 batch: 0.254608
+Train loss on 150 batch: 0.245410
+best-train-loss: 0.267898
+best-valid-loss: 0.355252
+best-kappa: 0.8583
+: Epoch: 104 | Training Loss: 0.267898 | Val. Loss: 0.355252 | Val. Kappa Score: 0.8583 | LR: 0.000250 | Estimated time: 58.87
+Train loss on 50 batch: 0.246706
+Train loss on 100 batch: 0.306264
+Train loss on 150 batch: 0.245380
+best-train-loss: 0.271817
+best-valid-loss: 0.323688
+best-kappa: 0.8585
+: Epoch: 105 | Training Loss: 0.271817 | Val. Loss: 0.323688 | Val. Kappa Score: 0.8585 | LR: 0.000250 | Estimated time: 57.83
+Train loss on 50 batch: 0.251388
+Train loss on 100 batch: 0.261408
+Train loss on 150 batch: 0.258267
+best-train-loss: 0.265030
+best-valid-loss: 0.326819
+best-kappa: 0.8586
+: Epoch: 106 | Training Loss: 0.265030 | Val. Loss: 0.326819 | Val. Kappa Score: 0.8586 | LR: 0.000250 | Estimated time: 57.48
+Train loss on 50 batch: 0.257121
+Train loss on 100 batch: 0.263799
+Train loss on 150 batch: 0.258704
+best-train-loss: 0.267482
+best-valid-loss: 0.328612
+best-kappa: 0.8587
+: Epoch: 107 | Training Loss: 0.267482 | Val. Loss: 0.328612 | Val. Kappa Score: 0.8587 | LR: 0.000250 | Estimated time: 57.76
+Train loss on 50 batch: 0.259761
+Train loss on 100 batch: 0.287279
+Train loss on 150 batch: 0.279852
+best-train-loss: 0.272254
+best-valid-loss: 0.328625
+best-kappa: 0.8589
+: Epoch: 108 | Training Loss: 0.272254 | Val. Loss: 0.328625 | Val. Kappa Score: 0.8589 | LR: 0.000250 | Estimated time: 58.13
+Train loss on 50 batch: 0.238442
+Train loss on 100 batch: 0.238276
+Train loss on 150 batch: 0.297588
+best-train-loss: 0.255737
+best-valid-loss: 0.342362
+best-kappa: 0.8590
+: Epoch: 109 | Training Loss: 0.255737 | Val. Loss: 0.342362 | Val. Kappa Score: 0.8590 | LR: 0.000250 | Estimated time: 57.85
+Train loss on 50 batch: 0.274767
+Train loss on 100 batch: 0.250582
+Train loss on 150 batch: 0.274847
+best-train-loss: 0.264655
+best-valid-loss: 0.345048
+best-kappa: 0.8591
+: Epoch: 110 | Training Loss: 0.264655 | Val. Loss: 0.345048 | Val. Kappa Score: 0.8591 | LR: 0.000250 | Estimated time: 58.15
+Train loss on 50 batch: 0.284238
+Train loss on 100 batch: 0.223962
+Train loss on 150 batch: 0.266999
+best-train-loss: 0.260920
+best-valid-loss: 0.328680
+best-kappa: 0.8593
+: Epoch: 111 | Training Loss: 0.260920 | Val. Loss: 0.328680 | Val. Kappa Score: 0.8593 | LR: 0.000250 | Estimated time: 57.54
+Train loss on 50 batch: 0.272499
+Train loss on 100 batch: 0.281064
+Train loss on 150 batch: 0.254594
+: Epoch: 112 | Training Loss: 0.365016 | Val. Loss: 0.381151 | Val. Kappa Score: 0.8592 | LR: 0.000250 | Estimated time: 57.64
+Train loss on 50 batch: 0.262317
+Train loss on 100 batch: 0.257511
+Train loss on 150 batch: 0.285887
+: Epoch: 113 | Training Loss: 0.269104 | Val. Loss: 0.341547 | Val. Kappa Score: 0.8592 | LR: 0.000250 | Estimated time: 57.56
+Train loss on 50 batch: 0.364567
+Train loss on 100 batch: 0.285439
+Train loss on 150 batch: 0.252188
+best-train-loss: 0.281346
+best-valid-loss: 0.324857
+best-kappa: 0.8593
+: Epoch: 114 | Training Loss: 0.281346 | Val. Loss: 0.324857 | Val. Kappa Score: 0.8593 | LR: 0.000250 | Estimated time: 57.03
+Train loss on 50 batch: 0.281559
+Train loss on 100 batch: 0.218175
+Train loss on 150 batch: 0.257848
+best-train-loss: 0.306765
+best-valid-loss: 0.323352
+best-kappa: 0.8593
+: Epoch: 115 | Training Loss: 0.306765 | Val. Loss: 0.323352 | Val. Kappa Score: 0.8593 | LR: 0.000250 | Estimated time: 57.37
+Train loss on 50 batch: 0.279092
+Train loss on 100 batch: 0.274931
+Train loss on 150 batch: 0.226004
+best-train-loss: 0.252276
+best-valid-loss: 0.338625
+best-kappa: 0.8594
+: Epoch: 116 | Training Loss: 0.252276 | Val. Loss: 0.338625 | Val. Kappa Score: 0.8594 | LR: 0.000250 | Estimated time: 57.84
+Train loss on 50 batch: 0.270799
+Train loss on 100 batch: 0.245776
+Train loss on 150 batch: 0.240527
+best-train-loss: 0.257578
+best-valid-loss: 0.348061
+best-kappa: 0.8595
+: Epoch: 117 | Training Loss: 0.257578 | Val. Loss: 0.348061 | Val. Kappa Score: 0.8595 | LR: 0.000250 | Estimated time: 57.92
+Train loss on 50 batch: 0.257135
+Train loss on 100 batch: 0.262354
+Train loss on 150 batch: 0.245005
+best-train-loss: 0.347644
+best-valid-loss: 0.367334
+best-kappa: 0.8596
+: Epoch: 118 | Training Loss: 0.347644 | Val. Loss: 0.367334 | Val. Kappa Score: 0.8596 | LR: 0.000250 | Estimated time: 57.57
+Train loss on 50 batch: 0.274059
+Train loss on 100 batch: 0.259392
+Train loss on 150 batch: 0.264107
+best-train-loss: 0.267324
+best-valid-loss: 0.334842
+best-kappa: 0.8596
+: Epoch: 119 | Training Loss: 0.267324 | Val. Loss: 0.334842 | Val. Kappa Score: 0.8596 | LR: 0.000250 | Estimated time: 57.87
+Train loss on 50 batch: 0.237099
+Train loss on 100 batch: 0.256559
+Train loss on 150 batch: 0.295705
+best-train-loss: 0.269651
+best-valid-loss: 0.325068
+best-kappa: 0.8597
+: Epoch: 120 | Training Loss: 0.269651 | Val. Loss: 0.325068 | Val. Kappa Score: 0.8597 | LR: 0.000250 | Estimated time: 57.62
+Train loss on 50 batch: 0.247366
+Train loss on 100 batch: 0.260704
+Train loss on 150 batch: 0.266805
+best-train-loss: 0.261367
+best-valid-loss: 0.326660
+best-kappa: 0.8600
+: Epoch: 121 | Training Loss: 0.261367 | Val. Loss: 0.326660 | Val. Kappa Score: 0.8600 | LR: 0.000250 | Estimated time: 57.10
+Train loss on 50 batch: 0.282084
+Train loss on 100 batch: 0.265669
+Train loss on 150 batch: 0.266983
+best-train-loss: 0.275310
+best-valid-loss: 0.357225
+best-kappa: 0.8600
+: Epoch: 122 | Training Loss: 0.275310 | Val. Loss: 0.357225 | Val. Kappa Score: 0.8600 | LR: 0.000250 | Estimated time: 57.95
+Train loss on 50 batch: 0.257933
+Train loss on 100 batch: 0.249963
+Train loss on 150 batch: 0.270539
+best-train-loss: 0.263327
+best-valid-loss: 0.354174
+best-kappa: 0.8601
+: Epoch: 123 | Training Loss: 0.263327 | Val. Loss: 0.354174 | Val. Kappa Score: 0.8601 | LR: 0.000250 | Estimated time: 59.05
+Train loss on 50 batch: 0.262659
+Train loss on 100 batch: 0.252585
+Train loss on 150 batch: 0.264270
+best-train-loss: 0.263074
+best-valid-loss: 0.366675
+best-kappa: 0.8602
+: Epoch: 124 | Training Loss: 0.263074 | Val. Loss: 0.366675 | Val. Kappa Score: 0.8602 | LR: 0.000250 | Estimated time: 58.73
+Train loss on 50 batch: 0.263067
+Train loss on 100 batch: 0.215384
+Train loss on 150 batch: 0.255110
+: Epoch: 125 | Training Loss: 0.259953 | Val. Loss: 0.364362 | Val. Kappa Score: 0.8602 | LR: 0.000250 | Estimated time: 57.18
+Train loss on 50 batch: 0.283938
+Train loss on 100 batch: 0.254413
+Train loss on 150 batch: 0.241185
+best-train-loss: 0.253861
+best-valid-loss: 0.344171
+best-kappa: 0.8602
+: Epoch: 126 | Training Loss: 0.253861 | Val. Loss: 0.344171 | Val. Kappa Score: 0.8602 | LR: 0.000250 | Estimated time: 57.66
+Train loss on 50 batch: 0.230949
+Train loss on 100 batch: 0.265793
+Train loss on 150 batch: 0.231612
+best-train-loss: 0.251990
+best-valid-loss: 0.325162
+best-kappa: 0.8602
+: Epoch: 127 | Training Loss: 0.251990 | Val. Loss: 0.325162 | Val. Kappa Score: 0.8602 | LR: 0.000250 | Estimated time: 57.55
+Train loss on 50 batch: 0.263624
+Train loss on 100 batch: 0.257919
+Train loss on 150 batch: 0.302788
+best-train-loss: 0.305779
+best-valid-loss: 0.317475
+best-kappa: 0.8604
+: Epoch: 128 | Training Loss: 0.305779 | Val. Loss: 0.317475 | Val. Kappa Score: 0.8604 | LR: 0.000250 | Estimated time: 59.22
+Train loss on 50 batch: 0.251429
+Train loss on 100 batch: 0.249943
+Train loss on 150 batch: 0.273220
+best-train-loss: 0.259861
+best-valid-loss: 0.356023
+best-kappa: 0.8604
+: Epoch: 129 | Training Loss: 0.259861 | Val. Loss: 0.356023 | Val. Kappa Score: 0.8604 | LR: 0.000250 | Estimated time: 58.65
+Train loss on 50 batch: 0.249050
+Train loss on 100 batch: 0.262562
+Train loss on 150 batch: 0.267164
+: Epoch: 130 | Training Loss: 0.243677 | Val. Loss: 0.377388 | Val. Kappa Score: 0.8604 | LR: 0.000250 | Estimated time: 58.66
+Train loss on 50 batch: 0.268427
+Train loss on 100 batch: 0.209980
+Train loss on 150 batch: 0.266218
+best-train-loss: 0.252864
+best-valid-loss: 0.330606
+best-kappa: 0.8604
+: Epoch: 131 | Training Loss: 0.252864 | Val. Loss: 0.330606 | Val. Kappa Score: 0.8604 | LR: 0.000250 | Estimated time: 58.75
+Train loss on 50 batch: 0.257244
+Train loss on 100 batch: 0.245655
+Train loss on 150 batch: 0.250238
+: Epoch: 132 | Training Loss: 0.245840 | Val. Loss: 0.379735 | Val. Kappa Score: 0.8604 | LR: 0.000125 | Estimated time: 59.64
+Train loss on 50 batch: 0.238231
+Train loss on 100 batch: 0.251454
+Train loss on 150 batch: 0.238586
+: Epoch: 133 | Training Loss: 0.255632 | Val. Loss: 0.334881 | Val. Kappa Score: 0.8604 | LR: 0.000125 | Estimated time: 59.26
+Train loss on 50 batch: 0.203733
+Train loss on 100 batch: 0.287810
+Train loss on 150 batch: 0.225546
+best-train-loss: 0.227990
+best-valid-loss: 0.340870
+best-kappa: 0.8605
+: Epoch: 134 | Training Loss: 0.227990 | Val. Loss: 0.340870 | Val. Kappa Score: 0.8605 | LR: 0.000125 | Estimated time: 58.69
+Train loss on 50 batch: 0.225278
+Train loss on 100 batch: 0.243744
+Train loss on 150 batch: 0.245299
+best-train-loss: 0.330589
+best-valid-loss: 0.335839
+best-kappa: 0.8606
+: Epoch: 135 | Training Loss: 0.330589 | Val. Loss: 0.335839 | Val. Kappa Score: 0.8606 | LR: 0.000125 | Estimated time: 58.96
+Train loss on 50 batch: 0.274318
+Train loss on 100 batch: 0.237770
+Train loss on 150 batch: 0.243153
+best-train-loss: 0.241867
+best-valid-loss: 0.343606
+best-kappa: 0.8607
+: Epoch: 136 | Training Loss: 0.241867 | Val. Loss: 0.343606 | Val. Kappa Score: 0.8607 | LR: 0.000125 | Estimated time: 58.02
+Train loss on 50 batch: 0.226956
+Train loss on 100 batch: 0.233020
+Train loss on 150 batch: 0.240642
+best-train-loss: 0.325093
+best-valid-loss: 0.323694
+best-kappa: 0.8608
+: Epoch: 137 | Training Loss: 0.325093 | Val. Loss: 0.323694 | Val. Kappa Score: 0.8608 | LR: 0.000125 | Estimated time: 57.84
+Train loss on 50 batch: 0.238118
+Train loss on 100 batch: 0.232340
+Train loss on 150 batch: 0.227748
+best-train-loss: 0.231563
+best-valid-loss: 0.332364
+best-kappa: 0.8608
+: Epoch: 138 | Training Loss: 0.231563 | Val. Loss: 0.332364 | Val. Kappa Score: 0.8608 | LR: 0.000125 | Estimated time: 57.73
+Train loss on 50 batch: 0.243008
+Train loss on 100 batch: 0.223907
+Train loss on 150 batch: 0.245059
+best-train-loss: 0.239998
+best-valid-loss: 0.332644
+best-kappa: 0.8609
+: Epoch: 139 | Training Loss: 0.239998 | Val. Loss: 0.332644 | Val. Kappa Score: 0.8609 | LR: 0.000125 | Estimated time: 57.28
+Train loss on 50 batch: 0.250914
+Train loss on 100 batch: 0.232628
+Train loss on 150 batch: 0.198989
+: Epoch: 140 | Training Loss: 0.250737 | Val. Loss: 0.326911 | Val. Kappa Score: 0.8608 | LR: 0.000125 | Estimated time: 58.19
+Train loss on 50 batch: 0.218708
+Train loss on 100 batch: 0.224010
+Train loss on 150 batch: 0.253128
+: Epoch: 141 | Training Loss: 0.246650 | Val. Loss: 0.336640 | Val. Kappa Score: 0.8609 | LR: 0.000125 | Estimated time: 58.00
+Train loss on 50 batch: 0.237925
+Train loss on 100 batch: 0.263349
+Train loss on 150 batch: 0.228034
+: Epoch: 142 | Training Loss: 0.239274 | Val. Loss: 0.338136 | Val. Kappa Score: 0.8609 | LR: 0.000063 | Estimated time: 57.36
+Train loss on 50 batch: 0.232997
+Train loss on 100 batch: 0.241054
+Train loss on 150 batch: 0.224910
+: Epoch: 143 | Training Loss: 0.229928 | Val. Loss: 0.334266 | Val. Kappa Score: 0.8609 | LR: 0.000063 | Estimated time: 58.35
+Train loss on 50 batch: 0.206109
+Train loss on 100 batch: 0.241842
+Train loss on 150 batch: 0.302877
+best-train-loss: 0.240921
+best-valid-loss: 0.324558
+best-kappa: 0.8611
+: Epoch: 144 | Training Loss: 0.240921 | Val. Loss: 0.324558 | Val. Kappa Score: 0.8611 | LR: 0.000063 | Estimated time: 57.89
+Train loss on 50 batch: 0.232653
+Train loss on 100 batch: 0.248687
+Train loss on 150 batch: 0.208207
+best-train-loss: 0.227942
+best-valid-loss: 0.328086
+best-kappa: 0.8612
+: Epoch: 145 | Training Loss: 0.227942 | Val. Loss: 0.328086 | Val. Kappa Score: 0.8612 | LR: 0.000063 | Estimated time: 58.13
+Train loss on 50 batch: 0.246167
+Train loss on 100 batch: 0.243698
+Train loss on 150 batch: 0.247988
+best-train-loss: 0.247123
+best-valid-loss: 0.339858
+best-kappa: 0.8612
+: Epoch: 146 | Training Loss: 0.247123 | Val. Loss: 0.339858 | Val. Kappa Score: 0.8612 | LR: 0.000063 | Estimated time: 58.59
+Train loss on 50 batch: 0.219484
+Train loss on 100 batch: 0.229883
+Train loss on 150 batch: 0.223107
+best-train-loss: 0.236188
+best-valid-loss: 0.334146
+best-kappa: 0.8613
+: Epoch: 147 | Training Loss: 0.236188 | Val. Loss: 0.334146 | Val. Kappa Score: 0.8613 | LR: 0.000063 | Estimated time: 58.39
+Train loss on 50 batch: 0.213260
+Train loss on 100 batch: 0.245066
+Train loss on 150 batch: 0.262012
+best-train-loss: 0.239211
+best-valid-loss: 0.328757
+best-kappa: 0.8614
+: Epoch: 148 | Training Loss: 0.239211 | Val. Loss: 0.328757 | Val. Kappa Score: 0.8614 | LR: 0.000063 | Estimated time: 58.83
+Train loss on 50 batch: 0.240171
+Train loss on 100 batch: 0.229502
+Train loss on 150 batch: 0.209512
+best-train-loss: 0.263250
+best-valid-loss: 0.331422
+best-kappa: 0.8615
+: Epoch: 149 | Training Loss: 0.263250 | Val. Loss: 0.331422 | Val. Kappa Score: 0.8615 | LR: 0.000063 | Estimated time: 57.24
+Train loss on 50 batch: 0.256504
+Train loss on 100 batch: 0.201771
+Train loss on 150 batch: 0.224401
+: Epoch: 150 | Training Loss: 0.246759 | Val. Loss: 0.328759 | Val. Kappa Score: 0.8615 | LR: 0.000063 | Estimated time: 58.35
+Train loss on 50 batch: 0.221778
+Train loss on 100 batch: 0.220913
+Train loss on 150 batch: 0.260807
+best-train-loss: 0.249099
+best-valid-loss: 0.334583
+best-kappa: 0.8616
+: Epoch: 151 | Training Loss: 0.249099 | Val. Loss: 0.334583 | Val. Kappa Score: 0.8616 | LR: 0.000063 | Estimated time: 57.85
+Train loss on 50 batch: 0.227520
+Train loss on 100 batch: 0.237591
+Train loss on 150 batch: 0.216238
+best-train-loss: 0.243229
+best-valid-loss: 0.326437
+best-kappa: 0.8617
+: Epoch: 152 | Training Loss: 0.243229 | Val. Loss: 0.326437 | Val. Kappa Score: 0.8617 | LR: 0.000063 | Estimated time: 57.84
+Train loss on 50 batch: 0.213970
+Train loss on 100 batch: 0.202657
+Train loss on 150 batch: 0.262499
+best-train-loss: 0.230133
+best-valid-loss: 0.331359
+best-kappa: 0.8617
+: Epoch: 153 | Training Loss: 0.230133 | Val. Loss: 0.331359 | Val. Kappa Score: 0.8617 | LR: 0.000063 | Estimated time: 58.55
+Train loss on 50 batch: 0.226197
+Train loss on 100 batch: 0.212106
+Train loss on 150 batch: 0.235306
+best-train-loss: 0.306692
+best-valid-loss: 0.332047
+best-kappa: 0.8617
+: Epoch: 154 | Training Loss: 0.306692 | Val. Loss: 0.332047 | Val. Kappa Score: 0.8617 | LR: 0.000063 | Estimated time: 58.03
+Train loss on 50 batch: 0.211158
+Train loss on 100 batch: 0.235251
+Train loss on 150 batch: 0.264991
+best-train-loss: 0.234193
+best-valid-loss: 0.335089
+best-kappa: 0.8618
+: Epoch: 155 | Training Loss: 0.234193 | Val. Loss: 0.335089 | Val. Kappa Score: 0.8618 | LR: 0.000063 | Estimated time: 58.36
+Train loss on 50 batch: 0.200297
+Train loss on 100 batch: 0.245638
+Train loss on 150 batch: 0.238999
+best-train-loss: 0.315240
+best-valid-loss: 0.327137
+best-kappa: 0.8619
+: Epoch: 156 | Training Loss: 0.315240 | Val. Loss: 0.327137 | Val. Kappa Score: 0.8619 | LR: 0.000063 | Estimated time: 58.33
+Train loss on 50 batch: 0.225278
+Train loss on 100 batch: 0.216320
+Train loss on 150 batch: 0.224541
+best-train-loss: 0.237271
+best-valid-loss: 0.329450
+best-kappa: 0.8620
+: Epoch: 157 | Training Loss: 0.237271 | Val. Loss: 0.329450 | Val. Kappa Score: 0.8620 | LR: 0.000063 | Estimated time: 57.86
+Train loss on 50 batch: 0.236996
+Train loss on 100 batch: 0.253250
+Train loss on 150 batch: 0.213718
+best-train-loss: 0.243544
+best-valid-loss: 0.331746
+best-kappa: 0.8621
+: Epoch: 158 | Training Loss: 0.243544 | Val. Loss: 0.331746 | Val. Kappa Score: 0.8621 | LR: 0.000063 | Estimated time: 58.09
+Train loss on 50 batch: 0.228205
+Train loss on 100 batch: 0.213418
+Train loss on 150 batch: 0.252472
+best-train-loss: 0.225945
+best-valid-loss: 0.338302
+best-kappa: 0.8621
+: Epoch: 159 | Training Loss: 0.225945 | Val. Loss: 0.338302 | Val. Kappa Score: 0.8621 | LR: 0.000063 | Estimated time: 57.68
+Train loss on 50 batch: 0.233839
+Train loss on 100 batch: 0.201429
+Train loss on 150 batch: 0.252298
+best-train-loss: 0.226148
+best-valid-loss: 0.329149
+best-kappa: 0.8622
+: Epoch: 160 | Training Loss: 0.226148 | Val. Loss: 0.329149 | Val. Kappa Score: 0.8622 | LR: 0.000063 | Estimated time: 58.33
+Train loss on 50 batch: 0.220008
+Train loss on 100 batch: 0.265633
+Train loss on 150 batch: 0.231625
+: Epoch: 161 | Training Loss: 0.246089 | Val. Loss: 0.327606 | Val. Kappa Score: 0.8622 | LR: 0.000063 | Estimated time: 57.65
+Train loss on 50 batch: 0.206458
+Train loss on 100 batch: 0.195447
+Train loss on 150 batch: 0.260629
+best-train-loss: 0.226305
+best-valid-loss: 0.329682
+best-kappa: 0.8623
+: Epoch: 162 | Training Loss: 0.226305 | Val. Loss: 0.329682 | Val. Kappa Score: 0.8623 | LR: 0.000063 | Estimated time: 57.85
+Train loss on 50 batch: 0.237136
+Train loss on 100 batch: 0.222463
+Train loss on 150 batch: 0.227340
+best-train-loss: 0.230843
+best-valid-loss: 0.335281
+best-kappa: 0.8623
+: Epoch: 163 | Training Loss: 0.230843 | Val. Loss: 0.335281 | Val. Kappa Score: 0.8623 | LR: 0.000063 | Estimated time: 57.14
+Train loss on 50 batch: 0.243361
+Train loss on 100 batch: 0.224025
+Train loss on 150 batch: 0.202085
+best-train-loss: 0.233537
+best-valid-loss: 0.322215
+best-kappa: 0.8624
+: Epoch: 164 | Training Loss: 0.233537 | Val. Loss: 0.322215 | Val. Kappa Score: 0.8624 | LR: 0.000063 | Estimated time: 58.05
+Train loss on 50 batch: 0.222266
+Train loss on 100 batch: 0.239289
+Train loss on 150 batch: 0.226432
+best-train-loss: 0.232805
+best-valid-loss: 0.327676
+best-kappa: 0.8626
+: Epoch: 165 | Training Loss: 0.232805 | Val. Loss: 0.327676 | Val. Kappa Score: 0.8626 | LR: 0.000063 | Estimated time: 58.26
+Train loss on 50 batch: 0.247225
+Train loss on 100 batch: 0.219741
+Train loss on 150 batch: 0.236190
+best-train-loss: 0.240011
+best-valid-loss: 0.329661
+best-kappa: 0.8626
+: Epoch: 166 | Training Loss: 0.240011 | Val. Loss: 0.329661 | Val. Kappa Score: 0.8626 | LR: 0.000063 | Estimated time: 57.59
+Train loss on 50 batch: 0.238002
+Train loss on 100 batch: 0.219770
+Train loss on 150 batch: 0.240384
+best-train-loss: 0.237143
+best-valid-loss: 0.332005
+best-kappa: 0.8627
+: Epoch: 167 | Training Loss: 0.237143 | Val. Loss: 0.332005 | Val. Kappa Score: 0.8627 | LR: 0.000063 | Estimated time: 58.33
+Train loss on 50 batch: 0.222634
+Train loss on 100 batch: 0.260444
+Train loss on 150 batch: 0.239348
+best-train-loss: 0.317172
+best-valid-loss: 0.344362
+best-kappa: 0.8628
+: Epoch: 168 | Training Loss: 0.317172 | Val. Loss: 0.344362 | Val. Kappa Score: 0.8628 | LR: 0.000063 | Estimated time: 57.31
+Train loss on 50 batch: 0.239774
+Train loss on 100 batch: 0.204265
+Train loss on 150 batch: 0.222471
+best-train-loss: 0.241814
+best-valid-loss: 0.332083
+best-kappa: 0.8628
+: Epoch: 169 | Training Loss: 0.241814 | Val. Loss: 0.332083 | Val. Kappa Score: 0.8628 | LR: 0.000063 | Estimated time: 57.73
+Train loss on 50 batch: 0.229395
+Train loss on 100 batch: 0.250604
+Train loss on 150 batch: 0.246844
+best-train-loss: 0.233782
+best-valid-loss: 0.333162
+best-kappa: 0.8629
+: Epoch: 170 | Training Loss: 0.233782 | Val. Loss: 0.333162 | Val. Kappa Score: 0.8629 | LR: 0.000063 | Estimated time: 57.13
+Train loss on 50 batch: 0.234788
+Train loss on 100 batch: 0.229961
+Train loss on 150 batch: 0.221588
+: Epoch: 171 | Training Loss: 0.226012 | Val. Loss: 0.328897 | Val. Kappa Score: 0.8629 | LR: 0.000063 | Estimated time: 57.49
+Train loss on 50 batch: 0.261377
+Train loss on 100 batch: 0.211351
+Train loss on 150 batch: 0.220242
+: Epoch: 172 | Training Loss: 0.236846 | Val. Loss: 0.326785 | Val. Kappa Score: 0.8629 | LR: 0.000063 | Estimated time: 59.29
+Train loss on 50 batch: 0.270477
+Train loss on 100 batch: 0.216653
+Train loss on 150 batch: 0.233453
+best-train-loss: 0.308024
+best-valid-loss: 0.327227
+best-kappa: 0.8630
+: Epoch: 173 | Training Loss: 0.308024 | Val. Loss: 0.327227 | Val. Kappa Score: 0.8630 | LR: 0.000063 | Estimated time: 57.72
+Train loss on 50 batch: 0.222841
+Train loss on 100 batch: 0.205098
+Train loss on 150 batch: 0.256160
+best-train-loss: 0.230786
+best-valid-loss: 0.322566
+best-kappa: 0.8630
+: Epoch: 174 | Training Loss: 0.230786 | Val. Loss: 0.322566 | Val. Kappa Score: 0.8630 | LR: 0.000063 | Estimated time: 58.01
+Train loss on 50 batch: 0.214387
+Train loss on 100 batch: 0.223459
+Train loss on 150 batch: 0.239181
+best-train-loss: 0.232941
+best-valid-loss: 0.326533
+best-kappa: 0.8630
+: Epoch: 175 | Training Loss: 0.232941 | Val. Loss: 0.326533 | Val. Kappa Score: 0.8630 | LR: 0.000063 | Estimated time: 59.17
+Train loss on 50 batch: 0.255600
+Train loss on 100 batch: 0.215492
+Train loss on 150 batch: 0.211899
+best-train-loss: 0.235218
+best-valid-loss: 0.337255
+best-kappa: 0.8631
+: Epoch: 176 | Training Loss: 0.235218 | Val. Loss: 0.337255 | Val. Kappa Score: 0.8631 | LR: 0.000063 | Estimated time: 60.35
+Train loss on 50 batch: 0.200170
+Train loss on 100 batch: 0.233612
+Train loss on 150 batch: 0.203078
+best-train-loss: 0.240316
+best-valid-loss: 0.325344
+best-kappa: 0.8631
+: Epoch: 177 | Training Loss: 0.240316 | Val. Loss: 0.325344 | Val. Kappa Score: 0.8631 | LR: 0.000063 | Estimated time: 58.55
+Train loss on 50 batch: 0.199978
+Train loss on 100 batch: 0.257971
+Train loss on 150 batch: 0.211952
+best-train-loss: 0.223613
+best-valid-loss: 0.320494
+best-kappa: 0.8631
+: Epoch: 178 | Training Loss: 0.223613 | Val. Loss: 0.320494 | Val. Kappa Score: 0.8631 | LR: 0.000063 | Estimated time: 59.39
+Train loss on 50 batch: 0.204599
+Train loss on 100 batch: 0.252208
+Train loss on 150 batch: 0.232408
+best-train-loss: 0.235562
+best-valid-loss: 0.331953
+best-kappa: 0.8632
+: Epoch: 179 | Training Loss: 0.235562 | Val. Loss: 0.331953 | Val. Kappa Score: 0.8632 | LR: 0.000063 | Estimated time: 59.37
+Train loss on 50 batch: 0.243214
+Train loss on 100 batch: 0.235126
+Train loss on 150 batch: 0.210481
+best-train-loss: 0.232754
+best-valid-loss: 0.323404
+best-kappa: 0.8632
+: Epoch: 180 | Training Loss: 0.232754 | Val. Loss: 0.323404 | Val. Kappa Score: 0.8632 | LR: 0.000063 | Estimated time: 59.01
+Train loss on 50 batch: 0.225408
+Train loss on 100 batch: 0.227732
+Train loss on 150 batch: 0.229712
+best-train-loss: 0.225438
+best-valid-loss: 0.332913
+best-kappa: 0.8633
+: Epoch: 181 | Training Loss: 0.225438 | Val. Loss: 0.332913 | Val. Kappa Score: 0.8633 | LR: 0.000063 | Estimated time: 57.71
+----------------------------------------
+
+Experiment N: 157: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b2
+
+
+: 
+date: 2019.08.29 23:30:58
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb96026320>
+early-stopping-patience: 10
+parameters-amount: 7702403
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 157: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b2
+
+
+: 
+date: 2019.08.29 23:31:14
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb51764be0>
+early-stopping-patience: 10
+parameters-amount: 7702403
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 157: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 23:36:45
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f414e0>
+early-stopping-patience: 10
+parameters-amount: 28343265
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+----------------------------------------
+
+Experiment N: 157: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 23:37:12
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f3f588>
+early-stopping-patience: 10
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 1.068099
+Train loss on 100 batch: 0.655748
+Train loss on 150 batch: 0.650533
+best-train-loss: 0.706035
+best-valid-loss: 1.207197
+best-kappa: 0.7812
+: Epoch: 1 | Training Loss: 0.706035 | Val. Loss: 1.207197 | Val. Kappa Score: 0.7812 | LR: 0.001000 | Estimated time: 74.56
+Train loss on 50 batch: 0.452733
+Train loss on 100 batch: 0.501432
+Train loss on 150 batch: 0.452438
+best-train-loss: 0.485425
+best-valid-loss: 0.412135
+best-kappa: 0.8133
+: Epoch: 2 | Training Loss: 0.485425 | Val. Loss: 0.412135 | Val. Kappa Score: 0.8133 | LR: 0.001000 | Estimated time: 73.78
+Train loss on 50 batch: 0.484098
+----------------------------------------
+
+Experiment N: 158: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.29 23:40:19
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f424e0>
+early-stopping-patience: 10
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 1.068099
+Train loss on 100 batch: 0.655748
+Train loss on 150 batch: 0.650533
+best-train-loss: 0.706035
+best-valid-loss: 1.207197
+best-kappa: 0.7812
+: Epoch: 1 | Training Loss: 0.706035 | Val. Loss: 1.207197 | Val. Kappa Score: 0.7812 | LR: 0.001000 | Estimated time: 74.30
+Train loss on 50 batch: 0.452733
+Train loss on 100 batch: 0.501432
+Train loss on 150 batch: 0.452438
+best-train-loss: 0.485425
+best-valid-loss: 0.412135
+best-kappa: 0.8133
+: Epoch: 2 | Training Loss: 0.485425 | Val. Loss: 0.412135 | Val. Kappa Score: 0.8133 | LR: 0.001000 | Estimated time: 73.16
+Train loss on 50 batch: 0.484098
+Train loss on 100 batch: 0.424582
+Train loss on 150 batch: 0.443468
+best-train-loss: 0.438640
+best-valid-loss: 0.388574
+best-kappa: 0.8268
+: Epoch: 3 | Training Loss: 0.438640 | Val. Loss: 0.388574 | Val. Kappa Score: 0.8268 | LR: 0.001000 | Estimated time: 71.39
+Train loss on 50 batch: 0.514322
+Train loss on 100 batch: 0.333417
+Train loss on 150 batch: 0.303562
+: Epoch: 4 | Training Loss: 0.380419 | Val. Loss: 0.529187 | Val. Kappa Score: 0.8188 | LR: 0.001000 | Estimated time: 70.11
+Train loss on 50 batch: 0.376969
+Train loss on 100 batch: 0.355620
+Train loss on 150 batch: 0.343603
+: Epoch: 5 | Training Loss: 0.366293 | Val. Loss: 0.678570 | Val. Kappa Score: 0.7558 | LR: 0.001000 | Estimated time: 71.55
+Train loss on 50 batch: 0.357986
+Train loss on 100 batch: 0.344660
+Train loss on 150 batch: 0.355369
+: Epoch: 6 | Training Loss: 0.366242 | Val. Loss: 0.389217 | Val. Kappa Score: 0.7701 | LR: 0.000500 | Estimated time: 71.63
+Train loss on 50 batch: 0.338957
+Train loss on 100 batch: 0.255443
+Train loss on 150 batch: 0.280333
+best-train-loss: 0.301358
+best-valid-loss: 0.338374
+best-kappa: 0.7842
+: Epoch: 7 | Training Loss: 0.301358 | Val. Loss: 0.338374 | Val. Kappa Score: 0.7842 | LR: 0.000500 | Estimated time: 75.87
+Train loss on 50 batch: 0.228199
+Train loss on 100 batch: 0.280799
+Train loss on 150 batch: 0.248069
+best-train-loss: 0.244069
+best-valid-loss: 0.309465
+best-kappa: 0.7959
+: Epoch: 8 | Training Loss: 0.244069 | Val. Loss: 0.309465 | Val. Kappa Score: 0.7959 | LR: 0.000500 | Estimated time: 71.64
+Train loss on 50 batch: 0.227304
+Train loss on 100 batch: 0.240147
+Train loss on 150 batch: 0.196150
+: Epoch: 9 | Training Loss: 0.230123 | Val. Loss: 0.325984 | Val. Kappa Score: 0.8056 | LR: 0.000500 | Estimated time: 68.90
+Train loss on 50 batch: 0.206397
+Train loss on 100 batch: 0.227922
+Train loss on 150 batch: 0.216540
+best-train-loss: 0.220783
+best-valid-loss: 0.308764
+best-kappa: 0.8135
+: Epoch: 10 | Training Loss: 0.220783 | Val. Loss: 0.308764 | Val. Kappa Score: 0.8135 | LR: 0.000500 | Estimated time: 69.58
+Train loss on 50 batch: 0.226865
+Train loss on 100 batch: 0.214684
+Train loss on 150 batch: 0.245497
+: Epoch: 11 | Training Loss: 0.235338 | Val. Loss: 0.358245 | Val. Kappa Score: 0.8180 | LR: 0.000500 | Estimated time: 74.14
+Train loss on 50 batch: 0.223407
+Train loss on 100 batch: 0.202577
+Train loss on 150 batch: 0.192876
+: Epoch: 12 | Training Loss: 0.204779 | Val. Loss: 0.330299 | Val. Kappa Score: 0.8226 | LR: 0.000500 | Estimated time: 71.87
+Train loss on 50 batch: 0.203150
+Train loss on 100 batch: 0.216784
+Train loss on 150 batch: 0.218981
+: Epoch: 13 | Training Loss: 0.204038 | Val. Loss: 0.310554 | Val. Kappa Score: 0.8275 | LR: 0.000250 | Estimated time: 73.22
+Train loss on 50 batch: 0.164381
+Train loss on 100 batch: 0.180758
+Train loss on 150 batch: 0.182029
+best-train-loss: 0.178281
+best-valid-loss: 0.266098
+best-kappa: 0.8320
+: Epoch: 14 | Training Loss: 0.178281 | Val. Loss: 0.266098 | Val. Kappa Score: 0.8320 | LR: 0.000250 | Estimated time: 73.35
+Train loss on 50 batch: 0.179513
+Train loss on 100 batch: 0.151806
+Train loss on 150 batch: 0.164144
+: Epoch: 15 | Training Loss: 0.163001 | Val. Loss: 0.266331 | Val. Kappa Score: 0.8360 | LR: 0.000250 | Estimated time: 71.59
+Train loss on 50 batch: 0.140049
+Train loss on 100 batch: 0.139929
+Train loss on 150 batch: 0.177480
+: Epoch: 16 | Training Loss: 0.169331 | Val. Loss: 0.296195 | Val. Kappa Score: 0.8393 | LR: 0.000250 | Estimated time: 69.00
+Train loss on 50 batch: 0.149416
+Train loss on 100 batch: 0.124113
+Train loss on 150 batch: 0.163972
+: Epoch: 17 | Training Loss: 0.154524 | Val. Loss: 0.290155 | Val. Kappa Score: 0.8430 | LR: 0.000125 | Estimated time: 71.63
+Train loss on 50 batch: 0.134215
+Train loss on 100 batch: 0.106010
+Train loss on 150 batch: 0.141328
+: Epoch: 18 | Training Loss: 0.125852 | Val. Loss: 0.275657 | Val. Kappa Score: 0.8461 | LR: 0.000125 | Estimated time: 72.27
+Train loss on 50 batch: 0.108612
+Train loss on 100 batch: 0.111642
+Train loss on 150 batch: 0.118227
+: Epoch: 19 | Training Loss: 0.115860 | Val. Loss: 0.288809 | Val. Kappa Score: 0.8480 | LR: 0.000125 | Estimated time: 72.52
+Train loss on 50 batch: 0.100703
+Train loss on 100 batch: 0.108303
+Train loss on 150 batch: 0.119522
+: Epoch: 20 | Training Loss: 0.108743 | Val. Loss: 0.285285 | Val. Kappa Score: 0.8502 | LR: 0.000063 | Estimated time: 72.01
+Train loss on 50 batch: 0.086366
+Train loss on 100 batch: 0.096166
+Train loss on 150 batch: 0.099590
+: Epoch: 21 | Training Loss: 0.104817 | Val. Loss: 0.279555 | Val. Kappa Score: 0.8522 | LR: 0.000063 | Estimated time: 70.27
+Train loss on 50 batch: 0.095037
+Train loss on 100 batch: 0.088866
+Train loss on 150 batch: 0.085982
+: Epoch: 22 | Training Loss: 0.094105 | Val. Loss: 0.288022 | Val. Kappa Score: 0.8538 | LR: 0.000063 | Estimated time: 69.74
+Train loss on 50 batch: 0.077394
+Train loss on 100 batch: 0.088190
+Train loss on 150 batch: 0.099546
+: Epoch: 23 | Training Loss: 0.092554 | Val. Loss: 0.292513 | Val. Kappa Score: 0.8551 | LR: 0.000031 | Estimated time: 69.60
+Train loss on 50 batch: 0.077319
+Train loss on 100 batch: 0.082204
+Train loss on 150 batch: 0.089422
+: Epoch: 24 | Training Loss: 0.093985 | Val. Loss: 0.280739 | Val. Kappa Score: 0.8567 | LR: 0.000031 | Estimated time: 69.28
+time_estimated: 1720.36
+n-epochs: 24
+time_estimated: 1720.42
+----------------------------------------
+
+Experiment N: 159: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b1
+
+
+: 
+date: 2019.08.30 08:16:56
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb96026278>
+early-stopping-patience: 10
+parameters-amount: 6514465
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 0.660119
+Train loss on 100 batch: 0.549684
+Train loss on 150 batch: 0.494282
+best-train-loss: 0.551253
+best-valid-loss: 0.557491
+best-kappa: 0.7862
+: Epoch: 1 | Training Loss: 0.551253 | Val. Loss: 0.557491 | Val. Kappa Score: 0.7862 | LR: 0.001000 | Estimated time: 56.15
+Train loss on 50 batch: 0.463487
+Train loss on 100 batch: 0.464903
+Train loss on 150 batch: 0.401290
+: Epoch: 2 | Training Loss: 0.486215 | Val. Loss: 0.684169 | Val. Kappa Score: 0.7557 | LR: 0.001000 | Estimated time: 57.84
+Train loss on 50 batch: 0.517190
+Train loss on 100 batch: 0.447374
+Train loss on 150 batch: 0.492520
+best-train-loss: 0.472071
+best-valid-loss: 0.455969
+best-kappa: 0.7764
+: Epoch: 3 | Training Loss: 0.472071 | Val. Loss: 0.455969 | Val. Kappa Score: 0.7764 | LR: 0.001000 | Estimated time: 57.29
+Train loss on 50 batch: 0.423503
+Train loss on 100 batch: 0.451616
+Train loss on 150 batch: 0.407990
+best-train-loss: 0.534670
+best-valid-loss: 0.448005
+best-kappa: 0.7903
+: Epoch: 4 | Training Loss: 0.534670 | Val. Loss: 0.448005 | Val. Kappa Score: 0.7903 | LR: 0.001000 | Estimated time: 57.27
+Train loss on 50 batch: 0.419824
+Train loss on 100 batch: 0.493086
+Train loss on 150 batch: 0.380384
+: Epoch: 5 | Training Loss: 0.416968 | Val. Loss: 0.544054 | Val. Kappa Score: 0.7884 | LR: 0.001000 | Estimated time: 58.20
+Train loss on 50 batch: 0.379182
+Train loss on 100 batch: 0.375675
+Train loss on 150 batch: 0.382986
+best-train-loss: 0.369929
+best-valid-loss: 0.446854
+best-kappa: 0.7940
+: Epoch: 6 | Training Loss: 0.369929 | Val. Loss: 0.446854 | Val. Kappa Score: 0.7940 | LR: 0.001000 | Estimated time: 57.67
+Train loss on 50 batch: 0.416028
+Train loss on 100 batch: 0.365910
+Train loss on 150 batch: 0.389658
+best-train-loss: 0.395237
+best-valid-loss: 0.439947
+best-kappa: 0.8023
+: Epoch: 7 | Training Loss: 0.395237 | Val. Loss: 0.439947 | Val. Kappa Score: 0.8023 | LR: 0.001000 | Estimated time: 57.75
+Train loss on 50 batch: 0.311768
+Train loss on 100 batch: 0.410966
+Train loss on 150 batch: 0.354106
+best-train-loss: 0.378137
+best-valid-loss: 0.408229
+best-kappa: 0.8066
+: Epoch: 8 | Training Loss: 0.378137 | Val. Loss: 0.408229 | Val. Kappa Score: 0.8066 | LR: 0.001000 | Estimated time: 56.87
+Train loss on 50 batch: 0.394451
+Train loss on 100 batch: 0.418102
+Train loss on 150 batch: 0.387331
+best-train-loss: 0.387570
+best-valid-loss: 0.391523
+best-kappa: 0.8122
+: Epoch: 9 | Training Loss: 0.387570 | Val. Loss: 0.391523 | Val. Kappa Score: 0.8122 | LR: 0.001000 | Estimated time: 57.58
+Train loss on 50 batch: 0.336352
+Train loss on 100 batch: 0.382711
+Train loss on 150 batch: 0.329226
+best-train-loss: 0.453756
+best-valid-loss: 0.381310
+best-kappa: 0.8159
+: Epoch: 10 | Training Loss: 0.453756 | Val. Loss: 0.381310 | Val. Kappa Score: 0.8159 | LR: 0.001000 | Estimated time: 57.35
+Train loss on 50 batch: 0.368168
+Train loss on 100 batch: 0.350747
+Train loss on 150 batch: 0.389197
+best-train-loss: 0.372025
+best-valid-loss: 0.368784
+best-kappa: 0.8199
+: Epoch: 11 | Training Loss: 0.372025 | Val. Loss: 0.368784 | Val. Kappa Score: 0.8199 | LR: 0.001000 | Estimated time: 56.95
+Train loss on 50 batch: 0.315197
+Train loss on 100 batch: 0.346526
+Train loss on 150 batch: 0.372719
+: Epoch: 12 | Training Loss: 0.349718 | Val. Loss: 0.374800 | Val. Kappa Score: 0.8215 | LR: 0.001000 | Estimated time: 56.80
+Train loss on 50 batch: 0.324509
+Train loss on 100 batch: 0.369760
+Train loss on 150 batch: 0.343373
+: Epoch: 13 | Training Loss: 0.351229 | Val. Loss: 0.421054 | Val. Kappa Score: 0.8251 | LR: 0.001000 | Estimated time: 57.91
+Train loss on 50 batch: 0.329356
+Train loss on 100 batch: 0.331137
+Train loss on 150 batch: 0.362076
+best-train-loss: 0.346518
+best-valid-loss: 0.322152
+best-kappa: 0.8290
+: Epoch: 14 | Training Loss: 0.346518 | Val. Loss: 0.322152 | Val. Kappa Score: 0.8290 | LR: 0.001000 | Estimated time: 57.92
+Train loss on 50 batch: 0.356392
+Train loss on 100 batch: 0.339673
+Train loss on 150 batch: 0.325344
+: Epoch: 15 | Training Loss: 0.370660 | Val. Loss: 0.436137 | Val. Kappa Score: 0.8302 | LR: 0.001000 | Estimated time: 56.88
+Train loss on 50 batch: 0.383687
+Train loss on 100 batch: 0.300231
+Train loss on 150 batch: 0.322129
+: Epoch: 16 | Training Loss: 0.345335 | Val. Loss: 0.388814 | Val. Kappa Score: 0.8315 | LR: 0.001000 | Estimated time: 57.33
+Train loss on 50 batch: 0.398610
+Train loss on 100 batch: 0.344850
+Train loss on 150 batch: 0.284903
+: Epoch: 17 | Training Loss: 0.341202 | Val. Loss: 0.338900 | Val. Kappa Score: 0.8336 | LR: 0.000500 | Estimated time: 57.28
+Train loss on 50 batch: 0.334474
+Train loss on 100 batch: 0.273387
+Train loss on 150 batch: 0.301628
+: Epoch: 18 | Training Loss: 0.307954 | Val. Loss: 0.326618 | Val. Kappa Score: 0.8354 | LR: 0.000500 | Estimated time: 56.57
+Train loss on 50 batch: 0.286054
+Train loss on 100 batch: 0.321440
+Train loss on 150 batch: 0.345079
+: Epoch: 19 | Training Loss: 0.322011 | Val. Loss: 0.347159 | Val. Kappa Score: 0.8372 | LR: 0.000500 | Estimated time: 57.62
+Train loss on 50 batch: 0.338050
+Train loss on 100 batch: 0.307020
+Train loss on 150 batch: 0.265475
+: Epoch: 20 | Training Loss: 0.292698 | Val. Loss: 0.326616 | Val. Kappa Score: 0.8391 | LR: 0.000250 | Estimated time: 57.05
+Train loss on 50 batch: 0.303020
+Train loss on 100 batch: 0.260440
+Train loss on 150 batch: 0.311518
+: Epoch: 21 | Training Loss: 0.339249 | Val. Loss: 0.324778 | Val. Kappa Score: 0.8409 | LR: 0.000250 | Estimated time: 56.68
+Train loss on 50 batch: 0.291866
+Train loss on 100 batch: 0.285225
+Train loss on 150 batch: 0.311469
+: Epoch: 22 | Training Loss: 0.294376 | Val. Loss: 0.327006 | Val. Kappa Score: 0.8423 | LR: 0.000250 | Estimated time: 57.43
+Train loss on 50 batch: 0.282562
+Train loss on 100 batch: 0.296419
+Train loss on 150 batch: 0.282814
+: Epoch: 23 | Training Loss: 0.310194 | Val. Loss: 0.338166 | Val. Kappa Score: 0.8440 | LR: 0.000125 | Estimated time: 57.53
+Train loss on 50 batch: 0.305981
+Train loss on 100 batch: 0.304288
+Train loss on 150 batch: 0.261851
+best-train-loss: 0.376866
+best-valid-loss: 0.321751
+best-kappa: 0.8453
+: Epoch: 24 | Training Loss: 0.376866 | Val. Loss: 0.321751 | Val. Kappa Score: 0.8453 | LR: 0.000125 | Estimated time: 57.75
+Train loss on 50 batch: 0.276350
+Train loss on 100 batch: 0.266674
+Train loss on 150 batch: 0.313152
+: Epoch: 25 | Training Loss: 0.284456 | Val. Loss: 0.330211 | Val. Kappa Score: 0.8462 | LR: 0.000125 | Estimated time: 56.81
+Train loss on 50 batch: 0.281893
+Train loss on 100 batch: 0.227794
+Train loss on 150 batch: 0.300828
+: Epoch: 26 | Training Loss: 0.325605 | Val. Loss: 0.324578 | Val. Kappa Score: 0.8470 | LR: 0.000125 | Estimated time: 57.11
+Train loss on 50 batch: 0.281955
+Train loss on 100 batch: 0.314681
+Train loss on 150 batch: 0.278367
+best-train-loss: 0.312067
+best-valid-loss: 0.320604
+best-kappa: 0.8481
+: Epoch: 27 | Training Loss: 0.312067 | Val. Loss: 0.320604 | Val. Kappa Score: 0.8481 | LR: 0.000125 | Estimated time: 57.65
+Train loss on 50 batch: 0.295170
+Train loss on 100 batch: 0.288352
+Train loss on 150 batch: 0.253895
+: Epoch: 28 | Training Loss: 0.295145 | Val. Loss: 0.321219 | Val. Kappa Score: 0.8485 | LR: 0.000125 | Estimated time: 57.28
+Train loss on 50 batch: 0.249198
+Train loss on 100 batch: 0.298242
+Train loss on 150 batch: 0.288127
+best-train-loss: 0.299663
+best-valid-loss: 0.314548
+best-kappa: 0.8495
+: Epoch: 29 | Training Loss: 0.299663 | Val. Loss: 0.314548 | Val. Kappa Score: 0.8495 | LR: 0.000125 | Estimated time: 56.90
+Train loss on 50 batch: 0.274084
+Train loss on 100 batch: 0.258476
+Train loss on 150 batch: 0.293029
+: Epoch: 30 | Training Loss: 0.284255 | Val. Loss: 0.319208 | Val. Kappa Score: 0.8504 | LR: 0.000125 | Estimated time: 57.04
+Train loss on 50 batch: 0.250189
+Train loss on 100 batch: 0.289348
+Train loss on 150 batch: 0.280874
+best-train-loss: 0.283695
+best-valid-loss: 0.309899
+best-kappa: 0.8512
+: Epoch: 31 | Training Loss: 0.283695 | Val. Loss: 0.309899 | Val. Kappa Score: 0.8512 | LR: 0.000125 | Estimated time: 58.47
+Train loss on 50 batch: 0.261010
+Train loss on 100 batch: 0.322416
+Train loss on 150 batch: 0.252453
+: Epoch: 32 | Training Loss: 0.274947 | Val. Loss: 0.325306 | Val. Kappa Score: 0.8522 | LR: 0.000125 | Estimated time: 57.17
+Train loss on 50 batch: 0.281054
+Train loss on 100 batch: 0.272534
+Train loss on 150 batch: 0.257815
+: Epoch: 33 | Training Loss: 0.280908 | Val. Loss: 0.319030 | Val. Kappa Score: 0.8531 | LR: 0.000125 | Estimated time: 57.51
+Train loss on 50 batch: 0.260360
+Train loss on 100 batch: 0.284487
+Train loss on 150 batch: 0.295417
+: Epoch: 34 | Training Loss: 0.272041 | Val. Loss: 0.316898 | Val. Kappa Score: 0.8536 | LR: 0.000063 | Estimated time: 57.03
+Train loss on 50 batch: 0.270084
+Train loss on 100 batch: 0.295063
+Train loss on 150 batch: 0.278898
+: Epoch: 35 | Training Loss: 0.297100 | Val. Loss: 0.315141 | Val. Kappa Score: 0.8540 | LR: 0.000063 | Estimated time: 57.19
+Train loss on 50 batch: 0.231428
+Train loss on 100 batch: 0.280095
+Train loss on 150 batch: 0.254683
+best-train-loss: 0.271152
+best-valid-loss: 0.307440
+best-kappa: 0.8546
+: Epoch: 36 | Training Loss: 0.271152 | Val. Loss: 0.307440 | Val. Kappa Score: 0.8546 | LR: 0.000063 | Estimated time: 56.81
+Train loss on 50 batch: 0.276381
+Train loss on 100 batch: 0.266016
+Train loss on 150 batch: 0.266903
+: Epoch: 37 | Training Loss: 0.290188 | Val. Loss: 0.308565 | Val. Kappa Score: 0.8549 | LR: 0.000063 | Estimated time: 56.70
+Train loss on 50 batch: 0.251804
+Train loss on 100 batch: 0.257966
+Train loss on 150 batch: 0.277462
+best-train-loss: 0.358956
+best-valid-loss: 0.306781
+best-kappa: 0.8556
+: Epoch: 38 | Training Loss: 0.358956 | Val. Loss: 0.306781 | Val. Kappa Score: 0.8556 | LR: 0.000063 | Estimated time: 56.97
+Train loss on 50 batch: 0.288485
+Train loss on 100 batch: 0.242556
+Train loss on 150 batch: 0.275759
+: Epoch: 39 | Training Loss: 0.293103 | Val. Loss: 0.306881 | Val. Kappa Score: 0.8559 | LR: 0.000063 | Estimated time: 57.76
+Train loss on 50 batch: 0.275348
+Train loss on 100 batch: 0.259615
+Train loss on 150 batch: 0.287378
+: Epoch: 40 | Training Loss: 0.282965 | Val. Loss: 0.306914 | Val. Kappa Score: 0.8564 | LR: 0.000063 | Estimated time: 58.03
+Train loss on 50 batch: 0.257191
+Train loss on 100 batch: 0.285505
+Train loss on 150 batch: 0.271707
+: Epoch: 41 | Training Loss: 0.267968 | Val. Loss: 0.311245 | Val. Kappa Score: 0.8572 | LR: 0.000031 | Estimated time: 57.29
+Train loss on 50 batch: 0.294432
+Train loss on 100 batch: 0.240519
+Train loss on 150 batch: 0.272600
+: Epoch: 42 | Training Loss: 0.267910 | Val. Loss: 0.306834 | Val. Kappa Score: 0.8577 | LR: 0.000031 | Estimated time: 57.17
+Train loss on 50 batch: 0.249718
+Train loss on 100 batch: 0.270939
+Train loss on 150 batch: 0.239702
+best-train-loss: 0.267099
+best-valid-loss: 0.303687
+best-kappa: 0.8584
+: Epoch: 43 | Training Loss: 0.267099 | Val. Loss: 0.303687 | Val. Kappa Score: 0.8584 | LR: 0.000031 | Estimated time: 56.21
+Train loss on 50 batch: 0.253391
+Train loss on 100 batch: 0.255109
+Train loss on 150 batch: 0.296204
+: Epoch: 44 | Training Loss: 0.259282 | Val. Loss: 0.307379 | Val. Kappa Score: 0.8588 | LR: 0.000031 | Estimated time: 56.98
+Train loss on 50 batch: 0.274885
+Train loss on 100 batch: 0.238912
+Train loss on 150 batch: 0.286338
+: Epoch: 45 | Training Loss: 0.261457 | Val. Loss: 0.305890 | Val. Kappa Score: 0.8595 | LR: 0.000031 | Estimated time: 57.01
+Train loss on 50 batch: 0.276450
+Train loss on 100 batch: 0.263494
+Train loss on 150 batch: 0.269864
+: Epoch: 46 | Training Loss: 0.284250 | Val. Loss: 0.306583 | Val. Kappa Score: 0.8599 | LR: 0.000016 | Estimated time: 57.24
+Train loss on 50 batch: 0.291903
+Train loss on 100 batch: 0.239227
+Train loss on 150 batch: 0.250624
+: Epoch: 47 | Training Loss: 0.272224 | Val. Loss: 0.307010 | Val. Kappa Score: 0.8604 | LR: 0.000016 | Estimated time: 56.95
+Train loss on 50 batch: 0.251071
+Train loss on 100 batch: 0.275568
+Train loss on 150 batch: 0.255264
+: Epoch: 48 | Training Loss: 0.267881 | Val. Loss: 0.306189 | Val. Kappa Score: 0.8607 | LR: 0.000016 | Estimated time: 57.36
+Train loss on 50 batch: 0.238912
+Train loss on 100 batch: 0.288343
+Train loss on 150 batch: 0.243653
+: Epoch: 49 | Training Loss: 0.276952 | Val. Loss: 0.306166 | Val. Kappa Score: 0.8611 | LR: 0.000008 | Estimated time: 57.24
+Train loss on 50 batch: 0.244847
+Train loss on 100 batch: 0.261478
+Train loss on 150 batch: 0.288669
+: Epoch: 50 | Training Loss: 0.257487 | Val. Loss: 0.304698 | Val. Kappa Score: 0.8616 | LR: 0.000008 | Estimated time: 57.92
+Train loss on 50 batch: 0.254704
+Train loss on 100 batch: 0.317077
+Train loss on 150 batch: 0.249453
+: Epoch: 51 | Training Loss: 0.277462 | Val. Loss: 0.308043 | Val. Kappa Score: 0.8621 | LR: 0.000008 | Estimated time: 56.85
+Train loss on 50 batch: 0.270808
+Train loss on 100 batch: 0.258960
+Train loss on 150 batch: 0.283923
+: Epoch: 52 | Training Loss: 0.270749 | Val. Loss: 0.308923 | Val. Kappa Score: 0.8623 | LR: 0.000004 | Estimated time: 57.39
+Train loss on 50 batch: 0.308777
+Train loss on 100 batch: 0.236128
+Train loss on 150 batch: 0.263577
+: Epoch: 53 | Training Loss: 0.291103 | Val. Loss: 0.307501 | Val. Kappa Score: 0.8628 | LR: 0.000004 | Estimated time: 56.95
+time_estimated: 3037.82
+n-epochs: 53
+time_estimated: 3037.87
+----------------------------------------
+
+Experiment N: 160: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.30 22:32:41
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f3e5c0>
+early-stopping-patience: 10
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 0.508491
+Train loss on 100 batch: 0.360112
+Train loss on 150 batch: 0.388027
+best-train-loss: 0.397615
+best-valid-loss: 0.387942
+best-kappa: 0.8638
+: Epoch: 1 | Training Loss: 0.397615 | Val. Loss: 0.387942 | Val. Kappa Score: 0.8638 | LR: 0.001000 | Estimated time: 70.47
+Train loss on 50 batch: 0.310000
+Train loss on 100 batch: 0.344806
+Train loss on 150 batch: 0.280530
+best-train-loss: 0.341408
+best-valid-loss: 0.339125
+best-kappa: 0.8666
+: Epoch: 2 | Training Loss: 0.341408 | Val. Loss: 0.339125 | Val. Kappa Score: 0.8666 | LR: 0.001000 | Estimated time: 70.04
+Train loss on 50 batch: 0.330134
+Train loss on 100 batch: 0.301625
+Train loss on 150 batch: 0.312627
+best-train-loss: 0.302103
+best-valid-loss: 0.333899
+best-kappa: 0.8680
+: Epoch: 3 | Training Loss: 0.302103 | Val. Loss: 0.333899 | Val. Kappa Score: 0.8680 | LR: 0.001000 | Estimated time: 69.91
+Train loss on 50 batch: 0.340022
+Train loss on 100 batch: 0.325260
+Train loss on 150 batch: 0.290864
+: Epoch: 4 | Training Loss: 0.384624 | Val. Loss: 0.396011 | Val. Kappa Score: 0.8650 | LR: 0.001000 | Estimated time: 69.65
+Train loss on 50 batch: 0.348556
+Train loss on 100 batch: 0.362903
+Train loss on 150 batch: 0.267094
+: Epoch: 5 | Training Loss: 0.326268 | Val. Loss: 0.357249 | Val. Kappa Score: 0.8650 | LR: 0.001000 | Estimated time: 69.64
+Train loss on 50 batch: 0.306911
+Train loss on 100 batch: 0.321481
+Train loss on 150 batch: 0.263875
+: Epoch: 6 | Training Loss: 0.280486 | Val. Loss: 0.454233 | Val. Kappa Score: 0.8578 | LR: 0.000500 | Estimated time: 69.92
+Train loss on 50 batch: 0.280239
+Train loss on 100 batch: 0.253872
+Train loss on 150 batch: 0.248866
+best-train-loss: 0.260508
+best-valid-loss: 0.315693
+best-kappa: 0.8608
+: Epoch: 7 | Training Loss: 0.260508 | Val. Loss: 0.315693 | Val. Kappa Score: 0.8608 | LR: 0.000500 | Estimated time: 70.05
+Train loss on 50 batch: 0.223714
+Train loss on 100 batch: 0.285031
+Train loss on 150 batch: 0.220636
+: Epoch: 8 | Training Loss: 0.264610 | Val. Loss: 0.341267 | Val. Kappa Score: 0.8628 | LR: 0.000500 | Estimated time: 69.77
+Train loss on 50 batch: 0.247196
+Train loss on 100 batch: 0.287688
+Train loss on 150 batch: 0.237368
+best-train-loss: 0.263291
+best-valid-loss: 0.298566
+best-kappa: 0.8650
+: Epoch: 9 | Training Loss: 0.263291 | Val. Loss: 0.298566 | Val. Kappa Score: 0.8650 | LR: 0.000500 | Estimated time: 70.39
+Train loss on 50 batch: 0.229288
+Train loss on 100 batch: 0.249875
+Train loss on 150 batch: 0.258114
+: Epoch: 10 | Training Loss: 0.308603 | Val. Loss: 0.330820 | Val. Kappa Score: 0.8650 | LR: 0.000500 | Estimated time: 69.60
+Train loss on 50 batch: 0.257432
+Train loss on 100 batch: 0.273438
+Train loss on 150 batch: 0.250509
+: Epoch: 11 | Training Loss: 0.266271 | Val. Loss: 0.327352 | Val. Kappa Score: 0.8665 | LR: 0.000500 | Estimated time: 71.17
+Train loss on 50 batch: 0.217768
+Train loss on 100 batch: 0.225660
+Train loss on 150 batch: 0.242959
+: Epoch: 12 | Training Loss: 0.231582 | Val. Loss: 0.363535 | Val. Kappa Score: 0.8668 | LR: 0.000250 | Estimated time: 71.12
+Train loss on 50 batch: 0.231914
+Train loss on 100 batch: 0.251116
+Train loss on 150 batch: 0.198611
+best-train-loss: 0.229699
+best-valid-loss: 0.288540
+best-kappa: 0.8687
+: Epoch: 13 | Training Loss: 0.229699 | Val. Loss: 0.288540 | Val. Kappa Score: 0.8687 | LR: 0.000250 | Estimated time: 70.82
+Train loss on 50 batch: 0.207323
+Train loss on 100 batch: 0.201212
+Train loss on 150 batch: 0.230298
+best-train-loss: 0.215580
+best-valid-loss: 0.279381
+best-kappa: 0.8694
+: Epoch: 14 | Training Loss: 0.215580 | Val. Loss: 0.279381 | Val. Kappa Score: 0.8694 | LR: 0.000250 | Estimated time: 70.96
+Train loss on 50 batch: 0.228864
+Train loss on 100 batch: 0.221763
+Train loss on 150 batch: 0.216313
+: Epoch: 15 | Training Loss: 0.218925 | Val. Loss: 0.354032 | Val. Kappa Score: 0.8703 | LR: 0.000250 | Estimated time: 70.38
+Train loss on 50 batch: 0.217454
+Train loss on 100 batch: 0.191326
+Train loss on 150 batch: 0.213354
+: Epoch: 16 | Training Loss: 0.210900 | Val. Loss: 0.324624 | Val. Kappa Score: 0.8708 | LR: 0.000250 | Estimated time: 70.63
+Train loss on 50 batch: 0.233697
+Train loss on 100 batch: 0.220094
+Train loss on 150 batch: 0.173124
+: Epoch: 17 | Training Loss: 0.205174 | Val. Loss: 0.288832 | Val. Kappa Score: 0.8715 | LR: 0.000125 | Estimated time: 70.42
+Train loss on 50 batch: 0.200934
+Train loss on 100 batch: 0.163692
+Train loss on 150 batch: 0.221533
+: Epoch: 18 | Training Loss: 0.200233 | Val. Loss: 0.281443 | Val. Kappa Score: 0.8724 | LR: 0.000125 | Estimated time: 70.55
+Train loss on 50 batch: 0.189494
+Train loss on 100 batch: 0.178057
+Train loss on 150 batch: 0.196480
+: Epoch: 19 | Training Loss: 0.206602 | Val. Loss: 0.280833 | Val. Kappa Score: 0.8736 | LR: 0.000125 | Estimated time: 71.60
+Train loss on 50 batch: 0.188943
+Train loss on 100 batch: 0.226451
+Train loss on 150 batch: 0.173890
+: Epoch: 20 | Training Loss: 0.191468 | Val. Loss: 0.285745 | Val. Kappa Score: 0.8741 | LR: 0.000063 | Estimated time: 70.88
+Train loss on 50 batch: 0.200311
+Train loss on 100 batch: 0.199155
+Train loss on 150 batch: 0.194710
+: Epoch: 21 | Training Loss: 0.223462 | Val. Loss: 0.283764 | Val. Kappa Score: 0.8749 | LR: 0.000063 | Estimated time: 69.92
+Train loss on 50 batch: 0.193036
+Train loss on 100 batch: 0.201361
+Train loss on 150 batch: 0.208509
+: Epoch: 22 | Training Loss: 0.197399 | Val. Loss: 0.283658 | Val. Kappa Score: 0.8758 | LR: 0.000063 | Estimated time: 70.58
+Train loss on 50 batch: 0.207167
+Train loss on 100 batch: 0.194444
+Train loss on 150 batch: 0.187188
+: Epoch: 23 | Training Loss: 0.197952 | Val. Loss: 0.280109 | Val. Kappa Score: 0.8762 | LR: 0.000031 | Estimated time: 70.27
+Train loss on 50 batch: 0.187065
+Train loss on 100 batch: 0.193348
+Train loss on 150 batch: 0.181167
+: Epoch: 24 | Training Loss: 0.253751 | Val. Loss: 0.279552 | Val. Kappa Score: 0.8768 | LR: 0.000031 | Estimated time: 70.52
+time_estimated: 1690.98
+n-epochs: 24
+time_estimated: 1691.04
+----------------------------------------
+
+Experiment N: 161: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.31 05:37:36
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f3f518>
+early-stopping-patience: 10
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 0.518505
+Train loss on 100 batch: 0.409882
+Train loss on 150 batch: 0.370715
+best-train-loss: 0.404351
+best-valid-loss: 0.405460
+best-kappa: 0.8544
+: Epoch: 1 | Training Loss: 0.404351 | Val. Loss: 0.405460 | Val. Kappa Score: 0.8544 | LR: 0.001000 | Estimated time: 70.62
+Train loss on 50 batch: 0.358028
+Train loss on 100 batch: 0.346044
+Train loss on 150 batch: 0.308112
+best-train-loss: 0.370735
+best-valid-loss: 0.340830
+best-kappa: 0.8631
+: Epoch: 2 | Training Loss: 0.370735 | Val. Loss: 0.340830 | Val. Kappa Score: 0.8631 | LR: 0.001000 | Estimated time: 69.46
+Train loss on 50 batch: 0.329481
+Train loss on 100 batch: 0.350965
+Train loss on 150 batch: 0.334896
+best-train-loss: 0.329613
+best-valid-loss: 0.329778
+best-kappa: 0.8649
+: Epoch: 3 | Training Loss: 0.329613 | Val. Loss: 0.329778 | Val. Kappa Score: 0.8649 | LR: 0.001000 | Estimated time: 69.85
+Train loss on 50 batch: 0.354855
+Train loss on 100 batch: 0.343670
+Train loss on 150 batch: 0.304898
+: Epoch: 4 | Training Loss: 0.392458 | Val. Loss: 0.377454 | Val. Kappa Score: 0.8637 | LR: 0.001000 | Estimated time: 69.28
+Train loss on 50 batch: 0.374409
+Train loss on 100 batch: 0.377319
+Train loss on 150 batch: 0.271608
+: Epoch: 5 | Training Loss: 0.339118 | Val. Loss: 0.411270 | Val. Kappa Score: 0.8619 | LR: 0.001000 | Estimated time: 69.87
+Train loss on 50 batch: 0.320198
+Train loss on 100 batch: 0.287264
+Train loss on 150 batch: 0.283902
+: Epoch: 6 | Training Loss: 0.277461 | Val. Loss: 0.382265 | Val. Kappa Score: 0.8595 | LR: 0.000500 | Estimated time: 69.96
+Train loss on 50 batch: 0.289668
+Train loss on 100 batch: 0.278254
+Train loss on 150 batch: 0.250273
+best-train-loss: 0.273911
+best-valid-loss: 0.291287
+best-kappa: 0.8644
+: Epoch: 7 | Training Loss: 0.273911 | Val. Loss: 0.291287 | Val. Kappa Score: 0.8644 | LR: 0.000500 | Estimated time: 70.06
+Train loss on 50 batch: 0.245302
+Train loss on 100 batch: 0.289438
+Train loss on 150 batch: 0.224472
+: Epoch: 8 | Training Loss: 0.272375 | Val. Loss: 0.321686 | Val. Kappa Score: 0.8663 | LR: 0.000500 | Estimated time: 69.12
+Train loss on 50 batch: 0.259178
+Train loss on 100 batch: 0.288361
+Train loss on 150 batch: 0.254095
+: Epoch: 9 | Training Loss: 0.270243 | Val. Loss: 0.307222 | Val. Kappa Score: 0.8680 | LR: 0.000500 | Estimated time: 70.01
+Train loss on 50 batch: 0.253700
+Train loss on 100 batch: 0.263653
+Train loss on 150 batch: 0.279320
+: Epoch: 10 | Training Loss: 0.325237 | Val. Loss: 0.299613 | Val. Kappa Score: 0.8686 | LR: 0.000250 | Estimated time: 70.32
+Train loss on 50 batch: 0.259119
+Train loss on 100 batch: 0.247943
+Train loss on 150 batch: 0.227010
+: Epoch: 11 | Training Loss: 0.250885 | Val. Loss: 0.294286 | Val. Kappa Score: 0.8697 | LR: 0.000250 | Estimated time: 69.84
+Train loss on 50 batch: 0.234870
+Train loss on 100 batch: 0.200011
+Train loss on 150 batch: 0.254122
+: Epoch: 12 | Training Loss: 0.225314 | Val. Loss: 0.301588 | Val. Kappa Score: 0.8707 | LR: 0.000250 | Estimated time: 70.06
+Train loss on 50 batch: 0.211530
+Train loss on 100 batch: 0.287304
+Train loss on 150 batch: 0.221666
+: Epoch: 13 | Training Loss: 0.244296 | Val. Loss: 0.301609 | Val. Kappa Score: 0.8720 | LR: 0.000125 | Estimated time: 70.23
+Train loss on 50 batch: 0.210762
+Train loss on 100 batch: 0.210092
+Train loss on 150 batch: 0.223938
+best-train-loss: 0.211811
+best-valid-loss: 0.286808
+best-kappa: 0.8720
+: Epoch: 14 | Training Loss: 0.211811 | Val. Loss: 0.286808 | Val. Kappa Score: 0.8720 | LR: 0.000125 | Estimated time: 70.07
+Train loss on 50 batch: 0.220941
+Train loss on 100 batch: 0.200767
+Train loss on 150 batch: 0.234710
+best-train-loss: 0.225187
+best-valid-loss: 0.285344
+best-kappa: 0.8731
+: Epoch: 15 | Training Loss: 0.225187 | Val. Loss: 0.285344 | Val. Kappa Score: 0.8731 | LR: 0.000125 | Estimated time: 69.42
+Train loss on 50 batch: 0.207311
+Train loss on 100 batch: 0.180313
+Train loss on 150 batch: 0.213008
+best-train-loss: 0.207343
+best-valid-loss: 0.284706
+best-kappa: 0.8739
+: Epoch: 16 | Training Loss: 0.207343 | Val. Loss: 0.284706 | Val. Kappa Score: 0.8739 | LR: 0.000125 | Estimated time: 69.62
+Train loss on 50 batch: 0.250982
+Train loss on 100 batch: 0.231027
+Train loss on 150 batch: 0.187437
+: Epoch: 17 | Training Loss: 0.218308 | Val. Loss: 0.286666 | Val. Kappa Score: 0.8748 | LR: 0.000125 | Estimated time: 69.76
+Train loss on 50 batch: 0.211297
+Train loss on 100 batch: 0.191459
+Train loss on 150 batch: 0.228872
+: Epoch: 18 | Training Loss: 0.215074 | Val. Loss: 0.284831 | Val. Kappa Score: 0.8753 | LR: 0.000125 | Estimated time: 69.36
+Train loss on 50 batch: 0.175675
+Train loss on 100 batch: 0.214089
+Train loss on 150 batch: 0.216878
+: Epoch: 19 | Training Loss: 0.209609 | Val. Loss: 0.286188 | Val. Kappa Score: 0.8755 | LR: 0.000063 | Estimated time: 70.29
+Train loss on 50 batch: 0.201552
+Train loss on 100 batch: 0.228176
+Train loss on 150 batch: 0.196692
+best-train-loss: 0.209843
+best-valid-loss: 0.283854
+best-kappa: 0.8758
+: Epoch: 20 | Training Loss: 0.209843 | Val. Loss: 0.283854 | Val. Kappa Score: 0.8758 | LR: 0.000063 | Estimated time: 70.33
+Train loss on 50 batch: 0.200764
+Train loss on 100 batch: 0.197773
+Train loss on 150 batch: 0.201156
+: Epoch: 21 | Training Loss: 0.223575 | Val. Loss: 0.284461 | Val. Kappa Score: 0.8762 | LR: 0.000063 | Estimated time: 69.39
+Train loss on 50 batch: 0.204644
+Train loss on 100 batch: 0.196627
+Train loss on 150 batch: 0.194738
+best-train-loss: 0.194165
+best-valid-loss: 0.281357
+best-kappa: 0.8765
+: Epoch: 22 | Training Loss: 0.194165 | Val. Loss: 0.281357 | Val. Kappa Score: 0.8765 | LR: 0.000063 | Estimated time: 69.82
+Train loss on 50 batch: 0.204508
+Train loss on 100 batch: 0.207038
+Train loss on 150 batch: 0.216151
+: Epoch: 23 | Training Loss: 0.217144 | Val. Loss: 0.282236 | Val. Kappa Score: 0.8769 | LR: 0.000063 | Estimated time: 69.47
+Train loss on 50 batch: 0.219915
+Train loss on 100 batch: 0.195081
+Train loss on 150 batch: 0.197104
+: Epoch: 24 | Training Loss: 0.276553 | Val. Loss: 0.284402 | Val. Kappa Score: 0.8773 | LR: 0.000063 | Estimated time: 69.98
+Train loss on 50 batch: 0.189517
+Train loss on 100 batch: 0.192809
+Train loss on 150 batch: 0.225936
+best-train-loss: 0.205392
+best-valid-loss: 0.281112
+best-kappa: 0.8776
+: Epoch: 25 | Training Loss: 0.205392 | Val. Loss: 0.281112 | Val. Kappa Score: 0.8776 | LR: 0.000063 | Estimated time: 69.34
+Train loss on 50 batch: 0.195401
+Train loss on 100 batch: 0.182891
+Train loss on 150 batch: 0.209219
+: Epoch: 26 | Training Loss: 0.230652 | Val. Loss: 0.283117 | Val. Kappa Score: 0.8779 | LR: 0.000063 | Estimated time: 69.83
+Train loss on 50 batch: 0.224251
+Train loss on 100 batch: 0.229298
+Train loss on 150 batch: 0.187011
+best-train-loss: 0.209685
+best-valid-loss: 0.277106
+best-kappa: 0.8782
+: Epoch: 27 | Training Loss: 0.209685 | Val. Loss: 0.277106 | Val. Kappa Score: 0.8782 | LR: 0.000063 | Estimated time: 69.76
+Train loss on 50 batch: 0.232307
+Train loss on 100 batch: 0.174933
+Train loss on 150 batch: 0.183206
+best-train-loss: 0.211875
+best-valid-loss: 0.276826
+best-kappa: 0.8783
+: Epoch: 28 | Training Loss: 0.211875 | Val. Loss: 0.276826 | Val. Kappa Score: 0.8783 | LR: 0.000063 | Estimated time: 68.79
+Train loss on 50 batch: 0.151513
+Train loss on 100 batch: 0.220950
+Train loss on 150 batch: 0.208418
+: Epoch: 29 | Training Loss: 0.209032 | Val. Loss: 0.279946 | Val. Kappa Score: 0.8785 | LR: 0.000063 | Estimated time: 69.53
+Train loss on 50 batch: 0.209284
+Train loss on 100 batch: 0.211368
+Train loss on 150 batch: 0.201839
+: Epoch: 30 | Training Loss: 0.220892 | Val. Loss: 0.279279 | Val. Kappa Score: 0.8788 | LR: 0.000063 | Estimated time: 70.36
+Train loss on 50 batch: 0.175919
+Train loss on 100 batch: 0.200036
+Train loss on 150 batch: 0.174026
+: Epoch: 31 | Training Loss: 0.197531 | Val. Loss: 0.281247 | Val. Kappa Score: 0.8789 | LR: 0.000031 | Estimated time: 69.81
+Train loss on 50 batch: 0.207167
+Train loss on 100 batch: 0.223236
+Train loss on 150 batch: 0.175910
+: Epoch: 32 | Training Loss: 0.193662 | Val. Loss: 0.281555 | Val. Kappa Score: 0.8787 | LR: 0.000031 | Estimated time: 70.09
+Train loss on 50 batch: 0.201583
+Train loss on 100 batch: 0.188845
+Train loss on 150 batch: 0.169984
+: Epoch: 33 | Training Loss: 0.194771 | Val. Loss: 0.282176 | Val. Kappa Score: 0.8791 | LR: 0.000031 | Estimated time: 70.15
+Train loss on 50 batch: 0.185121
+Train loss on 100 batch: 0.199741
+Train loss on 150 batch: 0.203167
+: Epoch: 34 | Training Loss: 0.193907 | Val. Loss: 0.281487 | Val. Kappa Score: 0.8791 | LR: 0.000016 | Estimated time: 69.59
+Train loss on 50 batch: 0.179146
+Train loss on 100 batch: 0.188867
+Train loss on 150 batch: 0.198648
+: Epoch: 35 | Training Loss: 0.211713 | Val. Loss: 0.279560 | Val. Kappa Score: 0.8790 | LR: 0.000016 | Estimated time: 69.82
+Train loss on 50 batch: 0.176924
+Train loss on 100 batch: 0.204588
+Train loss on 150 batch: 0.188602
+: Epoch: 36 | Training Loss: 0.203728 | Val. Loss: 0.282606 | Val. Kappa Score: 0.8790 | LR: 0.000016 | Estimated time: 69.26
+Train loss on 50 batch: 0.188950
+Train loss on 100 batch: 0.185641
+Train loss on 150 batch: 0.187856
+: Epoch: 37 | Training Loss: 0.200880 | Val. Loss: 0.279944 | Val. Kappa Score: 0.8789 | LR: 0.000008 | Estimated time: 69.25
+Train loss on 50 batch: 0.177315
+Train loss on 100 batch: 0.179359
+Train loss on 150 batch: 0.189539
+: Epoch: 38 | Training Loss: 0.249192 | Val. Loss: 0.279884 | Val. Kappa Score: 0.8793 | LR: 0.000008 | Estimated time: 69.72
+time_estimated: 2654.32
+n-epochs: 38
+time_estimated: 2654.37
+----------------------------------------
+
+Experiment N: 162: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.08.31 12:29:40
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f3c5f8>
+early-stopping-patience: 10
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 0.475989
+Train loss on 100 batch: 0.390523
+Train loss on 150 batch: 0.339488
+best-train-loss: 0.383739
+best-valid-loss: 0.392248
+best-kappa: 0.8697
+: Epoch: 1 | Training Loss: 0.383739 | Val. Loss: 0.392248 | Val. Kappa Score: 0.8697 | LR: 0.001000 | Estimated time: 70.02
+Train loss on 50 batch: 0.303421
+Train loss on 100 batch: 0.304463
+Train loss on 150 batch: 0.268641
+: Epoch: 2 | Training Loss: 0.328673 | Val. Loss: 0.441039 | Val. Kappa Score: 0.8615 | LR: 0.001000 | Estimated time: 69.96
+Train loss on 50 batch: 0.316255
+Train loss on 100 batch: 0.321946
+Train loss on 150 batch: 0.301954
+best-train-loss: 0.306079
+best-valid-loss: 0.350593
+best-kappa: 0.8657
+: Epoch: 3 | Training Loss: 0.306079 | Val. Loss: 0.350593 | Val. Kappa Score: 0.8657 | LR: 0.001000 | Estimated time: 74.03
+Train loss on 50 batch: 0.305928
+Train loss on 100 batch: 0.303957
+Train loss on 150 batch: 0.295005
+: Epoch: 4 | Training Loss: 0.364686 | Val. Loss: 0.357997 | Val. Kappa Score: 0.8669 | LR: 0.001000 | Estimated time: 70.69
+Train loss on 50 batch: 0.341864
+Train loss on 100 batch: 0.343149
+Train loss on 150 batch: 0.264044
+best-train-loss: 0.321765
+best-valid-loss: 0.336523
+best-kappa: 0.8720
+: Epoch: 5 | Training Loss: 0.321765 | Val. Loss: 0.336523 | Val. Kappa Score: 0.8720 | LR: 0.001000 | Estimated time: 71.29
+Train loss on 50 batch: 0.288976
+Train loss on 100 batch: 0.295500
+Train loss on 150 batch: 0.282169
+: Epoch: 6 | Training Loss: 0.268890 | Val. Loss: 0.452358 | Val. Kappa Score: 0.8640 | LR: 0.001000 | Estimated time: 71.11
+Train loss on 50 batch: 0.273980
+Train loss on 100 batch: 0.261889
+Train loss on 150 batch: 0.240714
+: Epoch: 7 | Training Loss: 0.266626 | Val. Loss: 0.361471 | Val. Kappa Score: 0.8663 | LR: 0.001000 | Estimated time: 72.72
+Train loss on 50 batch: 0.249250
+Train loss on 100 batch: 0.262350
+Train loss on 150 batch: 0.226862
+best-train-loss: 0.263206
+best-valid-loss: 0.297449
+best-kappa: 0.8692
+: Epoch: 8 | Training Loss: 0.263206 | Val. Loss: 0.297449 | Val. Kappa Score: 0.8692 | LR: 0.001000 | Estimated time: 71.23
+Train loss on 50 batch: 0.270542
+Train loss on 100 batch: 0.285631
+Train loss on 150 batch: 0.260111
+: Epoch: 9 | Training Loss: 0.265821 | Val. Loss: 0.315876 | Val. Kappa Score: 0.8714 | LR: 0.001000 | Estimated time: 74.72
+Train loss on 50 batch: 0.241714
+Train loss on 100 batch: 0.249219
+Train loss on 150 batch: 0.254682
+: Epoch: 10 | Training Loss: 0.306522 | Val. Loss: 0.350313 | Val. Kappa Score: 0.8715 | LR: 0.001000 | Estimated time: 72.96
+Train loss on 50 batch: 0.261913
+Train loss on 100 batch: 0.259973
+Train loss on 150 batch: 0.242513
+: Epoch: 11 | Training Loss: 0.264420 | Val. Loss: 0.314838 | Val. Kappa Score: 0.8718 | LR: 0.000500 | Estimated time: 69.88
+Train loss on 50 batch: 0.219889
+Train loss on 100 batch: 0.209643
+Train loss on 150 batch: 0.231838
+: Epoch: 12 | Training Loss: 0.221716 | Val. Loss: 0.297862 | Val. Kappa Score: 0.8723 | LR: 0.000500 | Estimated time: 69.69
+Train loss on 50 batch: 0.205831
+Train loss on 100 batch: 0.247039
+Train loss on 150 batch: 0.206854
+: Epoch: 13 | Training Loss: 0.217871 | Val. Loss: 0.300100 | Val. Kappa Score: 0.8740 | LR: 0.000500 | Estimated time: 70.03
+Train loss on 50 batch: 0.204291
+Train loss on 100 batch: 0.221210
+Train loss on 150 batch: 0.218843
+best-train-loss: 0.219515
+best-valid-loss: 0.271584
+best-kappa: 0.8756
+: Epoch: 14 | Training Loss: 0.219515 | Val. Loss: 0.271584 | Val. Kappa Score: 0.8756 | LR: 0.000500 | Estimated time: 69.70
+Train loss on 50 batch: 0.223016
+Train loss on 100 batch: 0.193435
+Train loss on 150 batch: 0.208639
+: Epoch: 15 | Training Loss: 0.205892 | Val. Loss: 0.279707 | Val. Kappa Score: 0.8769 | LR: 0.000500 | Estimated time: 68.96
+Train loss on 50 batch: 0.216270
+Train loss on 100 batch: 0.180852
+Train loss on 150 batch: 0.219053
+: Epoch: 16 | Training Loss: 0.207267 | Val. Loss: 0.277539 | Val. Kappa Score: 0.8774 | LR: 0.000500 | Estimated time: 70.12
+Train loss on 50 batch: 0.219152
+Train loss on 100 batch: 0.212702
+Train loss on 150 batch: 0.183646
+: Epoch: 17 | Training Loss: 0.204688 | Val. Loss: 0.281613 | Val. Kappa Score: 0.8784 | LR: 0.000250 | Estimated time: 70.74
+Train loss on 50 batch: 0.189039
+Train loss on 100 batch: 0.166982
+Train loss on 150 batch: 0.207703
+: Epoch: 18 | Training Loss: 0.191370 | Val. Loss: 0.275516 | Val. Kappa Score: 0.8794 | LR: 0.000250 | Estimated time: 70.98
+Train loss on 50 batch: 0.165847
+Train loss on 100 batch: 0.186106
+Train loss on 150 batch: 0.179316
+: Epoch: 19 | Training Loss: 0.192084 | Val. Loss: 0.292432 | Val. Kappa Score: 0.8801 | LR: 0.000250 | Estimated time: 73.28
+Train loss on 50 batch: 0.190646
+Train loss on 100 batch: 0.202443
+Train loss on 150 batch: 0.165721
+best-train-loss: 0.183696
+best-valid-loss: 0.264644
+best-kappa: 0.8806
+: Epoch: 20 | Training Loss: 0.183696 | Val. Loss: 0.264644 | Val. Kappa Score: 0.8806 | LR: 0.000250 | Estimated time: 73.02
+Train loss on 50 batch: 0.181671
+Train loss on 100 batch: 0.164994
+Train loss on 150 batch: 0.181987
+: Epoch: 21 | Training Loss: 0.206208 | Val. Loss: 0.284580 | Val. Kappa Score: 0.8809 | LR: 0.000250 | Estimated time: 72.02
+Train loss on 50 batch: 0.181764
+Train loss on 100 batch: 0.183825
+Train loss on 150 batch: 0.181478
+best-train-loss: 0.186254
+best-valid-loss: 0.260374
+best-kappa: 0.8818
+: Epoch: 22 | Training Loss: 0.186254 | Val. Loss: 0.260374 | Val. Kappa Score: 0.8818 | LR: 0.000250 | Estimated time: 72.84
+Train loss on 50 batch: 0.175902
+Train loss on 100 batch: 0.170149
+Train loss on 150 batch: 0.165206
+: Epoch: 23 | Training Loss: 0.167138 | Val. Loss: 0.272413 | Val. Kappa Score: 0.8826 | LR: 0.000250 | Estimated time: 72.42
+Train loss on 50 batch: 0.171894
+Train loss on 100 batch: 0.157578
+Train loss on 150 batch: 0.162675
+: Epoch: 24 | Training Loss: 0.232256 | Val. Loss: 0.302081 | Val. Kappa Score: 0.8823 | LR: 0.000250 | Estimated time: 74.06
+Train loss on 50 batch: 0.173496
+Train loss on 100 batch: 0.188001
+Train loss on 150 batch: 0.191149
+: Epoch: 25 | Training Loss: 0.187415 | Val. Loss: 0.267411 | Val. Kappa Score: 0.8828 | LR: 0.000125 | Estimated time: 74.56
+Train loss on 50 batch: 0.183898
+Train loss on 100 batch: 0.142202
+Train loss on 150 batch: 0.158949
+: Epoch: 26 | Training Loss: 0.182435 | Val. Loss: 0.263278 | Val. Kappa Score: 0.8832 | LR: 0.000125 | Estimated time: 74.61
+Train loss on 50 batch: 0.167210
+Train loss on 100 batch: 0.187438
+Train loss on 150 batch: 0.148880
+best-train-loss: 0.162131
+best-valid-loss: 0.259979
+best-kappa: 0.8836
+: Epoch: 27 | Training Loss: 0.162131 | Val. Loss: 0.259979 | Val. Kappa Score: 0.8836 | LR: 0.000125 | Estimated time: 74.59
+Train loss on 50 batch: 0.192321
+Train loss on 100 batch: 0.151633
+Train loss on 150 batch: 0.148419
+best-train-loss: 0.163355
+best-valid-loss: 0.259351
+best-kappa: 0.8832
+: Epoch: 28 | Training Loss: 0.163355 | Val. Loss: 0.259351 | Val. Kappa Score: 0.8832 | LR: 0.000125 | Estimated time: 73.81
+Train loss on 50 batch: 0.136888
+Train loss on 100 batch: 0.161147
+Train loss on 150 batch: 0.149396
+: Epoch: 29 | Training Loss: 0.152759 | Val. Loss: 0.269056 | Val. Kappa Score: 0.8832 | LR: 0.000125 | Estimated time: 74.37
+Train loss on 50 batch: 0.160763
+Train loss on 100 batch: 0.163980
+Train loss on 150 batch: 0.164430
+: Epoch: 30 | Training Loss: 0.163347 | Val. Loss: 0.262390 | Val. Kappa Score: 0.8832 | LR: 0.000125 | Estimated time: 75.37
+Train loss on 50 batch: 0.141776
+Train loss on 100 batch: 0.178419
+Train loss on 150 batch: 0.150569
+: Epoch: 31 | Training Loss: 0.167207 | Val. Loss: 0.265931 | Val. Kappa Score: 0.8835 | LR: 0.000063 | Estimated time: 74.50
+Train loss on 50 batch: 0.150415
+Train loss on 100 batch: 0.170864
+Train loss on 150 batch: 0.141664
+: Epoch: 32 | Training Loss: 0.154784 | Val. Loss: 0.263110 | Val. Kappa Score: 0.8834 | LR: 0.000063 | Estimated time: 74.20
+Train loss on 50 batch: 0.163258
+Train loss on 100 batch: 0.160063
+Train loss on 150 batch: 0.125909
+: Epoch: 33 | Training Loss: 0.153361 | Val. Loss: 0.262854 | Val. Kappa Score: 0.8840 | LR: 0.000063 | Estimated time: 70.35
+Train loss on 50 batch: 0.145758
+Train loss on 100 batch: 0.154113
+Train loss on 150 batch: 0.166227
+: Epoch: 34 | Training Loss: 0.154769 | Val. Loss: 0.261347 | Val. Kappa Score: 0.8839 | LR: 0.000031 | Estimated time: 70.05
+Train loss on 50 batch: 0.132980
+Train loss on 100 batch: 0.167256
+Train loss on 150 batch: 0.151361
+: Epoch: 35 | Training Loss: 0.167607 | Val. Loss: 0.260278 | Val. Kappa Score: 0.8838 | LR: 0.000031 | Estimated time: 69.94
+Train loss on 50 batch: 0.124337
+Train loss on 100 batch: 0.154261
+Train loss on 150 batch: 0.144507
+: Epoch: 36 | Training Loss: 0.149759 | Val. Loss: 0.262277 | Val. Kappa Score: 0.8838 | LR: 0.000031 | Estimated time: 69.83
+Train loss on 50 batch: 0.143871
+Train loss on 100 batch: 0.147013
+Train loss on 150 batch: 0.151896
+: Epoch: 37 | Training Loss: 0.154965 | Val. Loss: 0.262413 | Val. Kappa Score: 0.8839 | LR: 0.000016 | Estimated time: 70.84
+Train loss on 50 batch: 0.134279
+Train loss on 100 batch: 0.140548
+Train loss on 150 batch: 0.158737
+: Epoch: 38 | Training Loss: 0.178443 | Val. Loss: 0.264465 | Val. Kappa Score: 0.8840 | LR: 0.000016 | Estimated time: 71.11
+time_estimated: 2737.39
+n-epochs: 38
+time_estimated: 2737.43
+----------------------------------------
+
+Experiment N: 163: 
+
+
+
+EXPERIMENT WITH BATCH_SIZE: 16, LR: 0.001, p_horizontalflip: 0.4, model_type: efficientnet-b5
+
+
+: 
+date: 2019.09.02 17:28:02
+data-type: new
+loss-func: MSELoss()
+optim: Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 1e-05
+)
+scheduler: <torch.optim.lr_scheduler.ReduceLROnPlateau object at 0x7efb95f04160>
+early-stopping-patience: 10
+parameters-amount: 28342833
+n-epochs: 200
+batch-size: 16
+best-train-loss: inf
+best-valid-loss: inf
+best-kappa: 0
+lb-kappa-score: nan
+Train loss on 50 batch: 0.533912
+Train loss on 100 batch: 0.399936
+Train loss on 150 batch: 0.399654
+best-train-loss: 0.415096
+best-valid-loss: 0.392041
+best-kappa: 0.8562
+: Epoch: 1 | Training Loss: 0.415096 | Val. Loss: 0.392041 | Val. Kappa Score: 0.8562 | LR: 0.001000 | Estimated time: 70.13
+Train loss on 50 batch: 0.327802
+Train loss on 100 batch: 0.338426
+Train loss on 150 batch: 0.303963
+best-train-loss: 0.353578
+best-valid-loss: 0.364388
+best-kappa: 0.8626
+: Epoch: 2 | Training Loss: 0.353578 | Val. Loss: 0.364388 | Val. Kappa Score: 0.8626 | LR: 0.001000 | Estimated time: 69.81
+Train loss on 50 batch: 0.343398
+Train loss on 100 batch: 0.371546
+Train loss on 150 batch: 0.311036
+best-train-loss: 0.332131
+best-valid-loss: 0.348749
+best-kappa: 0.8646
+: Epoch: 3 | Training Loss: 0.332131 | Val. Loss: 0.348749 | Val. Kappa Score: 0.8646 | LR: 0.001000 | Estimated time: 69.90
+Train loss on 50 batch: 0.307595
+Train loss on 100 batch: 0.336034
+Train loss on 150 batch: 0.320148
+: Epoch: 4 | Training Loss: 0.404454 | Val. Loss: 0.369165 | Val. Kappa Score: 0.8662 | LR: 0.001000 | Estimated time: 69.71
+Train loss on 50 batch: 0.366852
+Train loss on 100 batch: 0.395708
+Train loss on 150 batch: 0.283939
+: Epoch: 5 | Training Loss: 0.345155 | Val. Loss: 0.351598 | Val. Kappa Score: 0.8650 | LR: 0.001000 | Estimated time: 70.64
+Train loss on 50 batch: 0.296335
+Train loss on 100 batch: 0.311927
+Train loss on 150 batch: 0.309034
+: Epoch: 6 | Training Loss: 0.289864 | Val. Loss: 0.401975 | Val. Kappa Score: 0.8626 | LR: 0.000500 | Estimated time: 70.04
+Train loss on 50 batch: 0.290640
+Train loss on 100 batch: 0.256375
+Train loss on 150 batch: 0.255945
+best-train-loss: 0.262329
+best-valid-loss: 0.315972
+best-kappa: 0.8655
+: Epoch: 7 | Training Loss: 0.262329 | Val. Loss: 0.315972 | Val. Kappa Score: 0.8655 | LR: 0.000500 | Estimated time: 70.03
+Train loss on 50 batch: 0.236834
+Train loss on 100 batch: 0.286466
+Train loss on 150 batch: 0.227267
+best-train-loss: 0.270913
+best-valid-loss: 0.304687
+best-kappa: 0.8678
+: Epoch: 8 | Training Loss: 0.270913 | Val. Loss: 0.304687 | Val. Kappa Score: 0.8678 | LR: 0.000500 | Estimated time: 69.32
+Train loss on 50 batch: 0.246344
+Train loss on 100 batch: 0.266897
+Train loss on 150 batch: 0.264786
+: Epoch: 9 | Training Loss: 0.259877 | Val. Loss: 0.318502 | Val. Kappa Score: 0.8692 | LR: 0.000500 | Estimated time: 70.12
+Train loss on 50 batch: 0.240684
+Train loss on 100 batch: 0.272248
+Train loss on 150 batch: 0.257030
+: Epoch: 10 | Training Loss: 0.318747 | Val. Loss: 0.322642 | Val. Kappa Score: 0.8699 | LR: 0.000500 | Estimated time: 70.19
+Train loss on 50 batch: 0.250615
+Train loss on 100 batch: 0.245091
+Train loss on 150 batch: 0.230411
+: Epoch: 11 | Training Loss: 0.242408 | Val. Loss: 0.316355 | Val. Kappa Score: 0.8700 | LR: 0.000250 | Estimated time: 69.84
+Train loss on 50 batch: 0.241611
+Train loss on 100 batch: 0.216994
+Train loss on 150 batch: 0.258788
+: Epoch: 12 | Training Loss: 0.235280 | Val. Loss: 0.311427 | Val. Kappa Score: 0.8704 | LR: 0.000250 | Estimated time: 70.56
+Train loss on 50 batch: 0.204089
+Train loss on 100 batch: 0.264679
+Train loss on 150 batch: 0.216718
+: Epoch: 13 | Training Loss: 0.234367 | Val. Loss: 0.314570 | Val. Kappa Score: 0.8715 | LR: 0.000250 | Estimated time: 70.35
+Train loss on 50 batch: 0.213212
+Train loss on 100 batch: 0.215656
+Train loss on 150 batch: 0.226929
+best-train-loss: 0.223222
+best-valid-loss: 0.295934
+best-kappa: 0.8722
+: Epoch: 14 | Training Loss: 0.223222 | Val. Loss: 0.295934 | Val. Kappa Score: 0.8722 | LR: 0.000250 | Estimated time: 70.19
+Train loss on 50 batch: 0.227728
+Train loss on 100 batch: 0.222492
+Train loss on 150 batch: 0.224821
+: Epoch: 15 | Training Loss: 0.226428 | Val. Loss: 0.298424 | Val. Kappa Score: 0.8728 | LR: 0.000250 | Estimated time: 69.90
+Train loss on 50 batch: 0.199453
+Train loss on 100 batch: 0.204621
+Train loss on 150 batch: 0.200091
+: Epoch: 16 | Training Loss: 0.207267 | Val. Loss: 0.297214 | Val. Kappa Score: 0.8734 | LR: 0.000250 | Estimated time: 69.64
+Train loss on 50 batch: 0.248643
+Train loss on 100 batch: 0.206439
+Train loss on 150 batch: 0.180554
+: Epoch: 17 | Training Loss: 0.211568 | Val. Loss: 0.296915 | Val. Kappa Score: 0.8743 | LR: 0.000125 | Estimated time: 69.95
+Train loss on 50 batch: 0.214650
+Train loss on 100 batch: 0.176486
+Train loss on 150 batch: 0.215552
+best-train-loss: 0.206358
+best-valid-loss: 0.294592
+best-kappa: 0.8750
+: Epoch: 18 | Training Loss: 0.206358 | Val. Loss: 0.294592 | Val. Kappa Score: 0.8750 | LR: 0.000125 | Estimated time: 68.92
+Train loss on 50 batch: 0.180289
+Train loss on 100 batch: 0.215689
+Train loss on 150 batch: 0.197534
+best-train-loss: 0.204716
+best-valid-loss: 0.294368
+best-kappa: 0.8755
+: Epoch: 19 | Training Loss: 0.204716 | Val. Loss: 0.294368 | Val. Kappa Score: 0.8755 | LR: 0.000125 | Estimated time: 70.77
+Train loss on 50 batch: 0.190274
+Train loss on 100 batch: 0.224417
+Train loss on 150 batch: 0.187383
+: Epoch: 20 | Training Loss: 0.202974 | Val. Loss: 0.304803 | Val. Kappa Score: 0.8762 | LR: 0.000125 | Estimated time: 69.97
+Train loss on 50 batch: 0.190476
+Train loss on 100 batch: 0.188909
+Train loss on 150 batch: 0.201674
+: Epoch: 21 | Training Loss: 0.215342 | Val. Loss: 0.305737 | Val. Kappa Score: 0.8762 | LR: 0.000125 | Estimated time: 69.36
+Train loss on 50 batch: 0.180155
+Train loss on 100 batch: 0.202455
+Train loss on 150 batch: 0.202770
+: Epoch: 22 | Training Loss: 0.195364 | Val. Loss: 0.305588 | Val. Kappa Score: 0.8766 | LR: 0.000063 | Estimated time: 69.80
+Train loss on 50 batch: 0.197202
+Train loss on 100 batch: 0.201740
+Train loss on 150 batch: 0.198343
+: Epoch: 23 | Training Loss: 0.203132 | Val. Loss: 0.295825 | Val. Kappa Score: 0.8772 | LR: 0.000063 | Estimated time: 70.19
+Train loss on 50 batch: 0.211826
+Train loss on 100 batch: 0.188620
+Train loss on 150 batch: 0.185363
+: Epoch: 24 | Training Loss: 0.265878 | Val. Loss: 0.298520 | Val. Kappa Score: 0.8776 | LR: 0.000063 | Estimated time: 70.09
+Train loss on 50 batch: 0.180087
+Train loss on 100 batch: 0.186330
+Train loss on 150 batch: 0.219439
+best-train-loss: 0.195843
+best-valid-loss: 0.293845
+best-kappa: 0.8781
+: Epoch: 25 | Training Loss: 0.195843 | Val. Loss: 0.293845 | Val. Kappa Score: 0.8781 | LR: 0.000063 | Estimated time: 69.89
+Train loss on 50 batch: 0.189407
+Train loss on 100 batch: 0.165769
+Train loss on 150 batch: 0.207368
+: Epoch: 26 | Training Loss: 0.223261 | Val. Loss: 0.297850 | Val. Kappa Score: 0.8784 | LR: 0.000063 | Estimated time: 69.66
+Train loss on 50 batch: 0.205555
+Train loss on 100 batch: 0.230419
+Train loss on 150 batch: 0.174844
+: Epoch: 27 | Training Loss: 0.205525 | Val. Loss: 0.296502 | Val. Kappa Score: 0.8790 | LR: 0.000063 | Estimated time: 69.51
+Train loss on 50 batch: 0.216863
+Train loss on 100 batch: 0.183055
+Train loss on 150 batch: 0.181077
+: Epoch: 28 | Training Loss: 0.202849 | Val. Loss: 0.293922 | Val. Kappa Score: 0.8790 | LR: 0.000031 | Estimated time: 70.05
+Train loss on 50 batch: 0.163595
+Train loss on 100 batch: 0.223485
+Train loss on 150 batch: 0.199154
+: Epoch: 29 | Training Loss: 0.196707 | Val. Loss: 0.295436 | Val. Kappa Score: 0.8792 | LR: 0.000031 | Estimated time: 71.53
+Train loss on 50 batch: 0.189641
+Train loss on 100 batch: 0.209176
+Train loss on 150 batch: 0.192149
+: Epoch: 30 | Training Loss: 0.197921 | Val. Loss: 0.295298 | Val. Kappa Score: 0.8796 | LR: 0.000031 | Estimated time: 70.59
+Train loss on 50 batch: 0.180664
+Train loss on 100 batch: 0.198845
+Train loss on 150 batch: 0.164430
+best-train-loss: 0.193601
+best-valid-loss: 0.291892
+best-kappa: 0.8800
+: Epoch: 31 | Training Loss: 0.193601 | Val. Loss: 0.291892 | Val. Kappa Score: 0.8800 | LR: 0.000031 | Estimated time: 72.71
+Train loss on 50 batch: 0.184923
+Train loss on 100 batch: 0.200696
+Train loss on 150 batch: 0.167137
+: Epoch: 32 | Training Loss: 0.183097 | Val. Loss: 0.293688 | Val. Kappa Score: 0.8800 | LR: 0.000031 | Estimated time: 72.98
+Train loss on 50 batch: 0.194165
+Train loss on 100 batch: 0.183399
+Train loss on 150 batch: 0.166638
+: Epoch: 33 | Training Loss: 0.187670 | Val. Loss: 0.296454 | Val. Kappa Score: 0.8804 | LR: 0.000031 | Estimated time: 70.06
+Train loss on 50 batch: 0.166857
+Train loss on 100 batch: 0.186412
+Train loss on 150 batch: 0.198195
+: Epoch: 34 | Training Loss: 0.183433 | Val. Loss: 0.293202 | Val. Kappa Score: 0.8803 | LR: 0.000016 | Estimated time: 70.07
+Train loss on 50 batch: 0.169721
+Train loss on 100 batch: 0.204803
+Train loss on 150 batch: 0.171226
+: Epoch: 35 | Training Loss: 0.204166 | Val. Loss: 0.292573 | Val. Kappa Score: 0.8803 | LR: 0.000016 | Estimated time: 73.53
+Train loss on 50 batch: 0.162434
+Train loss on 100 batch: 0.182538
+Train loss on 150 batch: 0.175993
+: Epoch: 36 | Training Loss: 0.189011 | Val. Loss: 0.292323 | Val. Kappa Score: 0.8803 | LR: 0.000016 | Estimated time: 72.01
+Train loss on 50 batch: 0.190479
+Train loss on 100 batch: 0.180120
+Train loss on 150 batch: 0.192965
+best-train-loss: 0.192115
+best-valid-loss: 0.291236
+best-kappa: 0.8804
+: Epoch: 37 | Training Loss: 0.192115 | Val. Loss: 0.291236 | Val. Kappa Score: 0.8804 | LR: 0.000016 | Estimated time: 73.01
+Train loss on 50 batch: 0.169970
+Train loss on 100 batch: 0.179293
+Train loss on 150 batch: 0.185165
+best-train-loss: 0.240785
+best-valid-loss: 0.291128
+best-kappa: 0.8806
+: Epoch: 38 | Training Loss: 0.240785 | Val. Loss: 0.291128 | Val. Kappa Score: 0.8806 | LR: 0.000016 | Estimated time: 70.34
+Train loss on 50 batch: 0.176845
+Train loss on 100 batch: 0.184969
+Train loss on 150 batch: 0.185704
+: Epoch: 39 | Training Loss: 0.192704 | Val. Loss: 0.292747 | Val. Kappa Score: 0.8808 | LR: 0.000016 | Estimated time: 72.61
+Train loss on 50 batch: 0.187782
+Train loss on 100 batch: 0.171789
+Train loss on 150 batch: 0.199264
+: Epoch: 40 | Training Loss: 0.186382 | Val. Loss: 0.292606 | Val. Kappa Score: 0.8809 | LR: 0.000016 | Estimated time: 71.07
+Train loss on 50 batch: 0.170290
+Train loss on 100 batch: 0.183256
+Train loss on 150 batch: 0.174045
+: Epoch: 41 | Training Loss: 0.176966 | Val. Loss: 0.293735 | Val. Kappa Score: 0.8812 | LR: 0.000008 | Estimated time: 70.55
+Train loss on 50 batch: 0.189439
+Train loss on 100 batch: 0.152513
+Train loss on 150 batch: 0.185049
+: Epoch: 42 | Training Loss: 0.179214 | Val. Loss: 0.291681 | Val. Kappa Score: 0.8814 | LR: 0.000008 | Estimated time: 70.84
+Train loss on 50 batch: 0.194434
+Train loss on 100 batch: 0.177171
+Train loss on 150 batch: 0.173601
+best-train-loss: 0.185907
+best-valid-loss: 0.290768
+best-kappa: 0.8817
+: Epoch: 43 | Training Loss: 0.185907 | Val. Loss: 0.290768 | Val. Kappa Score: 0.8817 | LR: 0.000008 | Estimated time: 69.94
+Train loss on 50 batch: 0.158663
+Train loss on 100 batch: 0.189294
+Train loss on 150 batch: 0.189125
+: Epoch: 44 | Training Loss: 0.171575 | Val. Loss: 0.293647 | Val. Kappa Score: 0.8820 | LR: 0.000008 | Estimated time: 69.99
+Train loss on 50 batch: 0.175335
+Train loss on 100 batch: 0.151893
+Train loss on 150 batch: 0.205590
+: Epoch: 45 | Training Loss: 0.180184 | Val. Loss: 0.293000 | Val. Kappa Score: 0.8821 | LR: 0.000008 | Estimated time: 70.78
+Train loss on 50 batch: 0.181930
+Train loss on 100 batch: 0.185097
+Train loss on 150 batch: 0.197603
+: Epoch: 46 | Training Loss: 0.184673 | Val. Loss: 0.292541 | Val. Kappa Score: 0.8822 | LR: 0.000004 | Estimated time: 70.53
+Train loss on 50 batch: 0.175874
+Train loss on 100 batch: 0.168856
+Train loss on 150 batch: 0.162856
+: Epoch: 47 | Training Loss: 0.176582 | Val. Loss: 0.292750 | Val. Kappa Score: 0.8823 | LR: 0.000004 | Estimated time: 72.76
+Train loss on 50 batch: 0.148855
+Train loss on 100 batch: 0.172317
+Train loss on 150 batch: 0.180203
+: Epoch: 48 | Training Loss: 0.189135 | Val. Loss: 0.293145 | Val. Kappa Score: 0.8822 | LR: 0.000004 | Estimated time: 72.64
+Train loss on 50 batch: 0.167208
+Train loss on 100 batch: 0.180358
+Train loss on 150 batch: 0.187869
+: Epoch: 49 | Training Loss: 0.187207 | Val. Loss: 0.294054 | Val. Kappa Score: 0.8823 | LR: 0.000002 | Estimated time: 72.41
+Train loss on 50 batch: 0.160328
+Train loss on 100 batch: 0.190088
+Train loss on 150 batch: 0.202669
+: Epoch: 50 | Training Loss: 0.180514 | Val. Loss: 0.292375 | Val. Kappa Score: 0.8824 | LR: 0.000002 | Estimated time: 71.66
+Train loss on 50 batch: 0.181696
+Train loss on 100 batch: 0.222441
+Train loss on 150 batch: 0.160192
+: Epoch: 51 | Training Loss: 0.184066 | Val. Loss: 0.293701 | Val. Kappa Score: 0.8826 | LR: 0.000002 | Estimated time: 74.25
+Train loss on 50 batch: 0.196491
+Train loss on 100 batch: 0.154430
+Train loss on 150 batch: 0.181857
+: Epoch: 52 | Training Loss: 0.180550 | Val. Loss: 0.295818 | Val. Kappa Score: 0.8827 | LR: 0.000001 | Estimated time: 74.58
+Train loss on 50 batch: 0.200320
+Train loss on 100 batch: 0.162989
+Train loss on 150 batch: 0.170138
+: Epoch: 53 | Training Loss: 0.178935 | Val. Loss: 0.297026 | Val. Kappa Score: 0.8829 | LR: 0.000001 | Estimated time: 73.33
+time_estimated: 3757.12
+n-epochs: 53
+time_estimated: 3757.18
