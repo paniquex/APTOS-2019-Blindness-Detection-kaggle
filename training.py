@@ -1,3 +1,4 @@
+
 import numpy as np # linear algebra
 import pandas as pd # data processing
 import matplotlib.pyplot as plt # Plotting
@@ -103,6 +104,8 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
     ## SHUFFLE DATA
     skf = None
     # if cfg.valid_type == 'holdout':
+    test_805 = pd.read_csv('./input/test_805.csv')
+    test_805 = pd.concat([test_805, test_805])
     train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True,
                                                                    random_state=cfg.seed, stratify=train_csv['diagnosis'])
     # train_csv, valid_csv = train_test_split(train_csv, test_size=cfg.valid_size,  shuffle=True, random_state=cfg.seed, stratify=train_csv['diagnosis'])
@@ -134,7 +137,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
     # Model
     cfg.model.load_state_dict(
-        torch.load('./Model_weights_finetuning/finetune11_like_10_imgsize256.pth')['model'])
+        torch.load('./Model_weights_finetuning/finetune18_like17_but_with_diffcoefs_colorjitter.pth')['model'])
 
     # check if CUDA is available
     train_on_gpu = torch.cuda.is_available()
@@ -227,6 +230,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
             batch_n += 1
             # move tensors to GPU if CUDA is available
             if train_on_gpu:
+                pass
                 data, target = data.cuda(), target.cuda().float()
             target = target.view(-1, 1)
             # clear the gradients of all optimized variables
@@ -256,6 +260,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
         for data, target in valid_loader:
             # move tensors to GPU if CUDA is available
             if train_on_gpu:
+                pass
                 data, target = data.cuda(), target.cuda().float()
             # forward pass: compute predicted outputs by passing inputs to the cfg.model
             target = target.view(-1, 1)

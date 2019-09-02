@@ -9,6 +9,7 @@ import math
 
 # The Code from: https://www.kaggle.com/ratthachat/aptos-updated-albumentation-meets-grad-cam
 cfg = Config()
+# import tensorflow as tf
 
 def crop_image1(img, tol=7):
     # img is image data
@@ -114,7 +115,10 @@ class CreateDataset(Dataset):
         lab = cv2.merge(lab_planes)
         clahed = cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
         image = resize_image(clahed, cfg.img_size)
-
+        # print(tf.test.is_gpu_available())
+        # vessel_model = VesselNet('./vessels/')
+        # process(lab, vessel_model=vessel_model)
+        # print(np.shape(image))
         image = transforms.ToPILImage()(image)
 
         if self.transform:
@@ -124,9 +128,9 @@ class CreateDataset(Dataset):
 
 transforms_train = transforms.Compose([
         transforms.RandomHorizontalFlip(),
-        transforms.RandomRotation((-150, 150)),
+        transforms.RandomRotation((-180, 180)),
         transforms.RandomVerticalFlip(),
-        transforms.ColorJitter(brightness=0, contrast=0, saturation=0, hue=0),
+        transforms.ColorJitter(brightness=0.1, contrast=0.5, saturation=0.1, hue=0.1),
         # transforms.RandomResizedCrop(cfg.img_size_crop),
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),

@@ -84,7 +84,8 @@ def training_loop(mode, train_csv_path, train_images_path, valid_csv_path, valid
                               worker_init_fn=__init_fn)
 
     # Model
-
+    # cfg.model.load_state_dict(
+    #     torch.load('./Model_weights_finetuning/exp156_end_epoch70.pth')['model'])
     # check if CUDA is available
     train_on_gpu = torch.cuda.is_available()
 
@@ -228,7 +229,10 @@ def training_loop(mode, train_csv_path, train_images_path, valid_csv_path, valid
 
         ## SCHEDULER STEP
         if cfg.scheduler is not None:
-            cfg.scheduler.step(valid_loss_epoch)
+            if cfg.early_stopping_loss == 'pytorch':
+                cfg.scheduler.step(valid_loss_epoch)
+            elif cfg.early_stopping_loss == 'kappa':
+                cfg.scheduler.step(1-valid_kappa)
 
         ## LOGGINS LOSSES
         if cfg.early_stopping_loss == 'pytorch':
@@ -295,16 +299,16 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
     # Loading Data + EDA
     modes = ['old', 'new']
-    training_loop(modes[0], './input/train_old.csv', './input/train_mixed_BEN_preprocessing/', './input/train_new.csv', './input/train_mixed_BEN_preprocessing/', 100, cfg)
+    training_loop(modes[0], './input/train_old.csv', './input/train_old_images/', './input/train_new.csv', './input/train_new_images/', 100, cfg)
     cfg.model.load_state_dict(torch.load(model_path)['model'])
     #training_loop(modes[1], './input/train_new.csv', './input/train_new_images/', cfg.n_epochs, cfg)
 
 
 if __name__ == '__main__':
     batch_size_list = [16]
-    lr_list = [5e-3]
+    lr_list = [1e-3]
     p_horizontalflip_list = [0.4]
-    model_type_list = ['efficientnet-b5']
+    # model_type_list = ['']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:
