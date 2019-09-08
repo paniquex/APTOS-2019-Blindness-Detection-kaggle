@@ -348,3 +348,29 @@ Model_weights/exp52_end_epoch5\.pth
 Model_weights/exp52_end_epoch7\.pth
 
 *.pth
+
+input/train_mixed_full_images.zip
+
+input/train_mixed_full_images/10075_right.png~
+
+input/train_mixed_full_images/10286_left.png~
+
+input/train_mixed_full_images/10890_left.png~
+
+input/train_new_images.zip
+
+input/EfficientNet_PyTorch.zip
+
+input/labels.zip
+
+input/resized test 15.zip
+
+libs_logs.zip
+
+libs/apex-master.zip
+
+Model_weights_finetuning/finetune8_256_crop_clahe_b5_colorjitter.pth.zip
+
+vessels/VesselNet_architecture.json
+
+vessels/VesselNet_best_weights.h5
