@@ -7,6 +7,7 @@ from libs.earlystopping import EarlyStopping
 
 import torch, random
 import numpy as np
+from robust_loss_pytorch import AdaptiveLossFunction
 
 def seed_torch(seed=13):
     random.seed(seed)
@@ -39,8 +40,8 @@ class Config:
                 self.df_logger.save()
         else:
             self.experiment_name = 'exp{}'.format(0) + '_end_epoch'
-        self.exper_type = 'data_imgsize_256'
-        self.img_size = 256
+        self.exper_type = 'data_imgsize_300'
+        self.img_size = 300
         # self.img_size_crop = 300
 
         ## MODEL PARAMETERS
@@ -55,7 +56,7 @@ class Config:
         self.lr = lr
         self.optimizer = optim.Adam(self.model.parameters(), lr=self.lr, weight_decay=1e-5)
         self.scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(self.optimizer, factor=0.5, patience=2, verbose=True)
-        self.criterion = nn.MSELoss()
+        self.criterion = nn.MSELoss()#AdaptiveLossFunction(num_dims=1, float_dtype=np.float32, device='cuda:0')
         # self.num_classes = 5
         self.model_param_list = [self.model, self.optimizer, self.scheduler]
 
