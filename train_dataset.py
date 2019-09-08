@@ -7,6 +7,9 @@ import numpy as np
 from config import Config
 import math
 
+from utils_img import *
+from retinal_process import *
+
 # The Code from: https://www.kaggle.com/ratthachat/aptos-updated-albumentation-meets-grad-cam
 cfg = Config()
 # import tensorflow as tf
@@ -97,6 +100,7 @@ class CreateDataset(Dataset):
         self.df = df_data
         self.transform = transform
         self.train_path = data_dir
+        self.number = 0
 
     def __len__(self):
         return len(self.df)
@@ -108,17 +112,17 @@ class CreateDataset(Dataset):
         p = self.df.id_code.values[idx]
         p_path = expand_path(p, self.train_path)
         image = cv2.imread(p_path)
-        lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
-        lab_planes = cv2.split(lab)
-        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(16, 16))
-        lab_planes[0] = clahe.apply(lab_planes[0])
-        lab = cv2.merge(lab_planes)
-        clahed = cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
-        image = resize_image(clahed, cfg.img_size)
+        # image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        # lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
+        # lab_planes = cv2.split(lab)
+        # clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(16, 16))
+        # lab_planes[0] = clahe.apply(lab_planes[0])
+        # lab = cv2.merge(lab_planes)
+        # clahed = cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
+        # image = resize_image(clahed, cfg.img_size)
         # print(tf.test.is_gpu_available())
         # vessel_model = VesselNet('./vessels/')
-        # process(lab, vessel_model=vessel_model)
-        # print(np.shape(image))
+        image = process(image, size = cfg.img_size, crop='normal', preprocessing='clahe', fourth=None)
         image = transforms.ToPILImage()(image)
 
         if self.transform:
@@ -128,14 +132,15 @@ class CreateDataset(Dataset):
 
 transforms_train = transforms.Compose([
         transforms.RandomHorizontalFlip(),
-        transforms.RandomRotation((-180, 180)),
+        transforms.RandomRotation((-150, 150)),
         transforms.RandomVerticalFlip(),
         transforms.ColorJitter(brightness=0.1, contrast=0.5, saturation=0.1, hue=0.1),
         # transforms.RandomResizedCrop(cfg.img_size_crop),
         transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
+        transforms.Normalize([0.406, 0.456, 0.485], [0.225, 0.224, 0.229]),
         ])
 
 transforms_valid = transforms.Compose([
         transforms.ToTensor(),
-        transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])])
+        transforms.Normalize([0.406, 0.456, 0.485], [0.225, 0.224, 0.229])
+    ])
