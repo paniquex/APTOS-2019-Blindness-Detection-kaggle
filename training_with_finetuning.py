@@ -85,7 +85,7 @@ def training_loop(mode, train_csv_path, train_images_path, valid_csv_path, valid
 
     # Model
     # cfg.model.load_state_dict(
-    #     torch.load('./Model_weights_finetuning/exp156_end_epoch70.pth')['model'])
+    #     torch.load('./Model_weights_finetuning/exp213_end_epoch6.pth')['model'])
     # check if CUDA is available
     train_on_gpu = torch.cuda.is_available()
 
@@ -184,6 +184,7 @@ def training_loop(mode, train_csv_path, train_images_path, valid_csv_path, valid
                 output = cfg.model(data)
                 # calculate the batch loss
                 loss = cfg.criterion(output, target)
+                # loss = torch.mean(cfg.criterion.lossfun((output - target)))
                 # backward pass: compute gradient of the loss with respect to cfg.model parameters
                 loss.backward()
                 # perform a single optimization step (parameter update)
@@ -212,6 +213,7 @@ def training_loop(mode, train_csv_path, train_images_path, valid_csv_path, valid
                 output = cfg.model(data)
                 # calculate the batch loss
                 loss = cfg.criterion(output, target)
+                # loss = torch.mean(cfg.criterion.lossfun((output - target)))
             # loss = loss.cpu()
             # update average validation loss
             valid_loss_epoch.append(loss.item())
@@ -299,7 +301,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
     # Loading Data + EDA
     modes = ['old', 'new']
-    training_loop(modes[0], './input/train_old.csv', './input/train_old_images/', './input/train_new.csv', './input/train_new_images/', 100, cfg)
+    training_loop(modes[0], './input/train_old_full.csv', './input/train_mixed_full_images/', './input/train_new.csv', './input/train_new_images/', 100, cfg)
     cfg.model.load_state_dict(torch.load(model_path)['model'])
     #training_loop(modes[1], './input/train_new.csv', './input/train_new_images/', cfg.n_epochs, cfg)
 
@@ -308,7 +310,7 @@ if __name__ == '__main__':
     batch_size_list = [16]
     lr_list = [1e-3]
     p_horizontalflip_list = [0.4]
-    # model_type_list = ['']
+    model_type_list = ['efficientnet-b3']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:

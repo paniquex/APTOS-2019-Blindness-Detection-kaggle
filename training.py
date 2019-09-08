@@ -87,7 +87,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
         train_path = './input/train_mixed_BEN_preprocessing/'
     elif cfg.data_type == 'new_old_balanced':
         train_csv = pd.read_csv('./input/train_balanced.csv')
-        train_path = './input/train_mixed_images/'
+        train_path = './input/train_mixed_full_images/'
     test_csv = pd.read_csv('./input/test.csv')
     print('Train Size = {}'.format(len(train_csv)))
     print('Public Test Size = {}'.format(len(test_csv)))
@@ -137,7 +137,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
     # Model
     cfg.model.load_state_dict(
-        torch.load('./Model_weights_finetuning/finetune18_like17_but_with_diffcoefs_colorjitter.pth')['model'])
+        torch.load('./Model_weights_finetuning/finetune28_b3_imgsize300.pth')['model'])
 
     # check if CUDA is available
     train_on_gpu = torch.cuda.is_available()
@@ -240,6 +240,7 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
                 output = cfg.model(data)
                 # calculate the batch loss
                 loss = cfg.criterion(output, target)
+                # loss = torch.mean(cfg.criterion.lossfun((output - target)))
                 # backward pass: compute gradient of the loss with respect to cfg.model parameters
                 loss.backward()
                 # perform a single optimization step (parameter update)
@@ -263,11 +264,12 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
                 pass
                 data, target = data.cuda(), target.cuda().float()
             # forward pass: compute predicted outputs by passing inputs to the cfg.model
-            target = target.view(-1, 1)
+            # target = target.view(-1, 1)
             with torch.no_grad():
                 output = cfg.model(data)
                 # calculate the batch loss
                 loss = cfg.criterion(output, target)
+                # loss = torch.mean(cfg.criterion.lossfun((output - target)))
             # loss = loss.cpu()
             # update average validation loss
             valid_loss_epoch.append(loss.item())
@@ -340,9 +342,9 @@ def main(batch_size, lr, p_horizontalflip, model_type, info):
 
 if __name__ == '__main__':
     batch_size_list = [16]
-    lr_list = [1e-3]
+    lr_list = [5e-4]
     p_horizontalflip_list = [0.4]
-    model_type_list = ['efficientnet-b5']
+    model_type_list = ['efficientnet-b3']
     for batch_size in batch_size_list:
         for lr in lr_list:
             for p_horizontalflip in p_horizontalflip_list:
