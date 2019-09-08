@@ -3,7 +3,8 @@ import torch.nn as nn
 import torchvision.models as models # Pre-Trained models
 from input.EfficientNet_PyTorch.efficientnet_pytorch import EfficientNet
 import timm     # Another Pre-trained models
-
+from torchvision.models import resnext101_32x8d as resnext
+from torchvision.models import DenseNet
 
 class ConvBlock(nn.Module):
     def __init__(self, in_channels, out_channels):
@@ -94,9 +95,11 @@ class MainModel:
             self.model = SimpleModel(num_classes)
         elif model_type == 'ResNet101':
             model = models.resnet101(pretrained=False)
-            # model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
+            model.load_state_dict(torch.load("./input/pretrained-models/resnet101-5d3b4d8f.pth"))
             # for param in model.parameters():
+            # model.conv1 = nn.Conv2d(4, 64, (7, 7), (2, 2), (3, 3), bias=False)
             #     param.requires_grad = False
+            print(model)
             # model.avg_pool = nn.AdaptiveAvgPool2d(output_size=(1, 1))
             model.fc = nn.Sequential(
                 # nn.Dropout(0.4),
@@ -113,10 +116,29 @@ class MainModel:
                 nn.Linear(in_features=2048, out_features=1),
             )
             self.model = model
+        elif model_type == 'ResNext101':
+            model = resnext(pretrained=True)
+            # model.conv1 = nn.Conv2d(4, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+            model.fc = nn.Linear(in_features=2048, out_features=1)
+            self.model = model
+
+        elif model_type == 'DenseNet':
+            # model = models.densenet121(pretrained=True)
+            # model.conv1 = nn.Conv2d(4, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+            # model.classifier = nn.Linear(in_features=1024, out_features=1)
+            # model.classifier = nn.Sequential(
+            #     nn.Dropout(0.4),
+            #     nn.Linear(in_features=1920, out_features=1)
+            # )
+            # print(model)
+            pass
+            # self.model = model
 
         elif model_type == 'efficientnet-b0':
             model = EfficientNet.from_name(model_type)
             model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b0-08094119.pth'))
+
+
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
                 nn.Dropout(0.4),
@@ -129,7 +151,8 @@ class MainModel:
             self.model = model
         elif model_type == 'efficientnet-b1':
             model = EfficientNet.from_name(model_type)
-            # model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b1-dbc7070a.pth'))
+            model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b1-dbc7070a.pth'))
+            # model._conv_stem = nn.Conv2d(4, 32, kernel_size=3, stride=2, bias=False)
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
                 nn.Dropout(0.4),
@@ -179,6 +202,9 @@ class MainModel:
             model = EfficientNet.from_name(model_type)
             model.load_state_dict(torch.load('./input/pretrained-models/efficientnet-b5-586e6cc6.pth'))
             # model._conv_stem = nn.Conv2d(4, 48, kernel_size=3, stride=2, bias=False)
+            # for i, layer in enumerate(model.):
+            #     if "batch_normalization" in layer.name:
+            #         effnet.layers[i] = GroupNormalization(groups=2, axis=-1, epsilon=0.1)
             in_features = model._fc.in_features
             model._fc = nn.Sequential(
                 nn.Dropout(0.4),
